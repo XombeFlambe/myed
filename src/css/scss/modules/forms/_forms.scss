@@ -1,0 +1,130 @@
+/*----------------------------------------------------------------------
+ Forms
+----------------------------------------------------------------------*/
+.form_alignLeft {text-align: left;}
+
+.form-wrap {
+    position: relative;
+    text-align: left;
+}
+
+.form-wrap_alignCenter {text-align: center;}
+
+.form label {
+	display: inline-block;
+	font-weight: 400;
+	padding-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 11px 8px;
+    margin: 0 auto 10px;
+    border: 1px solid $GRAY_SEMI_LIGHT;
+    box-shadow: inset 0 2px 1px rgba(0,0,0,.075);
+    background: $WHITE;
+    font-family: $FONT_PRIMARY;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.form-input:focus {
+	border: 1px solid $BRAND;
+	box-shadow: 0 0 3px 3px rgba(0,0,0,.075);
+}
+
+.form-input[disabled] {
+    background: $GRAY_LIGHT;
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+
+.form-input_area {min-height: 180px;}
+
+.form-input_block {display: block;}
+
+.form-input_sm {max-width: 200px;}
+
+.form-input_icon {
+    padding-left: 35px;
+}
+
+.form-wrap i {
+    position: absolute;
+    bottom: 22px;
+    left: 10px;
+    color: $GRAY;
+    font-size: 20px;
+}
+
+.form-input-show {
+    position: absolute;
+    bottom: 24px;
+    right: 10px;
+    color: $GRAY;
+    font-size: 12px;
+    cursor: pointer;
+    @include noSelect();
+}
+
+.radio,
+.checkbox {
+    display: inline-block;
+    position: relative;
+}
+
+.radio > li,
+.checkbox > li {padding-bottom: 5px;}
+
+.radio_block,
+.checkbox_block {display: block;}
+
+.radio input[type="radio"],
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+    text-indent: -9999px;
+}
+
+.radio .radio-custom,
+.checkbox .checkbox-custom {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    margin: 0 5px -1px 0;
+    border: 1px solid $BRAND;
+    border-radius: 2px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.radio .radio-custom {border-radius: 50%;}
+
+.radio input[type="radio"]:checked + .radio-custom,
+.checkbox input[type="checkbox"]:checked + .checkbox-custom {
+    border: 2px solid $BRAND;
+    background: $BRAND;
+}
+
+.radio li,
+.checkbox li {margin-bottom: 5px;}
+
+.radio_noMargin,
+.checkbox_noMargin {margin: 0;}
+
+.checkbox label {
+    font-size:16px;
+    cursor: pointer;
+}
+
+.checkbox-checked,
+.checkbox-unchecked {color: $BRAND;}
+
+.checkbox-unchecked {padding-right: 1px;}
+
+.checkbox input[type="checkbox"] + label .checkbox-checked {display: none;}
+
+.checkbox input[type="checkbox"]:checked  + label .checkbox-unchecked {display: none;}
+.checkbox input[type="checkbox"]:checked  + label .checkbox-checked {display: inline-block;}

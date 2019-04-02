@@ -1,0 +1,83 @@
+	<!-- BEGIN REPORTS MODAL MODULE -->
+	<div class="modal js-modal3">
+	    <div class="modal-mask js-modal-mask js-modal-mask_close"></div><!-- REMOVE js-modal-mask_close IF YOU WANT TO DEACTIVATE ON CLICK CLOSE FUNCTION ON MASK -->
+	    <div class="modal-content js-modal-content isActive">
+	        <div class="modal-hd">
+	            <h3 class="hdg hdg_3">DiSC Style Podcasts</h3>
+	        </div>
+	        <div class="modal-bd">
+	        	<div class="" style="display: none;">
+	        		<div class="spinner"><i class="fa fa-spinner fa-pulse"></i></div>
+	        	</div>
+	            <div>
+                    <!-- BEGIN JQUERY AUDIO PLAYER -->
+	            	<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                    <div class="jp-type-playlist">
+                        <div id="jp_container_1" class="jp-audio">
+                            <div class="jp-type-single">
+                                <span class="current_playing">The D Style</span>
+                                <div class="jp-gui jp-interface">
+
+                                    <ul class="jp-controls">
+                                        <li><a title="Play" class="jp-play fa fa-play" style="text-decoration:none;" href="javascript:;"></a></li>
+                                        <li><a title="Pause" class="jp-pause fa fa-pause" style="text-decoration:none;" href="javascript:;"> </a></li>
+                                        <li><a title="Mute" class="jp-mute fa fa-volume-down" href="javascript:;"> </a></li>
+                                        <li><a title="Unmute" class="jp-unmute fa fa-volume-off" href="javascript:;"> </a></li>
+                                        <li><a title="Max volume" class="jp-volume-max fa fa-volume-up" href="javascript:;"> </a></li>
+                                    </ul>
+                                    
+                                    <div class="jp-volume-bar">
+                                        <div class="jp-volume-bar-value"></div>
+                                    </div>
+                                    <div class="jp-time-holder">
+                                        <div class="jp-current-time"></div>
+                                        <div class="jp-duration"></div>
+                                    </div>
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div class="jp-play-bar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jp-playlist">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class="jp-playlist-item" href="#">The D Style</a></td>
+                                                <td>26:32</td>
+                                                <td><a href="./media/uploads/D-Transcript.pdf" target ="a_blank">Transcript PDF</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a class="jp-playlist-item" href="#">The i Style</a></td>
+                                                <td> 28:33 </td>
+                                                <td><a href="./media/uploads/i-Transcript.pdf" target ="a_blank">Transcript PDF</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a class="jp-playlist-item" href="#">The S Style</a></td>
+                                                <td>35:40</td>
+                                                <td><a href="./media/uploads/S-Transcript.pdf" target ="a_blank">Transcript PDF</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a class="jp-playlist-item" href="#">The C Style</a></td>
+                                                <td>43:03</td>
+                                                <td><a href="./media/uploads/C-Transcript.pdf" target ="a_blank">Transcript PDF</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="jp-playlist" style="display:none">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div><!-- DEFAULT PLAYLIST, NEEDED TO PLAY PROPERLY -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END JQUERY AUDIO PLAYER -->
+	            </div>
+	        </div>
+	        <a href="#" class="modal-close js-modal-close" title="close">
+	            <i class="jp-stop fa fa-times-circle"></i>
+	        </a>
+	    </div>
+	</div><!-- END REPORTS MODAL MODULE-->

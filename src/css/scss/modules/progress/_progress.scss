@@ -1,0 +1,72 @@
+/*----------------------------------------------------------------------
+ Progress
+----------------------------------------------------------------------*/
+.progress {
+    min-height: 50px;
+    position: relative;
+    color: #6e6e6e;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.progress-bar {
+    display: table;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    border: 1px solid #cedfe6;
+}
+
+.progress-bar > * {display: table-cell;}
+
+.progress-bar-object {
+	height: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar-animation {
+    width: 768px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    background-color: #0092cf;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255,255,255,.2) 10px, rgba(255,255,255,.2) 20px);
+    animation: progressBar 24s infinite linear;
+}
+
+@keyframes progressBar {0% {background-position: 0 0;} 100% {background-position: 600px 0;}}
+
+.progress-bar-mask {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.15) inset;
+    background: #ffffff;
+    z-index: 10;
+}
+
+.progress-bar-mask_0 {width: 100%;}.progress-bar-mask_1 {width: 99%;}.progress-bar-mask_2 {width: 98%;}.progress-bar-mask_3 {width: 97%;}.progress-bar-mask_4 {width: 96%;}.progress-bar-mask_5 {width: 95%;}.progress-bar-mask_6 {width: 94%;}.progress-bar-mask_7 {width: 93%;}.progress-bar-mask_8 {width: 92%;}.progress-bar-mask_9 {width: 91%;}
+.progress-bar-mask_10 {width: 90%;}.progress-bar-mask_11 {width: 89%;}.progress-bar-mask_12 {width: 88%;}.progress-bar-mask_13 {width: 87%;}.progress-bar-mask_14 {width: 86%;}.progress-bar-mask_15 {width: 85%;}.progress-bar-mask_16 {width: 84%;}.progress-bar-mask_17 {width: 83%;}.progress-bar-mask_18 {width: 82%;}.progress-bar-mask_19 {width: 81%;}
+.progress-bar-mask_20 {width: 80%;}.progress-bar-mask_21 {width: 79%;}.progress-bar-mask_22 {width: 78%;}.progress-bar-mask_23 {width: 77%;}.progress-bar-mask_24 {width: 76%;}.progress-bar-mask_25 {width: 75%;}.progress-bar-mask_26 {width: 74%;}.progress-bar-mask_27 {width: 73%;}.progress-bar-mask_28 {width: 72%;}.progress-bar-mask_29 {width: 71%;}
+.progress-bar-mask_30 {width: 70%;}.progress-bar-mask_31 {width: 69%;}.progress-bar-mask_32 {width: 68%;}.progress-bar-mask_33 {width: 67%;}.progress-bar-mask_34 {width: 66%;}.progress-bar-mask_35 {width: 65%;}.progress-bar-mask_36 {width: 64%;}.progress-bar-mask_37 {width: 63%;}.progress-bar-mask_38 {width: 62%;}.progress-bar-mask_39 {width: 61%;}
+.progress-bar-mask_40 {width: 60%;}.progress-bar-mask_41 {width: 59%;}.progress-bar-mask_42 {width: 58%;}.progress-bar-mask_43 {width: 57%;}.progress-bar-mask_44 {width: 56%;}.progress-bar-mask_45 {width: 55%;}.progress-bar-mask_46 {width: 54%;}.progress-bar-mask_47 {width: 53%;}.progress-bar-mask_48 {width: 52%;}.progress-bar-mask_49 {width: 51%;}
+.progress-bar-mask_50 {width: 50%;}.progress-bar-mask_51 {width: 49%;}.progress-bar-mask_52 {width: 48%;}.progress-bar-mask_53 {width: 47%;}.progress-bar-mask_54 {width: 46%;}.progress-bar-mask_55 {width: 45%;}.progress-bar-mask_56 {width: 44%;}.progress-bar-mask_57 {width: 43%;}.progress-bar-mask_58 {width: 42%;}.progress-bar-mask_59 {width: 41%;}
+.progress-bar-mask_60 {width: 40%;}.progress-bar-mask_61 {width: 39%;}.progress-bar-mask_62 {width: 38%;}.progress-bar-mask_63 {width: 37%;}.progress-bar-mask_64 {width: 36%;}.progress-bar-mask_65 {width: 35%;}.progress-bar-mask_66 {width: 34%;}.progress-bar-mask_67 {width: 33%;}.progress-bar-mask_68 {width: 32%;}.progress-bar-mask_69 {width: 31%;}
+.progress-bar-mask_70 {width: 30%;}.progress-bar-mask_71 {width: 29%;}.progress-bar-mask_72 {width: 28%;}.progress-bar-mask_73 {width: 27%;}.progress-bar-mask_74 {width: 26%;}.progress-bar-mask_75 {width: 25%;}.progress-bar-mask_76 {width: 24%;}.progress-bar-mask_77 {width: 23%;}.progress-bar-mask_78 {width: 22%;}.progress-bar-mask_79 {width: 21%;}
+.progress-bar-mask_80 {width: 20%;}.progress-bar-mask_81 {width: 19%;}.progress-bar-mask_82 {width: 18%;}.progress-bar-mask_83 {width: 17%;}.progress-bar-mask_84 {width: 16%;}.progress-bar-mask_85 {width: 15%;}.progress-bar-mask_86 {width: 14%;}.progress-bar-mask_87 {width: 13%;}.progress-bar-mask_88 {width: 12%;}.progress-bar-mask_89 {width: 11%;}
+.progress-bar-mask_90 {width: 10%;}.progress-bar-mask_91 {width: 09%;}.progress-bar-mask_92 {width: 08%;}.progress-bar-mask_93 {width: 07%;}.progress-bar-mask_94 {width: 06%;}.progress-bar-mask_95 {width: 05%;}.progress-bar-mask_96 {width: 04%;}.progress-bar-mask_97 {width: 03%;}.progress-bar-mask_98 {width: 02%;}.progress-bar-mask_99 {width: 01%;}
+.progress-bar-mask_100 {width: 0;}
+
+.progress-labels > * {
+	position: absolute;
+	top: 20px;
+}
+
+.progress-labels > *:first-child {left: 0;}
+.progress-labels > * + * {right: 0;}

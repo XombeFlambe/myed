@@ -1,0 +1,38 @@
+	<!-- BEGIN REPORTS MODAL MODULE -->
+	<div class="modal js-modal2">
+	    <div class="modal-mask js-modal-mask"></div><!-- REMOVE js-modal-mask_close IF YOU WANT TO DEACTIVATE ON CLICK CLOSE FUNCTION ON MASK -->
+	    <div class="modal-content js-modal-content isActive">
+	        <div class="modal-hd">
+	            <h3 class="hdg hdg_3">Generate Report</h3>
+	        </div>
+	        <div class="modal-bd">
+	        	<div class="" style="display: none;">
+	        		<h4 class="hdg hdg_4 hdg_alignCenter">We're generating your report...</h4>
+	        		<div class="spinner"><i class="fa fa-spinner fa-pulse"></i></div>
+	        	</div>
+	            <div class="">
+	            	<h4 class="hdg hdg_4 hdg_pushBtm hdg_alignCenter">Your Report is Ready</h4>
+	            	<ul class="list list_line list_borderBtmNone">
+	            		<li>
+                            <a href="javascript:void(0);" class=" txt_sm"><i class="fa fa-external-link"></i> View in browser</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class=" txt_sm"><i class="fa fa-cloud-download"></i> Download PDF</a>
+                        </li>
+                        <li>
+                            <div class="txt_pushBtmSm txt_sm txt_gray"><i class="fa fa-envelope"></i> Email as PDF</div>
+                            <div class="form" id="reportEmail">
+	                            <input type="email" id="email-report" class="form-input" placeholder="Separate multiple email addressess with a comma." />
+	                            <div class="wrap wrap_alignCenter">
+	                            	<button type="button" class="btn btn_sm btn_secondary btn_pushBtmNone btn_pushTopSm"><i class="fa fa-envelope-o"></i> Send Email</button>
+	                            </div>
+	                        </div>
+                        </li>
+	            	</ul>
+	            </div>
+	        </div>
+	        <a href="javascript:void(0)" class="modal-close js-modal-close" title="close">
+	            <i class="fa fa-times-circle"></i>
+	        </a>
+	    </div>
+	</div><!-- END REPORTS MODAL MODULE-->

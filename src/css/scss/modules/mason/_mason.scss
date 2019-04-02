@@ -1,0 +1,57 @@
+// ------------------------------------------------------------------
+// Mason Tiles
+// ------------------------------------------------------------------
+.mason {
+	width: 100%;
+	@include clearfix();
+	border: 3px solid $BRAND_LIGHT;
+}
+
+.mason-tile {
+	width: 100%;
+	position: relative;
+	@include clearfix();
+	border-bottom: 1px solid $BRAND_LIGHT;
+	background-size: cover;
+	background-color: $GRAY_LIGHT;
+}
+
+.mason-tile:last-child {border-bottom: none;}
+
+.mason-tile_feature {background-image: url(../../media/images/mason-tiles/LEARN-ABOUT-DISC-BKGRD.png);}
+
+.mason-content {
+	display: block;
+	padding: 20px;
+}
+
+.mason-tile > a {
+	display: table;
+	width: 100%;
+}
+
+.mason-tile > a:hover,
+.mason-tile > a:focus {
+	text-decoration: none;
+}
+
+.mason-media {
+	display: table-cell;
+	width: 100px;
+	margin: 10px 20px 10px 10px;
+	float: left;
+	overflow: hidden;
+	border-radius: 50%;
+	line-height: 0;
+	vertical-align: middle;
+}
+
+.mason-overlay {
+	display: table-cell;
+	width: 82%;
+	padding-right: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.mason-overlay > * {color: $BRAND;}

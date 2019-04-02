@@ -1,0 +1,22 @@
+/*----------------------------------------------------------------------
+ Tabs
+----------------------------------------------------------------------*/
+.tab-content,
+.tab-heading {display: none;}
+
+.tabsNav {
+	width: 100%;
+	margin-bottom: 0;
+	@include clearfix();
+}
+
+.tabsNav ul {
+	display: block;
+}
+
+.tabsNav li {
+	display: block;
+	padding: 10px;
+	text-align: left;
+	background: $GRADIENT;
+}

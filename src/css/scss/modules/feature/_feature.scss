@@ -1,0 +1,56 @@
+/*----------------------------------------------------------------------
+ Feature
+----------------------------------------------------------------------*/
+.feature {
+	position: relative;
+	border: 1px solid $BRAND_LIGHT;
+	background: $WHITE;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+.feature_update {background: $GRAY_LIGHT;}
+
+.feature_noBorder {border: none;}
+
+.feature-hd {
+	padding: 5px 25px 5px 10px;
+	border-bottom: 1px solid $BRAND_LIGHT;
+}
+
+.feature-bd {
+	padding: 5px 10px;
+	display: table;
+	@include clearfix();
+}
+
+.feature-media {
+	display: table-cell;
+	padding: 5px 10px 5px 0;
+	vertical-align: middle;
+}
+
+.feature-info {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.feature-ft {
+	padding: 5px 10px 7px;
+	margin-top: -1px; /* For slim view on My Comparisons features */
+	border-top: 1px solid $BRAND_LIGHT;
+}
+
+.feature-hd .feature-links {
+	padding: 5px 0;
+}
+
+.feature-ft .feature-links {
+	text-align: right;
+}
+
+.feature-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}

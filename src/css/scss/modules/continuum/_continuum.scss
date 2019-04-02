@@ -1,0 +1,130 @@
+// ------------------------------------------------------------------
+// Continuum
+// ------------------------------------------------------------------
+.continuum {
+    margin: 10px 10px 20px;
+    position: relative;
+    font-size: 14px;
+}
+
+.continuum-range {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.continuum-range > span {
+    display: inline-block;
+    color: #7e8b8f;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.continuum-range > span:first-child {float: left;}
+.continuum-range > span:last-child {float: right;}
+
+.continuum-line {
+    width: 100%;
+    height: 4px;
+    margin-top: 20px;
+    position: relative;
+    background: #cedfe6;
+}
+
+.continuum-line:before,
+.continuum-line:after {
+    display: table;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -8px;
+}
+
+.continuum-line:before {
+    left: -7px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #cedfe6;
+    border-bottom: 10px solid transparent;
+}
+
+.continuum-line:after {
+    right: -7px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #cedfe6;
+    border-bottom: 10px solid transparent;
+}
+
+.continuum-dataWrap {
+    margin-top: -17px;
+    padding: 0 5px;
+    position: relative;
+    color: #333333;
+}
+
+.continuum-dataWrap:before,
+.continuum-dataWrap:after {
+    display: table;
+    content: "";
+}
+
+.continuum-dataWrap:after {clear: both;}
+
+.continuum-data {
+    width: 7.69%; /* 13 columns */
+    min-height: 32px;
+    margin-bottom: 15px;
+    float: left;
+    text-align: center;
+}
+
+.continuum-data.inActive .continuum-data-item {display: none;}
+
+
+.continuum-data-item {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #cedfe6;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    font-size: 12px;
+    line-height: 2.6;
+    -ms-interpolation-mode: bicubic;
+}
+
+.continuum-tag {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.continuum-list {
+    margin: 0 0 20px 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    list-style-type: none;
+}
+
+.continuum-list li {margin-bottom: 5px;}
+
+.continuum-list i {
+    padding-right: 5px;
+}
+  
+@media only screen and (max-width: 479px) {
+    .continuum {
+        margin: 20px 0;
+    }
+      
+    .continuum-dataWrap {
+        margin-top: -12px;
+    }
+
+    .continuum-data-item {
+        width: 22px;
+        height: 22px;
+    }
+}

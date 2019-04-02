@@ -1,0 +1,141 @@
+	<!-- GATEWAY MODAL -->
+    <div class="modal modal_gateway"><!-- Add class 'isActive' to activate modal modal -->
+    	<div class="modal-mask"></div>
+
+        <!-- MODAL CONTENT SECTION 1A, ADD ACCESS CODE -->
+        <div class="modal-content isActive"><!-- ADD 'isActive' class to activate sections -->
+            <div class="modal-hd">
+                <h3 class="hdg hdg_3">Let's personalize your site.</h3>
+            </div>
+            <div class="modal-bd">
+                 <div class="form">
+                    <div class="wrap wrap_alignLeft pushBtm10">Enter or paste your access code</div>
+                    <div class="form-wrap">
+						<label for="acess-code" class="isVisuallyHidden">Access Code</label>
+						<i class="fa fa-key"></i>
+						<input type="text" id="access-code" name="acess-code" class="form-input form-input_icon" placeholder="for example: 1234-5678" />
+					</div>
+                    <div class="wrap wrap_alignRight">
+                        <a href="javascript:void(0);" class="js-modal-next pushRight10">Skip for now</a><!-- ADD inActive CLASS TO DEACTIVATE -->
+                        <input type="submit" value="Add" class="btn btn_secondary btn_sm"><!-- ADD disabled ATTRIBUTE TO DEACTIVATE -->
+                    </div>
+                    <div class="pushBtm10">You'll find your code in either of these two places.</div>
+                    <table>
+						<colgroup>
+							<col width="50%">
+							<col width="50%;">
+						</colgroup>
+                    	<tr>
+                    		<td>
+                        		<img src="./media/images/examples/myed-code-email.png" alt="Access code example one" class="imgResponsive" />
+                            	<span class="txt_sm">On your Profile report cover</span>
+                            </td>
+                            <td>
+                                <img src="./media/images/examples/myed-code-report.png" alt="Access code example two" class="imgResponsive" />
+                                <span class="txt_sm">In the email about Everything DiSC&reg;</span>
+                            </td>
+                    	</tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL CONTENT SECTION 1B, WRONG ACCESS CODE -->
+        <div class="modal-content">
+            <div class="modal-hd js-tip">
+                <h3 class="hdg hdg_3 hdg_inlineBlock">
+                    <span>Sorry, we don't recognize that code. </span>
+                    <span class="js-tip-trigger txt">
+                    	<i class="fa fa-info-circle"></i>
+                    </span>
+                </h3>
+                <div class="tip-content js-tip-content">
+                	<div class="wrap wrap_alignLeft">
+	                    <p class="txt_pushBtmSm">Why isn't my code working?</p>
+	                    <ul class="list list_bullet">
+	                    	<li>You could have entered your code incorrectly.</li>
+	                    	<li>This code may be associated with another account.</li>
+	                    	<li>This is not for an Everything DiSC product.</li>
+	                    </ul>
+	                    <span>Please contact your Everything DiSC facilitator for assistance.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-bd">
+                 <div class="form">
+                 	<p class="txt_pushBtmSm">Please try again. Or, skip this step for now and add it later.</p>
+                    <div class="wrap wrap_alignLeft pushBtm10">Enter or paste your access code</div>
+                    <div class="form-wrap">
+						<label for="acess-code" class="isVisuallyHidden">Access Code</label>
+						<i class="fa fa-key"></i>
+						<input type="text" id="access-code" name="acess-code" class="form-input form-input_icon" placeholder="for example: 1234-5678" />
+					</div>
+                    <div class="wrap wrap_alignRight">
+                        <a href="javascript:void(0);" class="js-modal-next pushRight10 inActive">Skip for now</a><!-- ADD inActive CLASS TO DEACTIVATE -->
+                        <input type="submit" value="Add" class="btn btn_secondary btn_sm" disabled><!-- ADD disabled ATTRIBUTE TO DEACTIVATE -->
+                    </div>
+                    <div class="pushBtm10">You'll find your code in either of these two places.</div>
+                    <table>
+						<colgroup>
+							<col width="50%">
+							<col width="50%;">
+						</colgroup>
+                    	<tr>
+                    		<td>
+                        		<img src="./media/images/examples/myed-code-email.png" alt="Access code example one" class="imgResponsive" />
+                            	<span class="txt_sm">On your Profile report cover</span>
+                            </td>
+                            <td>
+                                <img src="./media/images/examples/myed-code-report.png" alt="Access code example two" class="imgResponsive" />
+                                <span class="txt_sm">In the email about Everything DiSC&reg;</span>
+                            </td>
+                    	</tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL CONTENT SECTION 2, CODE ADDED -->
+        <div class="modal-content">
+            <div class="modal-hd">
+                <h3 class="hdg hdg_3">Your report has been added.</h3>
+            </div>
+            <div class="modal-bd">
+                <p class="txt_bold txt_pushBtmSm">Your DiSC style will be revealed once your facilitator turns on access.</p>
+                <p class="txt_pushBtmLg">Until then, you can learn about Everything DiSC&reg; on our site.</p>
+                <div class="wrap wrap_alignRight">
+                    <a href="javascript:void(0);" class="js-modal-next btn btn_secondary btn_sm">Continue to Site</a>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL CONTENT SECTION 3, NO REPORT -->
+        <div class="modal-content">
+            <div class="modal-hd">
+                <h3 class="hdg hdg_3">We don't have a report for you yet.</h3>
+            </div>
+            <div class="modal-bd">
+                <p class="txt_bold txt_pushBtmSm">You will need to complete an assessment first.</p>
+                <p class="txt_pushBtmLg">Until then, you can learn about Everything DiSC&reg; on our site.</p>
+                <div class="wrap wrap_alignRight">
+                    <a href="javascript:void(0);" class="js-modal-next pushRight10">Skip for now</a><!-- ADD inActive CLASS TO DEACTIVATE -->
+                    <a href="javascript:void(0);" class="js-modal-next btn btn_secondary btn_sm">Take Your Assessment</a>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL CONTENT SECTION 4, WELCOME -->
+        <div class="modal-content">
+            <div class="modal-hd">
+                <h3 class="hdg hdg_3">Welcome to MyEverythingDiSC.com!</h3>
+            </div>
+            <div class="modal-bd">
+                <p class="txt_pushBtmLg">We’re pleased to introduce interactive learning tools that will help you better understand your DiSC Style - and provide you with personalized tips for working with others. For the best experience possible, we recommend you set up your account profile first.</p>
+            </div>
+            <div class="wrap wrap_alignRight">
+                <a href="javascript:void(0);" class="js-modal-close pushRight10">Skip for now</a>
+                <a href="account.html" class="btn  btn_sm btn_secondary">Go to account</a>
+            </div>
+        </div>
+
+    </div><!-- END GATEWAY MODAL -->

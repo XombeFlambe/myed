@@ -1,0 +1,85 @@
+<!-- customers.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+	<!-- STICKY FOOTER -->
+    <div class="stickyFooter">
+		{{header.active('customers')}}
+
+		<div class="wrap wrap_extend">
+
+		    <div class="wrap wrap_content" id="top">
+
+				<div class="wrap wrap_alignCenter">
+					<h1 class="hdg hdg_1 pushTop20 pushBtm40">Gain insights for more effective interactions with customers</h1>
+				</div>
+
+				<div class="wrap wrap_sm">
+					<!-- BEGIN DRAWER MODULE -->
+					<div class="drawer js-drawer js-tip">
+					    <div class="drawer-trigger">
+                        	<h2 class="drawer-hd">Customer interaction maps</h2>
+                        	<span class="tip-trigger js-tip-trigger">
+								<i class="fa fa-info-circle"></i>
+							</span>
+                            <a href="javascript:void(0)" class="btn btn_secondary js-drawer-trigger">Create a New Map</a>
+                        </div>
+                        <div class="tip-content js-tip-content">
+							<span class="txt_sm">Customer interaction maps help you understand important similarities and differences between yourself and your customers. This allows you to read and adapt to your customers’ needs.</span>
+						</div>
+					    <div class="drawer-content js-drawer-content">
+					    	<h2 class="hdg hdg_3 pushBtm20">Create a Customer Interaction Map</h2>
+					    	<hr class="pushBtm20">
+					    	{%include "partials/forms/_form-create-map.html"%}
+					    </div>
+					</div><!-- END DRAWER MODULE -->
+				</div>
+
+				<table class="table table_customers">
+					<thead>
+						<tr>
+							<th>Date <span class="txt_pushLeftSm js-sort"><i class="fa fa-sort"></i></span></th>
+							<th>First Name <span class="txt_pushLeftSm js-sort"><i class="fa fa-sort"></i></span></th>
+							<th>Last Name <span class="txt_pushLeftSm js-sort"><i class="fa fa-sort"></i></span></th>
+							<th>Gender <span class="txt_pushLeftSm js-sort"><i class="fa fa-sort"></i></span></th>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>09/09/2999</td>
+							<td>David</td>
+							<td>Bowie</td>
+							<td>Male</td>
+							<td><a href="javascript:void(0);" class="js-modalTrigger2">Customer Interaction Map</a></td>
+							<td><div class="table-row-delete" title="delete"><i class="fa fa-times"></i></div></td>
+						</tr>
+						<tr>
+							<td colspan="6"><p class="alert alert_inline alert_noMargin">You are about to delete your Freddie Mercury Customer Interaction Map. <span class="alert-actions"><a href="javascript:void(0);" class="">Delete my Map</a> | <a href="javascript:void(0);" class="link_secondary">Cancel</a></span></p>
+							</td>
+						</tr>
+						<tr>
+							<td>12/09/2011</td>
+							<td>Iggy</td>
+							<td>Pop</td>
+							<td>Male</td>
+							<td><a href="javascript:void(0);" class="js-modalTrigger2">Customer Interaction Map</a></td>
+							<td><div class="table-row-delete" title="delete"><i class="fa fa-times"></i></div></td>
+						</tr>
+						
+					</tbody>
+				</table>
+
+		    </div>
+
+		</div>
+
+	</div><!-- END STICKY FOOTER -->
+	
+	{{footer.active()}}
+
+	{%include "partials/modals/_modal-reports.html"%}
+
+{% endblock %}

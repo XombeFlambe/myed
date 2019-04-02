@@ -1,0 +1,72 @@
+/*----------------------------------------------------------------------
+ Disc Map
+----------------------------------------------------------------------*/
+.discMap {
+	max-width: 490px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.discMap_pushTop {margin-top: 20px;}
+
+.discMap-btn {
+	position: absolute;
+    display: block;
+	cursor: pointer;
+}
+
+.discMap-btn_Di {
+    width: 30%;
+    height: 10%;
+    top: 0;
+    left: 35%;
+}
+
+.discMap-btn_i {
+    width: 25%;
+    height: 25%;
+    top: 5%;
+    left: 69%;
+}
+
+.discMap-btn_iS {
+    width: 10%;
+    height: 39%;
+    top: 32%;
+    left: 91%;
+}
+
+.discMap-btn_S {
+    width: 25%;
+    height: 25%;
+    top: 72%;
+    left: 67%;
+}
+
+.discMap-btn_SC {
+    width: 30%;
+    height: 10%;
+    top: 90%;
+    left: 33%;
+}
+
+.discMap-btn_C {
+    width: 25%;
+    height: 25%;
+    top: 72%;
+    left: 6%;
+}
+
+.discMap-btn_CD {
+    width: 10%;
+    height: 39%;
+    top: 32%;
+    left: -2%;
+}
+
+.discMap-btn_D {
+    width: 25%;
+    height: 25%;
+    top: 5%;
+    left: 6%;
+}

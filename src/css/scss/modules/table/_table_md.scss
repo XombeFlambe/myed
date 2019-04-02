@@ -1,0 +1,44 @@
+//----------------------------------------------------------------------
+// Tables Medium
+//----------------------------------------------------------------------
+.table {
+	display: table;
+	width: 100%;
+	margin-bottom: 20px;
+	border: none;
+
+	thead {display: table-header-group;}
+
+	tbody {display: table-row-group;}
+
+	tr {
+		display: table-row;
+		border: none;
+	}
+
+	th,
+	td {
+		display: table-cell;
+		padding: 10px;
+	}
+}
+
+.table_reports {
+	tbody td:first-child {float:none;}
+
+	tbody .table-row-delete {
+		margin: 0;
+		float: none;
+	}
+
+	tbody td + td {padding-right: 10px;}
+}
+
+.table_customers {
+	tbody .table-row-delete {
+		margin: 0;
+		float: none;
+	}
+
+	tbody td + td {padding-right: 10px;}
+}

@@ -1,0 +1,117 @@
+<!-- styleguide.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+	<!-- STICKY FOOTER -->
+    <div class="stickyFooter">
+		{{header.active('styleguide')}}
+
+		<div class="wrap wrap_extend">
+
+		    <div class="wrap wrap_content" id="top">
+
+				<h1 class="hdg hdg_1 hdg_pushBtm">My Everything DiSC Styleguide</h1>
+
+				<!-- TEMPLATE SECTOR 
+				<div class="sector">
+					<div class="sector-hd"><h2 class="hdg hdg_2"></h2></div>
+					<div class="sector-bd"></div>
+				</div> -->
+
+				<!-- COLORS SECTOR -->
+				<div class="sector">
+					<div class="sector-hd"><h2 class="hdg hdg_2">Colors</h2></div>
+					<div class="sector-bd">
+						<ul class="list">
+							<li style="padding: 5px;background:#0091d2;color:white;">#0091d2</li>
+							<li style="padding: 5px;background:#bfd9df;">#bfd9df</li>
+							<li style="padding: 5px;background:#B5D9DD;">#b5d9dd</li>
+							<li style="padding: 5px;background:#236fa8;color:white;">#236fa8</li>
+							<li style="padding: 5px;background:#fdf8bc;">#fdf8bc</li>
+							<li style="padding: 5px;background:#fdd601;">#fdd601</li>
+							<li style="padding: 5px;background:#fdc000;">#fdc000</li>
+							<li style="padding: 5px;background:#eaf2f4;">#eaf2f4</li>
+							<li style="padding: 5px;background:#d6d6d6;">#d6d6d6</li>
+							<li style="padding: 5px;background:#7E8C90;color:white;">#7E8C90</li>
+							<li style="padding: 5px;background:#4d4f4f;color:white;">#4d4f4f</li>
+							<li style="padding: 5px;background:#323232;color:white;">#323232</li>
+							<li style="padding: 5px;background:#dc4f4f;color:white;">#dc4f4f</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- TEMPLATE SECTOR -->
+				<div class="sector">
+					<div class="sector-hd"><h2 class="hdg hdg_2">Icons, Font Awesome</h2></div>
+					<div class="sector-bd" style="height:100px;position:relative;font-size:20px;">
+						<ul class="hList">
+							<li><i class="fa fa-lock"></i></li>
+							<li><i class="fa fa-envelope"></i></li>
+							<li><i class="fa fa-user"></i></li>
+							<li><i class="fa fa-building"></i></li>
+							<li><i class="fa fa-spinner"></i></li>
+							<li><i class="fa fa-question-circle"></i></li>
+							<li><i class="fa fa-times"></i></li>
+							<li><i class="fa fa-times-circle"></i></li>
+						</ul>
+						<div class="spinner">
+					        <i class="fa fa-spinner fa-pulse"></i>
+						</div>
+					</div>
+				</div>
+
+				
+				<!-- TEXT SECTOR -->
+				<div class="sector">
+					<div class="sector-hd"><h2 class="hdg hdg_2">Text</h2></div>
+					<div class="sector-bd">
+						<p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas culpa necessitatibus cum nisi labore nulla! Iure pariatur alias quaerat magni beatae placeat aut, tenetur ratione unde dolorum, fuga. Voluptatem, nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, veritatis! Lorem ipsum dolor sit amet.</p>
+						<ul class="list">
+							<li><span class="txt txt_lg">Large Text</span></li>
+							<li><span class="txt txt_med">Medium Text</span></li>
+							<li><span class="txt txt_sm">Small Text</span></li>
+							<li><span class="txt txt_bold">Bold Text</span></li>
+							<li><span class="txt txt_italic">Italic Text</span></li>
+							<li><span class="txt txt_upper">Uppercase Text</span></li>
+							<li><span class="txt txt_lower">Lowercase Text</span></li>
+							<li><span class="txt txt_gray">Gray Text</span></li>
+							<li><span class="txt txt_green">Green Text</span></li>
+							<li><span class="txt txt_red">Red Text</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- HEADINGS SECTOR -->
+				<div class="sector">
+					<div class="sector-hd"><h2 class="hdg hdg_2">Headings</h2></div>
+					<div class="sector-bd">
+						<h3 class="hdg hdg_1">Heading 1, <span class="hdg_bold">Bold, <span class="hdg_upper">uppercase </span></span></h3>
+						<h3 class="hdg hdg_2">Heading 2, <span class="hdg_bold">Bold, <span class="hdg_upper">uppercase</span></span></h3>
+						<h3 class="hdg hdg_3">Heading 3, <span class="hdg_bold">Bold, <span class="hdg_upper">uppercase, </span><span class="hdg_gray">Gray</span></span></h3>
+						<h3 class="hdg hdg_4">Heading 4, <span class="hdg_bold">Bold, <span class="hdg_upper">uppercase, </span><span class="hdg_gray">Gray</span></span></h3>
+						<h3 class="hdg hdg_5">Heading 5, <span class="hdg_bold">Bold, <span class="hdg_upper">uppercase, </span><span class="hdg_gray">Gray</span></span></h3>
+					</div>
+				</div>
+
+				<!-- BUTTONS SECTOR -->
+				<div class="sector">
+					<div class="sector-hd"><h2 class="hdg hdg_2">Buttons</h2></div>
+					<div class="sector-bd">
+						<a href="#" class="btn">Button Primary</a>
+						<a href="#" class="btn btn_secondary">Button Secondary</a>
+						<a href="#" class="btn btn_tertiary">Button Tertiary</a>
+						<a href="#" class="btn inActive">Disabled Button</a>
+						<a href="#" class="btn btn_sm">Small Button</a>
+						<a href="#" class="btn btn_xsm">Extra Small Button</a>
+					</div>
+				</div>
+
+		    </div>
+		</div>
+
+	</div><!-- END STICKY FOOTER -->
+	
+	{{footer.active()}}
+
+{% endblock %}

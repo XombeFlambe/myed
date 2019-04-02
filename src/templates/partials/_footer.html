@@ -1,0 +1,58 @@
+{% macro active(activePage='full') %}
+        <!-- SUB FOOTER -->
+        <div class="subFooter">
+            <ul class="subFooter-list {%if activePage == 'signin' %}isHidden{% endif %}">
+                <li><a href="./learn.html">Learn about DiSC&reg;</a></li>
+                <li><a href="http://wiley.qualtrics.com/jfe/form/SV_9pfE42uxOQcSsyp" target="_blank">Provide feedback</a></li>
+                <li><a href="./privacy-terms.html">View privacy &amp; terms of use</a></li>
+            </ul>
+        </div>
+        <!-- FOOTER -->
+        <div class="footer {%if activePage == 'signin' %}footer_signin{% endif %}" role="content-info">
+            <ul class="footer-blocks">
+
+                <!-- PARTNER LOGO -->
+                <li>
+                    <img src="./media/images/footer_partner_logo.png" alt="Partner logo" />
+                </li>
+
+                <!-- PARTNER CONTACT INFO -->
+                <li>
+                    <div class="footer-client">
+                        <div class="footer-client-address">
+                            <span>Cnr Boundary and Rosa Streets</span>
+                            <span>Spring Hill Qld 4000</span>
+                        </div>
+                        <div class="footer-client-phone">(07) 3227 4888</div>
+                        <div class="footer-client-website">
+                            <a href="http://www.aim.com.au/" target="_blank">www.aim.com.au</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- TRUSTe LOGO -->
+                <li>
+                    <a href="http://www.truste.com" target="_blank">
+                        <img src="./media/images/footer_truste_logo.png" alt="TRUSTe logo" />
+                    </a>
+                </li>
+                
+                <!-- WILEY FOOTER CONTENT -->
+                <li>
+                    <div class="footer-company">
+                        <div class="footer-company-logo">
+                            <img src="./media/images/footer_logo.png" alt="Everything DiSC&reg; logo" />
+                        </div>
+                        <div class="footer-company-version">EPIC2/MN v2014.10.2.1720</div>
+                        <small class="footer-company-copy">
+                            <span>&copy;<script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script></span>
+                            <a href=" http://www.wiley.com" target="_blank">John Wiley &amp; Sons, Inc </a>
+                            <span> All rights reserved.</span>
+                        </small>
+                    </div>
+                </li>
+            </ul>
+        </div><!-- END FOOTER -->
+
+        <a href="./index.html" style="padding: 10px;">Front End Index Page</a><!-- FE INDEX PAGE LINK: REMOVE FROM BE INTEGRATION -->
+{% endmacro %}

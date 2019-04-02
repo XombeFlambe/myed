@@ -1,0 +1,86 @@
+/*----------------------------------------------------------------------
+ Disc Scale
+----------------------------------------------------------------------*/
+.discScale-bd {
+	position: relative;
+}
+
+.discScale-media {
+	width: 260px;
+	height: 260px;
+	margin-left: -130px;
+	left: 50%;
+	position: absolute;
+	background-image: url(../../media/images/discs/disc-scale.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.discScale-list {
+    display: inline-block;
+    position: relative;
+    margin: 40px 0;
+}
+
+.discScale-list > li {padding-bottom: 5px;}
+
+.discScale-list_block {display: block;}
+
+.discScale-list input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+    text-indent: -9999px;
+}
+
+.discScale-list .discScale-custom {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $BRAND;
+    padding: 0;
+    margin: 0 5px -3px 0;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.discScale-list .discScale-custom {border-radius: 50%;}
+
+.discScale-list input[type="radio"]:checked + .discScale-custom {
+    border: 2px solid $BRAND;
+    background: $BRAND;
+}
+
+.discScale-list li {margin-bottom: 5px;}
+
+.discScale_horizontal {
+	.discScale-bd {
+		display: table;
+		width: 100%;
+	}
+
+	.discScale-bd-section {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.discScale-list > li {
+		display: inline-block;
+		padding: 75px 5px 85px;
+	}
+
+	.discScale-bd-section {width: 15%;}
+	.discScale-bd-section:first-child + .discScale-bd-section {width: 260px; text-align: center;}
+
+	@media screen and (max-width: $WIDTH_XSM) {
+		.discScale-bd-section:first-child,
+		.discScale-bd-section:last-child {
+			width: 20%;
+			position: absolute;
+			font-size: 12px;
+			top: -15px;
+		}
+
+		.discScale-bd-section:first-child {left: 0;}
+		.discScale-bd-section:last-child {right: 0;}
+	}
+}

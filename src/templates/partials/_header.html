@@ -1,0 +1,88 @@
+{% macro active(activePage='home') %}
+			<!-- BEGIN SITE BACKGROUND IMAGE -->
+			<div class="imgBg {%if activePage == 'signin' %}imgBg_full{% endif %}"></div><!-- END SITE BACKGROUND IMAGE -->
+
+			<!-- BEGIN HEADER ALERT -->
+			{%if activePage == 'home' %}
+			<div class="alert alert_fixed {%if activePage == 'home' %}alert_notify{% endif %} js-close">
+				<div class="alert-content"><span class="txt_inlineBlock">Add your report to learn more about you unique style and compare styles with others!<a href="" class="btn btn_secondary btn_pushLeft btn_xxsm btn_pushBtmNone">Add My Report</a></span>
+				</div>
+				<a href="javascript:void(0);" class="alert-close js-close-trigger" title="close"><i class="fa fa-times-circle"></i></a>
+			</div>
+			{% endif %}
+			<!-- BEGIN HEADER ALERT -->
+			{%if activePage == 'style' %}
+			<div class="alert alert_fixed {%if activePage == 'style' %}alert_notify{% endif %} js-close">
+				<div class="alert-content"><span class="txt_inlineBlock">Take your Everything DiSC® 363° for Leaders Profile (English) assessment to view the site <a href="" class="btn btn_secondary btn_pushLeft btn_xxsm btn_pushBtmNone">Take the assessment</a></span>
+				</div>
+				<a href="javascript:void(0);" class="alert-close js-close-trigger" title="close"><i class="fa fa-times-circle"></i></a>
+			</div>
+			{% endif %}
+			<!-- BEGIN HEADER ALERT -->
+			{%if activePage == 'account' %}
+			<div class="alert alert_fixed js-close">
+				<div class="alert-content">
+					<p>This is a standalone alert used to show validation errors.</p>
+					<ul class="list list_bullet list_pushLeft">
+						<li>Field cannot be blank</li>
+						<li>Number cannot be more than 100</li>
+						<li>Date is invalid</li>
+					</ul>
+					<a href="javascript:void(0);" class="alert-close js-close-trigger" title="close"><i class="fa fa-times-circle"></i></a>
+				</div>
+			</div>
+			{% endif %}
+
+			<!-- BEGIN HEADER -->
+			<div class="header">
+				<div class="header-push"></div>
+				<div class="header-wrap">
+					<div class="header-content">
+
+						<div class="header-logo {%if activePage == 'signin' %}centered{% endif %}" itemscope itemtype ="http://schema.org/LocalBusiness">
+						    <a href="home.html" itemprop="url">
+						        <img src="./media/images/logo-beta.png" class="imgResponsive" alt="Wiley" itemprop="logo" />
+						    </a>
+						</div>
+
+						<div class="header-nav {%if activePage == 'signin' %}isHidden{% endif %}">
+							<!-- BEGIN NAVIGATION  -->
+							<div class="mainNav js-mainNav">
+								<div class="mainNav-trigger js-mainNav-trigger">
+									<i class="fa fa-bars"></i>
+								</div>
+								<div class="mainNav-content js-mainNav-content">
+									<ul class="mainNav-content-user">
+										<li class="mainNav-user-media">
+											<ul class="hList hList_tight hList_pushBtmSm">
+												<li class="isHiddenMobile"><span>Chimpy</span></li>
+												<li><div class="avatar avatar_header" style="background-image: url(./media/images/placeholders/monkey.jpg);"></div></li>
+												<li><div class="circle">CD</div></li>
+											</ul>
+										</li>
+										<li class="mainNav-user-actions">
+											<ul class="hList hList_pipe hList_pushBtmSm">
+												<li><a href="./account.html" class="{%if activePage == 'account' %}isActive{% endif %}">My Account</a></li>
+												<li><a href="./signin.html">Sign Out</a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mainNav-content-bar">
+										<li><a href="style.html" class="{%if activePage == 'style' %}isActive{% endif %}">My Style</a></li>
+										<li><a href="reports.html" class="{%if activePage == 'reports' %}isActive{% endif %}">My Reports</a></li>
+										<li><a href="customers.html" class="{%if activePage == 'customers' %}isActive{% endif %}">My Customers</a></li>
+										<li><a href="comparisons.html" class="{%if activePage == 'comparisons' %}isActive{% endif %}">My Comparisons</a></li>
+									</ul>
+									<div class="mainNav-content-partner">
+										<span>Provided by: </span><span class="txt_bold txt_inlineBlock">Wiley R&amp;D SuperLongNameExample</span></div>
+								</div>
+							</div><!-- END NAVIGATION -->
+						</div>
+
+					</div>
+
+				</div>
+
+			</div><!-- END HEADER -->
+{% endmacro %}
+						

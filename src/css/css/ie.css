@@ -1,0 +1,43 @@
+/* CSS Fixes for IE8 *******************************************************************************/
+.isHiddenDesktop {display: none !important;}
+
+.radio input[type="radio"],
+.checkbox input[type="checkbox"],
+.continuum input[type="radio"],
+.discScale-list input[type="radio"] {
+    position: relative;
+    left: 0;
+    text-indent: 0;
+}
+
+.radio .radio-custom,
+.checkbox .checkbox-checked,
+.checkbox .checkbox-unchecked,
+.discScale-list .discScale-custom {display: none;}
+
+.modal-mask {background: #ffffff;}
+
+.discScale-media {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../media/images/discs/disc-scale.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../media/images/discs/disc-scale.png', sizingMethod='scale')";
+}
+
+.imgBg {
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../media/images/bg-registration.png', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../media/images/bg-registration.png', sizingMethod='scale')";
+}
+
+.discMap-btn {
+    background: #ff0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.mason-overlay {
+	background: #0091D2;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+
+.mason-tile:hover .mason-overlay,
+.mason-tile:focus .mason-overlay {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"}

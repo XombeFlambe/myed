@@ -1,0 +1,50 @@
+//----------------------------------------------------------------------
+// No JS Script Overlay Styles
+//----------------------------------------------------------------------
+.noScript {
+    display: table;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 11;
+    color: #323232;
+    background-color: $WHITE;
+    background-image: url('../../media/images/bg-content.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    text-align: center;
+}
+
+.noScript * {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.noScript-content {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 2em auto;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+.noScript-content h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.noScript-content p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.2;
+}
+
+.noScript-content img {
+    max-width: 200px;
+    margin-bottom: 15px;
+}

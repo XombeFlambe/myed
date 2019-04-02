@@ -1,0 +1,79 @@
+/*----------------------------------------------------------------------
+ Wraps
+----------------------------------------------------------------------*/
+.wrap {
+	@include clearfix();
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrap_extend {
+	//z-index: 0;
+	background: $WHITE;
+}
+
+.wrap_content {
+	max-width: $SITE_MAX_WIDTH;
+	padding: 20px 10px 20px;
+	//z-index: 1;
+}
+
+.wrap_contain {max-width: $SITE_MAX_WIDTH;}
+
+.wrap_blue {background: $BRAND;}
+.wrap_blueLight {background: $BRAND_LIGHT;}
+
+.wrap_gray {background: $GRAY_SEMI_LIGHT;}
+.wrap_grayLight {background: $GRAY_LIGHT;}
+
+.wrap_gradient {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaf2f4+0,eaf2f4+30,ffffff+100 */
+	background: #eaf2f4; /* Old browsers */
+	background: $GRADIENT; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.wrap_contentBg {
+	background-image: url(../../media/images/bg-content.png);
+	background-size: cover;
+	background-position: bottom;
+}
+
+.wrap_contentBgGray {
+	background-color: $GRAY_LIGHT;
+	background-image: url(../../media/images/bg-content-gray.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom;
+}
+
+.wrap_contentBgWhite {
+	background-color: $GRAY_LIGHT;
+	//background-image: url(../../media/images/bg-content-white.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom;
+}
+
+.wrap_signin {
+	max-width: 800px;
+	margin-top: 50px;
+	background: rgba(255,255,255,.7);
+}
+
+.wrap_med {max-width: 800px;}
+.wrap_sm {max-width: 600px;}
+
+.wrap_boxShadow {box-shadow: $BOX_SHADOW;}
+
+.wrap_border {border: 2px solid $BRAND_LIGHT;}
+.wrap_borderBtm {border-bottom: 5px solid rgba(0,0,0,.14);}
+
+.wrap_pushBtm {margin-bottom: 20px;}
+.wrap_pushTop {padding-top: 20px;}
+
+.wrap_alignCenter,
+.wrap.wrap_alignCenterMobile {text-align: center;}
+
+.wrap_alignLeft {text-align: left;}
+.wrap_alignRight {text-align: right;}

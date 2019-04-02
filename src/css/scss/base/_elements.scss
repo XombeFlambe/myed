@@ -1,0 +1,66 @@
+html,
+body {
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background-color: $WHITE;
+    @include baseText();
+}
+
+body:after {
+	display: table;
+	content: "";
+	width: 100%;
+	height: 500px;
+	position: fixed;
+	top: 0; 
+	left:0;	
+	z-index: -1;
+}
+
+body * {box-sizing: border-box;}
+
+a {
+	@include baseLink();
+	transition: box-shadow .3s;
+}
+
+a:hover,
+a:focus {
+	box-shadow: 0 1px 0 0 $BRAND;
+}
+
+.inActive {
+	a,
+	a:hover,
+	a:focus {
+		box-shadow: none;
+		color: $GRAY_SEMI_LIGHT;
+		text-decoration: none;
+		cursor: not-allowed;
+	}
+}
+
+a.inActive {
+	box-shadow: none;
+	color: $GRAY_SEMI_LIGHT;
+	text-decoration: none;
+	cursor: not-allowed;
+}
+
+a.isActive {
+	color: $GRAY_DARK;
+	box-shadow: 0 1px 0 0 $GRAY_DARK;
+}
+
+p {margin-bottom: 20px;}
+
+hr {
+	border: none;
+	border-bottom: 1px solid $GRAY_SEMI_LIGHT;
+}
+
+::selection {background: $BRAND_LIGHT; /* WebKit/Blink Browsers */}
+::-moz-selection {background: $BRAND_LIGHT; /* Gecko Browsers */}

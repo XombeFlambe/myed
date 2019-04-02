@@ -1,0 +1,961 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>My EverythingDiSC</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- FAVICONS -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="./favicons/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="./favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="./favicons/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="./favicons/manifest.json">
+        <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="./favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="msapplication-TileImage" content="./favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="./favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- STYLESHEETS -->
+        <!--build:css css/css/modern.min.css-->
+        <link rel="stylesheet" href="./css/css/modern.css">
+        
+        <!-- endbuild -->
+        <!-- build:css css/css/legacy.min.css-->
+        <!--[if lt IE 9]> 
+            <link rel="stylesheet" href="css/css/legacy.css">
+            <link rel="stylesheet" href="css/css/ie.css">
+        <![endif]-->
+        <!-- endbuild -->
+
+        <link rel="stylesheet" href="plugins/slider/flexslider.css" type="text/css">
+        <link href="./plugins/audioPlayer/jplayer.blue.monday.css" rel="stylesheet">
+
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body class="js-modalArc">
+
+        <!-- BEGIN 'IF JAVASCRIPT IS DEACTIVATED' WARNING -->
+        <noscript>
+            <div class="noScript">
+                <div class="noScript-content">
+                    <img src="./media/images/myed-logo-beta.png">
+                    <h1>Javascript is disabled...</h1>
+                    <p>We're sorry, but MyEverythingDiSC.com does not work properly without Javascript enabled. Please enable Javascript to proceed, then reload page.</p>
+                    <a href="" class="btn btn_sm pushRight20">Reload Page</a>
+                </div>
+            </div>
+        </noscript><!-- END 'IF JAVASCRIPT IS DEACTIVATED' WARNING -->
+
+
+
+
+
+
+
+	<!-- GATEWAY MODAL -->
+    <div class="modal modal_gateway"><!-- Add class 'isActive' to activate modal modal -->
+    	<div class="modal-mask"></div>
+
+        <!-- MODAL CONTENT SECTION 1A, ADD ACCESS CODE -->
+        <div class="modal-content isActive"><!-- ADD 'isActive' class to activate sections -->
+            <div class="modal-hd">
+                <h3 class="hdg hdg_3">Let's personalize your site.</h3>
+            </div>
+            <div class="modal-bd">
+                 <div class="form">
+                    <div class="wrap wrap_alignLeft pushBtm10">Enter or paste your access code</div>
+                    <div class="form-wrap">
+						<label for="acess-code" class="isVisuallyHidden">Access Code</label>
+						<i class="fa fa-key"></i>
+						<input type="text" id="access-code" name="acess-code" class="form-input form-input_icon" placeholder="for example: 1234-5678" />
+					</div>
+                    <div class="wrap wrap_alignRight">
+                        <a href="javascript:void(0);" class="js-modal-next pushRight10">Skip for now</a><!-- ADD inActive CLASS TO DEACTIVATE -->
+                        <input type="submit" value="Add" class="btn btn_secondary btn_sm"><!-- ADD disabled ATTRIBUTE TO DEACTIVATE -->
+                    </div>
+                    <div class="pushBtm10">You'll find your code in either of these two places.</div>
+                    <table>
+						<colgroup>
+							<col width="50%">
+							<col width="50%;">
+						</colgroup>
+                    	<tr>
+                    		<td>
+                        		<img src="./media/images/examples/myed-code-email.png" alt="Access code example one" class="imgResponsive" />
+                            	<span class="txt_sm">On your Profile report cover</span>
+                            </td>
+                            <td>
+                                <img src="./media/images/examples/myed-code-report.png" alt="Access code example two" class="imgResponsive" />
+                                <span class="txt_sm">In the email about Everything DiSC&reg;</span>
+                            </td>
+                    	</tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL CONTENT SECTION 1B, WRONG ACCESS CODE -->
+        <div class="modal-content">
+            <div class="modal-hd js-tip">
+                <h3 class="hdg hdg_3 hdg_inlineBlock">
+                    <span>Sorry, we don't recognize that code. </span>
+                    <span class="js-tip-trigger txt">
+                    	<i class="fa fa-info-circle"></i>
+                    </span>
+                </h3>
+                <div class="tip-content js-tip-content">
+                	<div class="wrap wrap_alignLeft">
+	                    <p class="txt_pushBtmSm">Why isn't my code working?</p>
+	                    <ul class="list list_bullet">
+	                    	<li>You could have entered your code incorrectly.</li>
+	                    	<li>This code may be associated with another account.</li>
+	                    	<li>This is not for an Everything DiSC product.</li>
+	                    </ul>
+	                    <span>Please contact your Everything DiSC facilitator for assistance.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-bd">
+                 <div class="form">
+                 	<p class="txt_pushBtmSm">Please try again. Or, skip this step for now and add it later.</p>
+                    <div class="wrap wrap_alignLeft pushBtm10">Enter or paste your access code</div>
+                    <div class="form-wrap">
+						<label for="acess-code" class="isVisuallyHidden">Access Code</label>
+						<i class="fa fa-key"></i>
+						<input type="text" id="access-code" name="acess-code" class="form-input form-input_icon" placeholder="for example: 1234-5678" />
+					</div>
+                    <div class="wrap wrap_alignRight">
+                        <a href="javascript:void(0);" class="js-modal-next pushRight10 inActive">Skip for now</a><!-- ADD inActive CLASS TO DEACTIVATE -->
+                        <input type="submit" value="Add" class="btn btn_secondary btn_sm" disabled><!-- ADD disabled ATTRIBUTE TO DEACTIVATE -->
+                    </div>
+                    <div class="pushBtm10">You'll find your code in either of these two places.</div>
+                    <table>
+						<colgroup>
+							<col width="50%">
+							<col width="50%;">
+						</colgroup>
+                    	<tr>
+                    		<td>
+                        		<img src="./media/images/examples/myed-code-email.png" alt="Access code example one" class="imgResponsive" />
+                            	<span class="txt_sm">On your Profile report cover</span>
+                            </td>
+                            <td>
+                                <img src="./media/images/examples/myed-code-report.png" alt="Access code example two" class="imgResponsive" />
+                                <span class="txt_sm">In the email about Everything DiSC&reg;</span>
+                            </td>
+                    	</tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL CONTENT SECTION 2, CODE ADDED -->
+        <div class="modal-content">
+            <div class="modal-hd">
+                <h3 class="hdg hdg_3">Your report has been added.</h3>
+            </div>
+            <div class="modal-bd">
+                <p class="txt_bold txt_pushBtmSm">Your DiSC style will be revealed once your facilitator turns on access.</p>
+                <p class="txt_pushBtmLg">Until then, you can learn about Everything DiSC&reg; on our site.</p>
+                <div class="wrap wrap_alignRight">
+                    <a href="javascript:void(0);" class="js-modal-next btn btn_secondary btn_sm">Continue to Site</a>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL CONTENT SECTION 3, NO REPORT -->
+        <div class="modal-content">
+            <div class="modal-hd">
+                <h3 class="hdg hdg_3">We don't have a report for you yet.</h3>
+            </div>
+            <div class="modal-bd">
+                <p class="txt_bold txt_pushBtmSm">You will need to complete an assessment first.</p>
+                <p class="txt_pushBtmLg">Until then, you can learn about Everything DiSC&reg; on our site.</p>
+                <div class="wrap wrap_alignRight">
+                    <a href="javascript:void(0);" class="js-modal-next pushRight10">Skip for now</a><!-- ADD inActive CLASS TO DEACTIVATE -->
+                    <a href="javascript:void(0);" class="js-modal-next btn btn_secondary btn_sm">Take Your Assessment</a>
+                </div>
+            </div>
+        </div>
+
+        <!--MODAL CONTENT SECTION 4, WELCOME -->
+        <div class="modal-content">
+            <div class="modal-hd">
+                <h3 class="hdg hdg_3">Welcome to MyEverythingDiSC.com!</h3>
+            </div>
+            <div class="modal-bd">
+                <p class="txt_pushBtmLg">We’re pleased to introduce interactive learning tools that will help you better understand your DiSC Style - and provide you with personalized tips for working with others. For the best experience possible, we recommend you set up your account profile first.</p>
+            </div>
+            <div class="wrap wrap_alignRight">
+                <a href="javascript:void(0);" class="js-modal-close pushRight10">Skip for now</a>
+                <a href="account.html" class="btn  btn_sm btn_secondary">Go to account</a>
+            </div>
+        </div>
+
+    </div><!-- END GATEWAY MODAL -->
+
+	<!-- STICKY FOOTER -->
+    <div class="stickyFooter">
+		
+			<!-- BEGIN SITE BACKGROUND IMAGE -->
+			<div class="imgBg "></div><!-- END SITE BACKGROUND IMAGE -->
+
+			<!-- BEGIN HEADER ALERT -->
+
+			<div class="alert alert_fixed alert_notify js-close">
+				<div class="alert-content"><span class="txt_inlineBlock">Add your report to learn more about you unique style and compare styles with others!<a href="" class="btn btn_secondary btn_pushLeft btn_xxsm btn_pushBtmNone">Add My Report</a></span>
+				</div>
+				<a href="javascript:void(0);" class="alert-close js-close-trigger" title="close"><i class="fa fa-times-circle"></i></a>
+			</div>
+
+			<!-- BEGIN HEADER ALERT -->
+
+			<!-- BEGIN HEADER ALERT -->
+
+
+			<!-- BEGIN HEADER -->
+			<div class="header">
+				<div class="header-push"></div>
+				<div class="header-wrap">
+					<div class="header-content">
+
+						<div class="header-logo " itemscope itemtype ="http://schema.org/LocalBusiness">
+						    <a href="home.html" itemprop="url">
+						        <img src="./media/images/logo-beta.png" class="imgResponsive" alt="Wiley" itemprop="logo" />
+						    </a>
+						</div>
+
+						<div class="header-nav ">
+							<!-- BEGIN NAVIGATION  -->
+							<div class="mainNav js-mainNav">
+								<div class="mainNav-trigger js-mainNav-trigger">
+									<i class="fa fa-bars"></i>
+								</div>
+								<div class="mainNav-content js-mainNav-content">
+									<ul class="mainNav-content-user">
+										<li class="mainNav-user-media">
+											<ul class="hList hList_tight hList_pushBtmSm">
+												<li class="isHiddenMobile"><span>Chimpy</span></li>
+												<li><div class="avatar avatar_header" style="background-image: url(./media/images/placeholders/monkey.jpg);"></div></li>
+												<li><div class="circle">CD</div></li>
+											</ul>
+										</li>
+										<li class="mainNav-user-actions">
+											<ul class="hList hList_pipe hList_pushBtmSm">
+												<li><a href="./account.html" class="">My Account</a></li>
+												<li><a href="./signin.html">Sign Out</a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="mainNav-content-bar">
+										<li><a href="style.html" class="">My Style</a></li>
+										<li><a href="reports.html" class="">My Reports</a></li>
+										<li><a href="customers.html" class="">My Customers</a></li>
+										<li><a href="comparisons.html" class="">My Comparisons</a></li>
+									</ul>
+									<div class="mainNav-content-partner">
+										<span>Provided by: </span><span class="txt_bold txt_inlineBlock">Wiley R&amp;D SuperLongNameExample</span></div>
+								</div>
+							</div><!-- END NAVIGATION -->
+						</div>
+
+					</div>
+
+				</div>
+
+			</div><!-- END HEADER -->
+
+
+        <!-- BEGIN HERO SECTION -->
+		<div class="wrap wrap_extend wrap_contentBg">
+		    <div class="wrap wrap_content" id="top">
+                <!-- BEGIN HERO, USER STYLE -->
+	            <div class="hero" style="display: block;">
+                    <div class="hero-info">
+                        <div class="hero-info-hd">
+                            <h1 class="hdg hdg_1 hdg_pushTopSm hdg_pushBtm">Your style is: <span class="txt_bold">D</span></h1>
+                        </div>
+                        <div class="hero-info-bd">
+                            <p>People with this style are direct and tough-minded. They're outspoken with their opinions and aren't afraid to be forceful when they're pushing for results. They tend to challenge people and don't waste time beating around the bush.</p>
+                        </div>
+                        <div class="hero-info-ft">
+                            <a href="./style.html" class="btn">Gain insights about your style</a>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+                        <img src="./media/images/discs/placeholder-disc.png">
+                    </div>
+	            </div><!-- END HERO, USER STYLE -->
+                <!-- BEGIN HERO, LEARN DISC -->
+                <div class="hero js-discMap" style="display: block;">
+                    <div class="hero-info">
+                        <div class="hero-info-hd">
+                            <h1 class="hdg hdg_1 hdg_pushTopSm hdg_pushBtm">You will know your style <span class="">soon.</span></h1>
+                        </div>
+                        <div class="hero-info-bd">
+                            <p>In the meantime, find out more about Everything DiSC® by browsing the Learn About DiSC section below.</p>
+                        </div>
+                        <div class="hero-info-ft">
+                            <div class="box">
+								<ul class="pieInfo">
+									<li class="js-discMap-content js-discMap-content_0 isActive">
+										<p class="txt_bold">Choose a section on the DiSC map to learn about each style.</p>
+									</li>
+									<li class="js-pie-info-id js-discMap-content js-discMap-content_1">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">iD Style</h3>
+										<p>People with this style are charismatic and adventurous. They describe themselves as risk-takers and like to be at the center of the action. They are not afraid to initiate change and often have an entrepreneurial spirit.</p>
+									</li>
+									<li class="js-pie-info-i js-discMap-content js-discMap-content_2">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">i Style</h3>
+										<p>People with this style are outgoing and enthusiastic. They project a lot of energy and are often the life of the party. They tend to be talkative, love meeting new people, and don't mind showing their emotions.</p>
+									</li>
+									<li class="js-pie-info-is js-discMap-content js-discMap-content_3">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">iS Style</h3>
+										<p>People with this style are cheerful and warm-hearted. They tend to be very trusting of others and are quick to show empathy. They are often described as receptive, welcoming, and easygoing.</p>
+									</li>
+									<li class="js-pie-info-si  js-discMap-content  js-discMap-content_4">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">Si Style</h3>
+										<p>People with this style are cheerful and warm-hearted. They tend to be very trusting of others and are quick to show empathy. They are often described as receptive, welcoming, and easygoing.</p>
+									</li>
+									<li class="js-pie-info-s js-discMap-content js-discMap-content_5">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">S Style</h3>
+										<p>People with this style are gentle and accommodating. They are patient with others’ mistakes and very considerate of the feelings of the people around them. They tend to be tactful, mild-mannered, and put others' needs above their own.</p>
+									</li>
+									<li class="js-pie-info-sc js-discMap-content js-discMap-content_6">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">SC Style</h3>
+										<p>People with this style are reflective and soft-spoken. They're quiet, modest, and spend more time listening than talking. Because they like stability in their world, they often take a cautious, step-by-step approach.</p>
+									</li>
+									<li class="js-pie-info-cs js-discMap-content js-discMap-content_7">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">CS Style</h3>
+										<p>People with this style are reflective and soft-spoken. They're quiet, modest, and spend more time listening than talking. Because they like stability in their world, they often take a cautious, step-by-step approach.</p>
+									</li>
+									<li class="js-pie-info-c js-discMap-content js-discMap-content_8">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">C Style</h3>
+										<p>People with this style are analytical and reserved. They take a logical, systematic approach to their work and pride themselves on accuracy. They avoid outward displays of emotion and don't mind solitary work.</p>
+									</li>
+									<li class="js-pie-info-cd js-discMap-content js-discMap-content_9">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">CD Style</h3>
+										<p>People with this style are questioning and tend to be on the skeptical side. They pride themselves on strong critical thinking, and they often maintain high standards for themselves and others. They have little patience for incompetence or irrationality.</p>
+									</li>
+									<li class="js-pie-info-dc js-discMap-content js-discMap-content_10">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">DC Style</h3>
+										<p>People with this style are questioning and tend to be on the skeptical side. They pride themselves on strong critical thinking, and they often maintain high standards for themselves and others. They have little patience for incompetence or irrationality.</p>
+									</li>
+									<li class="js-pie-info-d js-discMap-content js-discMap-content_11">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">D Style</h3>
+										<p>People with this style are direct and tough-minded. They're outspoken with their opinions and aren't afraid to be forceful when they’re pushing for results. They tend to challenge people and don't waste time beating around the bush.</p>
+									</li>
+									<li class="js-pie-info-di js-discMap-content js-discMap-content_12">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">Di Style</h3>
+										<p>People with this style are charismatic and adventurous. They describe themselves as risk-takers and like to be at the center of the action. They are not afraid to initiate change and often have an entrepreneurial spirit.</p>
+									</li>
+								</ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+								<div class="pieMedia">
+
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 461.759 461.452" style="enable-background:new 0 0 461.759 461.452;" xml:space="preserve">
+										<path class="pie-slice pie-slice_D pie-slice_12 js-discMap-trigger js-discMap-trigger_12" d="M230.652,0.101c-42.013,0-81.404,11.225-115.338,30.84
+											c40.851,72.099,115.338,199.852,115.338,199.852V0.101z"/>
+										<path class="pie-slice pie-slice_i pie-slice_1 js-discMap-trigger js-discMap-trigger_1" d="M230.667,0c42.013,0,81.404,11.225,115.338,30.84c-40.851,72.099-115.338,199.852-115.338,199.852V0z
+											"/>
+										<path class="pie-slice pie-slice_D pie-slice_10 js-discMap-trigger js-discMap-trigger_10" d="M30.961,115.412C9.954,151.796-0.02,191.522,0,230.717c82.865,0.672,230.745,0.04,230.745,0.04
+											L30.961,115.412z"/>
+										<path class="pie-slice pie-slice_i pie-slice_3 js-discMap-trigger js-discMap-trigger_3" d="M430.592,115.412c21.006,36.384,30.981,76.11,30.961,115.305
+											c-82.865,0.672-230.745,0.04-230.745,0.04L430.592,115.412z"/>
+										<path class="pie-slice pie-slice_C pie-slice_7 js-discMap-trigger js-discMap-trigger_7" d="M230.858,461.352c-42.013,0-81.404-11.225-115.338-30.84
+											c40.851-72.099,115.338-199.852,115.338-199.852V461.352z"/>
+										<path class="pie-slice pie-slice_S pie-slice_6 js-discMap-trigger js-discMap-trigger_6" d="M230.874,461.452c42.013,0,81.404-11.225,115.338-30.84
+											c-40.851-72.099-115.338-199.852-115.338-199.852V461.452z"/>
+										<path class="pie-slice pie-slice_C pie-slice_9 js-discMap-trigger js-discMap-trigger_9" d="M31.167,346.04C10.161,309.656,0.187,269.93,0.207,230.735c82.865-0.672,230.745-0.04,230.745-0.04
+											L31.167,346.04z"/>
+										<path class="pie-slice pie-slice_S pie-slice_4 js-discMap-trigger js-discMap-trigger_4" d="M430.799,346.04c21.006-36.384,30.981-76.11,30.961-115.305c-82.865-0.672-230.745-0.04-230.745-0.04
+											L430.799,346.04z"/>
+										<path class="pie-slice pie-slice_D pie-slice_11 js-discMap-trigger js-discMap-trigger_11"  d="M230.484,231.073c0,0-128.384-73.394-199.811-115.408c19.58-33.954,48.081-63.37,84.465-84.377
+											L230.484,231.073z"/>
+										<path class="pie-slice pie-slice_i pie-slice_2 js-discMap-trigger js-discMap-trigger_2" d="M346.072,30.986c36.384,21.006,64.885,50.423,84.465,84.377
+											C359.11,157.377,230.726,230.77,230.726,230.77L346.072,30.986z"/>
+										<path class="pie-slice pie-slice_C pie-slice_8 js-discMap-trigger js-discMap-trigger_8" d="M115.345,430.164c-36.384-21.006-64.885-50.423-84.465-84.377
+											c71.427-42.014,199.811-115.408,199.811-115.408L115.345,430.164z"/>
+										<path class="pie-slice pie-slice_S pie-slice_5 js-discMap-trigger js-discMap-trigger_5" d="M230.933,230.682c0,0,128.384,73.394,199.811,115.408c-19.58,33.954-48.081,63.37-84.465,84.377
+											L230.933,230.682z"/>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_11" d="M121.1,109.871h15.824c17.113,0,28.121,8.514,28.121,27.778s-11.008,28.293-27.433,28.293H121.1
+												V109.871z M136.15,155.708c9.546,0,15.91-4.644,15.91-18.06c0-13.416-6.364-17.544-15.91-17.544h-2.408v35.604H136.15z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_8" d="M120.975,318.205c0-18.575,12.298-29.411,26.487-29.411c7.224,0,13.072,3.439,16.856,7.31
+												l-6.708,8.084c-2.838-2.58-5.848-4.472-9.89-4.472c-7.654,0-13.76,6.794-13.76,18.06c0,11.523,5.332,18.231,13.587,18.231
+												c4.558,0,8.17-2.322,10.922-5.246l6.708,7.912c-4.644,5.418-10.836,8.256-18.146,8.256
+												C132.842,346.929,120.975,337.039,120.975,318.205z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_5" d="M293.866,338.503l7.225-8.687c4.042,3.44,9.201,5.849,13.846,5.849c5.246,0,7.825-2.064,7.825-5.418
+												c0-3.526-3.182-4.645-8.083-6.708l-7.311-3.096c-5.762-2.322-11.266-7.139-11.266-15.309c0-9.287,8.256-16.684,19.952-16.684
+												c6.449,0,13.243,2.58,18.06,7.396l-6.45,7.997c-3.698-2.838-7.138-4.472-11.609-4.472c-4.387,0-7.139,1.893-7.139,5.074
+												c0,3.439,3.698,4.644,8.515,6.622l7.224,2.924c6.794,2.752,11.094,7.31,11.094,15.222c0,9.288-7.74,17.372-21.155,17.372
+												C307.282,346.587,299.543,343.835,293.866,338.503z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_2" d="M307.262,110.072c0-3.87,3.096-6.536,7.31-6.536c4.3,0,7.31,2.666,7.31,6.536
+												c0,3.87-3.01,6.622-7.31,6.622C310.358,116.694,307.262,113.942,307.262,110.072z M308.293,122.972h12.643v42.655h-12.643V122.972z
+												"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_1" d="M265.995,36.07c0-1.209,0.931-2.046,2.201-2.046c1.271,0,2.202,0.837,2.202,2.046
+												c0,1.178-0.931,2.016-2.202,2.016C266.926,38.085,265.995,37.248,265.995,36.07z M266.399,40.751h3.565v15.224h-3.565V40.751z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_1" d="M274.83,35.698h5.426c6.201,0,9.86,3.349,9.86,10.046c0,6.729-3.659,10.232-9.674,10.232h-5.612
+												V35.698z M280.008,53.061c4.094,0,6.419-2.325,6.419-7.317c0-4.961-2.325-7.131-6.419-7.131h-1.581v14.449H280.008z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_12" d="M171.987,35.662h5.427c6.201,0,9.859,3.349,9.859,10.046c0,6.729-3.658,10.232-9.674,10.232h-5.612
+												V35.662z M177.166,53.025c4.092,0,6.418-2.325,6.418-7.317c0-4.961-2.326-7.131-6.418-7.131h-1.582v14.449H177.166z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_12" d="M190.65,36.034c0-1.209,0.931-2.046,2.201-2.046c1.271,0,2.202,0.837,2.202,2.046
+												c0,1.178-0.931,2.016-2.202,2.016C191.58,38.049,190.65,37.212,190.65,36.034z M191.053,40.715h3.565v15.224h-3.565V40.715z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_11" d="M92.445,86.076h5.427c6.201,0,9.859,3.349,9.859,10.046c0,6.729-3.658,10.232-9.674,10.232h-5.612
+												V86.076z M97.623,103.439c4.092,0,6.418-2.325,6.418-7.317c0-4.961-2.326-7.131-6.418-7.131h-1.582v14.449H97.623z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_10" d="M30.662,171.373h5.427c6.201,0,9.859,3.349,9.859,10.046c0,6.728-3.658,10.232-9.674,10.232h-5.612
+												V171.373z M35.841,188.736c4.092,0,6.418-2.326,6.418-7.317c0-4.961-2.326-7.131-6.418-7.131h-1.582v14.449H35.841z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_10" d="M48.983,181.574c0-6.635,4.154-10.573,9.271-10.573c2.542,0,4.589,1.209,5.86,2.574l-1.923,2.325
+												c-1.054-1.054-2.263-1.768-3.845-1.768c-3.317,0-5.674,2.791-5.674,7.349c0,4.62,2.17,7.41,5.581,7.41
+												c1.798,0,3.193-0.837,4.341-2.077l1.922,2.264c-1.643,1.891-3.782,2.945-6.387,2.945C53.013,192.023,48.983,188.302,48.983,181.574
+												z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_3" d="M404.182,172.24c0-1.209,0.93-2.046,2.201-2.046s2.201,0.837,2.201,2.046
+												c0,1.178-0.93,2.015-2.201,2.015S404.182,173.418,404.182,172.24z M404.585,176.922h3.565v15.224h-3.565V176.922z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_3" d="M411.621,189.541l2.109-2.449c1.457,1.364,3.41,2.294,5.271,2.294c2.294,0,3.534-1.023,3.534-2.604
+												c0-1.674-1.302-2.201-3.131-2.977l-2.791-1.209c-1.984-0.837-4.093-2.418-4.093-5.395c0-3.225,2.853-5.705,6.821-5.705
+												c2.356,0,4.651,0.992,6.232,2.574l-1.829,2.294c-1.303-1.085-2.667-1.736-4.403-1.736c-1.922,0-3.193,0.899-3.193,2.388
+												c0,1.581,1.551,2.17,3.225,2.853l2.76,1.147c2.387,1.023,4.093,2.542,4.093,5.488c0,3.287-2.729,6.015-7.286,6.015
+												C416.211,192.518,413.544,191.433,411.621,189.541z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_2" d="M364.998,86.357c0-1.209,0.93-2.046,2.201-2.046s2.201,0.837,2.201,2.046
+												c0,1.178-0.93,2.015-2.201,2.015S364.998,87.536,364.998,86.357z M365.402,91.039h3.565v15.224h-3.565V91.039z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_4" d="M401.482,284.947l2.107-2.449c1.458,1.364,3.411,2.294,5.271,2.294c2.295,0,3.535-1.022,3.535-2.604
+												c0-1.674-1.303-2.201-3.132-2.977l-2.791-1.209c-1.984-0.837-4.093-2.418-4.093-5.395c0-3.225,2.853-5.705,6.821-5.705
+												c2.356,0,4.651,0.992,6.232,2.573l-1.829,2.294c-1.303-1.085-2.667-1.736-4.403-1.736c-1.922,0-3.193,0.899-3.193,2.388
+												c0,1.581,1.55,2.171,3.225,2.853l2.76,1.147c2.388,1.023,4.093,2.542,4.093,5.488c0,3.286-2.729,6.015-7.287,6.015
+												C406.07,287.923,403.404,286.838,401.482,284.947z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_4" d="M419.058,267.646c0-1.21,0.93-2.047,2.201-2.047s2.201,0.837,2.201,2.047
+												c0,1.178-0.93,2.015-2.201,2.015S419.058,268.824,419.058,267.646z M419.461,272.328h3.565v15.224h-3.565V272.328z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_5" d="M361.516,369.226l2.109-2.449c1.457,1.364,3.41,2.294,5.271,2.294c2.294,0,3.534-1.022,3.534-2.604
+												c0-1.674-1.302-2.201-3.131-2.977l-2.791-1.209c-1.984-0.837-4.093-2.418-4.093-5.395c0-3.225,2.853-5.705,6.821-5.705
+												c2.356,0,4.651,0.992,6.232,2.573l-1.829,2.294c-1.303-1.085-2.667-1.736-4.403-1.736c-1.922,0-3.193,0.899-3.193,2.388
+												c0,1.581,1.551,2.171,3.225,2.853l2.76,1.147c2.387,1.023,4.093,2.542,4.093,5.488c0,3.286-2.729,6.015-7.286,6.015
+												C366.106,372.203,363.439,371.118,361.516,369.226z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_6" d="M265.416,423.163l2.107-2.449c1.458,1.364,3.411,2.294,5.271,2.294c2.295,0,3.535-1.023,3.535-2.604
+												c0-1.674-1.303-2.201-3.132-2.977l-2.791-1.209c-1.984-0.837-4.093-2.419-4.093-5.396c0-3.225,2.853-5.705,6.821-5.705
+												c2.356,0,4.651,0.992,6.232,2.574l-1.829,2.294c-1.303-1.085-2.667-1.736-4.403-1.736c-1.922,0-3.193,0.899-3.193,2.388
+												c0,1.581,1.55,2.17,3.225,2.853l2.76,1.147c2.388,1.022,4.093,2.542,4.093,5.487c0,3.287-2.729,6.016-7.287,6.016
+												C270.004,426.14,267.338,425.055,265.416,423.163z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_6" d="M282.652,415.691c0-6.635,4.154-10.573,9.271-10.573c2.543,0,4.589,1.21,5.86,2.574l-1.923,2.325
+												c-1.054-1.055-2.264-1.768-3.845-1.768c-3.317,0-5.674,2.791-5.674,7.349c0,4.62,2.171,7.41,5.581,7.41
+												c1.799,0,3.193-0.837,4.341-2.077l1.923,2.264c-1.644,1.891-3.783,2.945-6.388,2.945
+												C286.682,426.14,282.652,422.419,282.652,415.691z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_7" d="M165.638,415.925c0-6.635,4.154-10.573,9.271-10.573c2.542,0,4.589,1.21,5.86,2.574l-1.923,2.325
+												c-1.054-1.055-2.263-1.768-3.845-1.768c-3.317,0-5.674,2.791-5.674,7.349c0,4.62,2.17,7.41,5.581,7.41
+												c1.798,0,3.193-0.837,4.341-2.077l1.922,2.264c-1.643,1.891-3.782,2.945-6.387,2.945
+												C169.668,426.374,165.638,422.654,165.638,415.925z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_7" d="M182.347,423.398l2.107-2.449c1.458,1.364,3.411,2.294,5.271,2.294c2.295,0,3.535-1.023,3.535-2.604
+												c0-1.674-1.303-2.201-3.132-2.977l-2.791-1.209c-1.984-0.837-4.093-2.419-4.093-5.396c0-3.225,2.853-5.705,6.821-5.705
+												c2.356,0,4.651,0.992,6.232,2.574l-1.829,2.294c-1.303-1.085-2.667-1.736-4.403-1.736c-1.922,0-3.193,0.899-3.193,2.388
+												c0,1.581,1.55,2.17,3.225,2.853l2.76,1.147c2.388,1.022,4.093,2.542,4.093,5.487c0,3.287-2.729,6.016-7.287,6.016
+												C186.935,426.374,184.269,425.289,182.347,423.398z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_8" d="M86.467,361.033c0-6.635,4.154-10.572,9.271-10.572c2.542,0,4.589,1.209,5.86,2.573l-1.923,2.325
+												c-1.054-1.054-2.263-1.768-3.845-1.768c-3.317,0-5.674,2.791-5.674,7.349c0,4.62,2.17,7.41,5.581,7.41
+												c1.798,0,3.193-0.837,4.341-2.077l1.922,2.264c-1.643,1.892-3.782,2.945-6.387,2.945C90.497,371.482,86.467,367.761,86.467,361.033
+												z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_9" d="M31.824,277.231c0-6.635,4.154-10.572,9.271-10.572c2.542,0,4.589,1.209,5.86,2.573l-1.923,2.325
+												c-1.054-1.054-2.263-1.768-3.845-1.768c-3.317,0-5.674,2.791-5.674,7.349c0,4.62,2.17,7.41,5.581,7.41
+												c1.798,0,3.193-0.837,4.341-2.077l1.922,2.264c-1.643,1.892-3.782,2.945-6.387,2.945C35.855,287.68,31.824,283.959,31.824,277.231z
+												"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_9" d="M50.734,267.031h5.427c6.201,0,9.859,3.349,9.859,10.046c0,6.728-3.658,10.231-9.674,10.231h-5.612
+												V267.031z M55.912,284.394c4.092,0,6.418-2.326,6.418-7.317c0-4.961-2.326-7.132-6.418-7.132H54.33v14.449H55.912z"/>
+										</g>
+									</svg>
+
+								</div>
+                    </div>
+                </div><!-- END HERO, LEARN DISC -->
+                <!-- BEGIN HERO, LEARN DISC -->
+	            <div class="hero js-discMap" style="display: block;">
+                    <div class="hero-info">
+                        <div class="hero-info-hd">
+                            <h1 class="hdg hdg_1 hdg_pushTopSm hdg_pushBtm">Your DiSC style impacts your work relationships.</h1>
+                        </div>
+                        <div class="hero-info-bd">
+                            <p>Visit <a href="http://everythingdisc.com" target="_blank" class="txt_bold">EverythingDiSC.com</a> to find out how you can discover your own style.</p>
+                        </div>
+                        <div class="hero-info-ft">
+                            <div class="box">
+								<ul class="pieInfo">
+									<li class="js-discMap-content js-discMap-content_0 isActive">
+										<p class="txt_bold">Choose a section on the DiSC map to learn about each style.</p>
+									</li>
+									<li class="js-pie-info-id js-discMap-content js-discMap-content_1">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">iD Style</h3>
+										<p>People with this style are charismatic and adventurous. They describe themselves as risk-takers and like to be at the center of the action. They are not afraid to initiate change and often have an entrepreneurial spirit.</p>
+									</li>
+									<li class="js-pie-info-i js-discMap-content js-discMap-content_2">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">i Style</h3>
+										<p>People with this style are outgoing and enthusiastic. They project a lot of energy and are often the life of the party. They tend to be talkative, love meeting new people, and don't mind showing their emotions.</p>
+									</li>
+									<li class="js-pie-info-is js-discMap-content js-discMap-content_3">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">iS Style</h3>
+										<p>People with this style are cheerful and warm-hearted. They tend to be very trusting of others and are quick to show empathy. They are often described as receptive, welcoming, and easygoing.</p>
+									</li>
+									<li class="js-pie-info-si  js-discMap-content  js-discMap-content_4">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">Si Style</h3>
+										<p>People with this style are cheerful and warm-hearted. They tend to be very trusting of others and are quick to show empathy. They are often described as receptive, welcoming, and easygoing.</p>
+									</li>
+									<li class="js-pie-info-s js-discMap-content js-discMap-content_5">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">S Style</h3>
+										<p>People with this style are gentle and accommodating. They are patient with others’ mistakes and very considerate of the feelings of the people around them. They tend to be tactful, mild-mannered, and put others' needs above their own.</p>
+									</li>
+									<li class="js-pie-info-sc js-discMap-content js-discMap-content_6">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">SC Style</h3>
+										<p>People with this style are reflective and soft-spoken. They're quiet, modest, and spend more time listening than talking. Because they like stability in their world, they often take a cautious, step-by-step approach.</p>
+									</li>
+									<li class="js-pie-info-cs js-discMap-content js-discMap-content_7">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">CS Style</h3>
+										<p>People with this style are reflective and soft-spoken. They're quiet, modest, and spend more time listening than talking. Because they like stability in their world, they often take a cautious, step-by-step approach.</p>
+									</li>
+									<li class="js-pie-info-c js-discMap-content js-discMap-content_8">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">C Style</h3>
+										<p>People with this style are analytical and reserved. They take a logical, systematic approach to their work and pride themselves on accuracy. They avoid outward displays of emotion and don't mind solitary work.</p>
+									</li>
+									<li class="js-pie-info-cd js-discMap-content js-discMap-content_9">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">CD Style</h3>
+										<p>People with this style are questioning and tend to be on the skeptical side. They pride themselves on strong critical thinking, and they often maintain high standards for themselves and others. They have little patience for incompetence or irrationality.</p>
+									</li>
+									<li class="js-pie-info-dc js-discMap-content js-discMap-content_10">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">DC Style</h3>
+										<p>People with this style are questioning and tend to be on the skeptical side. They pride themselves on strong critical thinking, and they often maintain high standards for themselves and others. They have little patience for incompetence or irrationality.</p>
+									</li>
+									<li class="js-pie-info-d js-discMap-content js-discMap-content_11">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">D Style</h3>
+										<p>People with this style are direct and tough-minded. They're outspoken with their opinions and aren't afraid to be forceful when they’re pushing for results. They tend to challenge people and don't waste time beating around the bush.</p>
+									</li>
+									<li class="js-pie-info-di js-discMap-content js-discMap-content_12">
+										<h3 class="hdg hdg_4 hdg_bold hdg_pushBtm">Di Style</h3>
+										<p>People with this style are charismatic and adventurous. They describe themselves as risk-takers and like to be at the center of the action. They are not afraid to initiate change and often have an entrepreneurial spirit.</p>
+									</li>
+								</ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+								<div class="pieMedia">
+
+									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 461.759 461.452" style="enable-background:new 0 0 461.759 461.452;" xml:space="preserve">
+										<path class="pie-slice pie-slice_D pie-slice_12 js-discMap-trigger js-discMap-trigger_12" d="M230.652,0.101c-42.013,0-81.404,11.225-115.338,30.84
+											c40.851,72.099,115.338,199.852,115.338,199.852V0.101z"/>
+										<path class="pie-slice pie-slice_i pie-slice_1 js-discMap-trigger js-discMap-trigger_1" d="M230.667,0c42.013,0,81.404,11.225,115.338,30.84c-40.851,72.099-115.338,199.852-115.338,199.852V0z
+											"/>
+										<path class="pie-slice pie-slice_D pie-slice_10 js-discMap-trigger js-discMap-trigger_10" d="M30.961,115.412C9.954,151.796-0.02,191.522,0,230.717c82.865,0.672,230.745,0.04,230.745,0.04
+											L30.961,115.412z"/>
+										<path class="pie-slice pie-slice_i pie-slice_3 js-discMap-trigger js-discMap-trigger_3" d="M430.592,115.412c21.006,36.384,30.981,76.11,30.961,115.305
+											c-82.865,0.672-230.745,0.04-230.745,0.04L430.592,115.412z"/>
+										<path class="pie-slice pie-slice_C pie-slice_7 js-discMap-trigger js-discMap-trigger_7" d="M230.858,461.352c-42.013,0-81.404-11.225-115.338-30.84
+											c40.851-72.099,115.338-199.852,115.338-199.852V461.352z"/>
+										<path class="pie-slice pie-slice_S pie-slice_6 js-discMap-trigger js-discMap-trigger_6" d="M230.874,461.452c42.013,0,81.404-11.225,115.338-30.84
+											c-40.851-72.099-115.338-199.852-115.338-199.852V461.452z"/>
+										<path class="pie-slice pie-slice_C pie-slice_9 js-discMap-trigger js-discMap-trigger_9" d="M31.167,346.04C10.161,309.656,0.187,269.93,0.207,230.735c82.865-0.672,230.745-0.04,230.745-0.04
+											L31.167,346.04z"/>
+										<path class="pie-slice pie-slice_S pie-slice_4 js-discMap-trigger js-discMap-trigger_4" d="M430.799,346.04c21.006-36.384,30.981-76.11,30.961-115.305c-82.865-0.672-230.745-0.04-230.745-0.04
+											L430.799,346.04z"/>
+										<path class="pie-slice pie-slice_D pie-slice_11 js-discMap-trigger js-discMap-trigger_11"  d="M230.484,231.073c0,0-128.384-73.394-199.811-115.408c19.58-33.954,48.081-63.37,84.465-84.377
+											L230.484,231.073z"/>
+										<path class="pie-slice pie-slice_i pie-slice_2 js-discMap-trigger js-discMap-trigger_2" d="M346.072,30.986c36.384,21.006,64.885,50.423,84.465,84.377
+											C359.11,157.377,230.726,230.77,230.726,230.77L346.072,30.986z"/>
+										<path class="pie-slice pie-slice_C pie-slice_8 js-discMap-trigger js-discMap-trigger_8" d="M115.345,430.164c-36.384-21.006-64.885-50.423-84.465-84.377
+											c71.427-42.014,199.811-115.408,199.811-115.408L115.345,430.164z"/>
+										<path class="pie-slice pie-slice_S pie-slice_5 js-discMap-trigger js-discMap-trigger_5" d="M230.933,230.682c0,0,128.384,73.394,199.811,115.408c-19.58,33.954-48.081,63.37-84.465,84.377
+											L230.933,230.682z"/>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_11" d="M121.1,109.871h15.824c17.113,0,28.121,8.514,28.121,27.778s-11.008,28.293-27.433,28.293H121.1
+												V109.871z M136.15,155.708c9.546,0,15.91-4.644,15.91-18.06c0-13.416-6.364-17.544-15.91-17.544h-2.408v35.604H136.15z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_8" d="M120.975,318.205c0-18.575,12.298-29.411,26.487-29.411c7.224,0,13.072,3.439,16.856,7.31
+												l-6.708,8.084c-2.838-2.58-5.848-4.472-9.89-4.472c-7.654,0-13.76,6.794-13.76,18.06c0,11.523,5.332,18.231,13.587,18.231
+												c4.558,0,8.17-2.322,10.922-5.246l6.708,7.912c-4.644,5.418-10.836,8.256-18.146,8.256
+												C132.842,346.929,120.975,337.039,120.975,318.205z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_5" d="M293.866,338.503l7.225-8.687c4.042,3.44,9.201,5.849,13.846,5.849c5.246,0,7.825-2.064,7.825-5.418
+												c0-3.526-3.182-4.645-8.083-6.708l-7.311-3.096c-5.762-2.322-11.266-7.139-11.266-15.309c0-9.287,8.256-16.684,19.952-16.684
+												c6.449,0,13.243,2.58,18.06,7.396l-6.45,7.997c-3.698-2.838-7.138-4.472-11.609-4.472c-4.387,0-7.139,1.893-7.139,5.074
+												c0,3.439,3.698,4.644,8.515,6.622l7.224,2.924c6.794,2.752,11.094,7.31,11.094,15.222c0,9.288-7.74,17.372-21.155,17.372
+												C307.282,346.587,299.543,343.835,293.866,338.503z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_2" d="M307.262,110.072c0-3.87,3.096-6.536,7.31-6.536c4.3,0,7.31,2.666,7.31,6.536
+												c0,3.87-3.01,6.622-7.31,6.622C310.358,116.694,307.262,113.942,307.262,110.072z M308.293,122.972h12.643v42.655h-12.643V122.972z
+												"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_1" d="M265.995,36.07c0-1.209,0.931-2.046,2.201-2.046c1.271,0,2.202,0.837,2.202,2.046
+												c0,1.178-0.931,2.016-2.202,2.016C266.926,38.085,265.995,37.248,265.995,36.07z M266.399,40.751h3.565v15.224h-3.565V40.751z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_1" d="M274.83,35.698h5.426c6.201,0,9.86,3.349,9.86,10.046c0,6.729-3.659,10.232-9.674,10.232h-5.612
+												V35.698z M280.008,53.061c4.094,0,6.419-2.325,6.419-7.317c0-4.961-2.325-7.131-6.419-7.131h-1.581v14.449H280.008z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_12" d="M171.987,35.662h5.427c6.201,0,9.859,3.349,9.859,10.046c0,6.729-3.658,10.232-9.674,10.232h-5.612
+												V35.662z M177.166,53.025c4.092,0,6.418-2.325,6.418-7.317c0-4.961-2.326-7.131-6.418-7.131h-1.582v14.449H177.166z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_12" d="M190.65,36.034c0-1.209,0.931-2.046,2.201-2.046c1.271,0,2.202,0.837,2.202,2.046
+												c0,1.178-0.931,2.016-2.202,2.016C191.58,38.049,190.65,37.212,190.65,36.034z M191.053,40.715h3.565v15.224h-3.565V40.715z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_11" d="M92.445,86.076h5.427c6.201,0,9.859,3.349,9.859,10.046c0,6.729-3.658,10.232-9.674,10.232h-5.612
+												V86.076z M97.623,103.439c4.092,0,6.418-2.325,6.418-7.317c0-4.961-2.326-7.131-6.418-7.131h-1.582v14.449H97.623z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_10" d="M30.662,171.373h5.427c6.201,0,9.859,3.349,9.859,10.046c0,6.728-3.658,10.232-9.674,10.232h-5.612
+												V171.373z M35.841,188.736c4.092,0,6.418-2.326,6.418-7.317c0-4.961-2.326-7.131-6.418-7.131h-1.582v14.449H35.841z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_10" d="M48.983,181.574c0-6.635,4.154-10.573,9.271-10.573c2.542,0,4.589,1.209,5.86,2.574l-1.923,2.325
+												c-1.054-1.054-2.263-1.768-3.845-1.768c-3.317,0-5.674,2.791-5.674,7.349c0,4.62,2.17,7.41,5.581,7.41
+												c1.798,0,3.193-0.837,4.341-2.077l1.922,2.264c-1.643,1.891-3.782,2.945-6.387,2.945C53.013,192.023,48.983,188.302,48.983,181.574
+												z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_3" d="M404.182,172.24c0-1.209,0.93-2.046,2.201-2.046s2.201,0.837,2.201,2.046
+												c0,1.178-0.93,2.015-2.201,2.015S404.182,173.418,404.182,172.24z M404.585,176.922h3.565v15.224h-3.565V176.922z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_3" d="M411.621,189.541l2.109-2.449c1.457,1.364,3.41,2.294,5.271,2.294c2.294,0,3.534-1.023,3.534-2.604
+												c0-1.674-1.302-2.201-3.131-2.977l-2.791-1.209c-1.984-0.837-4.093-2.418-4.093-5.395c0-3.225,2.853-5.705,6.821-5.705
+												c2.356,0,4.651,0.992,6.232,2.574l-1.829,2.294c-1.303-1.085-2.667-1.736-4.403-1.736c-1.922,0-3.193,0.899-3.193,2.388
+												c0,1.581,1.551,2.17,3.225,2.853l2.76,1.147c2.387,1.023,4.093,2.542,4.093,5.488c0,3.287-2.729,6.015-7.286,6.015
+												C416.211,192.518,413.544,191.433,411.621,189.541z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_2" d="M364.998,86.357c0-1.209,0.93-2.046,2.201-2.046s2.201,0.837,2.201,2.046
+												c0,1.178-0.93,2.015-2.201,2.015S364.998,87.536,364.998,86.357z M365.402,91.039h3.565v15.224h-3.565V91.039z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_4" d="M401.482,284.947l2.107-2.449c1.458,1.364,3.411,2.294,5.271,2.294c2.295,0,3.535-1.022,3.535-2.604
+												c0-1.674-1.303-2.201-3.132-2.977l-2.791-1.209c-1.984-0.837-4.093-2.418-4.093-5.395c0-3.225,2.853-5.705,6.821-5.705
+												c2.356,0,4.651,0.992,6.232,2.573l-1.829,2.294c-1.303-1.085-2.667-1.736-4.403-1.736c-1.922,0-3.193,0.899-3.193,2.388
+												c0,1.581,1.55,2.171,3.225,2.853l2.76,1.147c2.388,1.023,4.093,2.542,4.093,5.488c0,3.286-2.729,6.015-7.287,6.015
+												C406.07,287.923,403.404,286.838,401.482,284.947z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_4" d="M419.058,267.646c0-1.21,0.93-2.047,2.201-2.047s2.201,0.837,2.201,2.047
+												c0,1.178-0.93,2.015-2.201,2.015S419.058,268.824,419.058,267.646z M419.461,272.328h3.565v15.224h-3.565V272.328z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_5" d="M361.516,369.226l2.109-2.449c1.457,1.364,3.41,2.294,5.271,2.294c2.294,0,3.534-1.022,3.534-2.604
+												c0-1.674-1.302-2.201-3.131-2.977l-2.791-1.209c-1.984-0.837-4.093-2.418-4.093-5.395c0-3.225,2.853-5.705,6.821-5.705
+												c2.356,0,4.651,0.992,6.232,2.573l-1.829,2.294c-1.303-1.085-2.667-1.736-4.403-1.736c-1.922,0-3.193,0.899-3.193,2.388
+												c0,1.581,1.551,2.171,3.225,2.853l2.76,1.147c2.387,1.023,4.093,2.542,4.093,5.488c0,3.286-2.729,6.015-7.286,6.015
+												C366.106,372.203,363.439,371.118,361.516,369.226z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_6" d="M265.416,423.163l2.107-2.449c1.458,1.364,3.411,2.294,5.271,2.294c2.295,0,3.535-1.023,3.535-2.604
+												c0-1.674-1.303-2.201-3.132-2.977l-2.791-1.209c-1.984-0.837-4.093-2.419-4.093-5.396c0-3.225,2.853-5.705,6.821-5.705
+												c2.356,0,4.651,0.992,6.232,2.574l-1.829,2.294c-1.303-1.085-2.667-1.736-4.403-1.736c-1.922,0-3.193,0.899-3.193,2.388
+												c0,1.581,1.55,2.17,3.225,2.853l2.76,1.147c2.388,1.022,4.093,2.542,4.093,5.487c0,3.287-2.729,6.016-7.287,6.016
+												C270.004,426.14,267.338,425.055,265.416,423.163z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_6" d="M282.652,415.691c0-6.635,4.154-10.573,9.271-10.573c2.543,0,4.589,1.21,5.86,2.574l-1.923,2.325
+												c-1.054-1.055-2.264-1.768-3.845-1.768c-3.317,0-5.674,2.791-5.674,7.349c0,4.62,2.171,7.41,5.581,7.41
+												c1.799,0,3.193-0.837,4.341-2.077l1.923,2.264c-1.644,1.891-3.783,2.945-6.388,2.945
+												C286.682,426.14,282.652,422.419,282.652,415.691z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_7" d="M165.638,415.925c0-6.635,4.154-10.573,9.271-10.573c2.542,0,4.589,1.21,5.86,2.574l-1.923,2.325
+												c-1.054-1.055-2.263-1.768-3.845-1.768c-3.317,0-5.674,2.791-5.674,7.349c0,4.62,2.17,7.41,5.581,7.41
+												c1.798,0,3.193-0.837,4.341-2.077l1.922,2.264c-1.643,1.891-3.782,2.945-6.387,2.945
+												C169.668,426.374,165.638,422.654,165.638,415.925z"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_7" d="M182.347,423.398l2.107-2.449c1.458,1.364,3.411,2.294,5.271,2.294c2.295,0,3.535-1.023,3.535-2.604
+												c0-1.674-1.303-2.201-3.132-2.977l-2.791-1.209c-1.984-0.837-4.093-2.419-4.093-5.396c0-3.225,2.853-5.705,6.821-5.705
+												c2.356,0,4.651,0.992,6.232,2.574l-1.829,2.294c-1.303-1.085-2.667-1.736-4.403-1.736c-1.922,0-3.193,0.899-3.193,2.388
+												c0,1.581,1.55,2.17,3.225,2.853l2.76,1.147c2.388,1.022,4.093,2.542,4.093,5.487c0,3.287-2.729,6.016-7.287,6.016
+												C186.935,426.374,184.269,425.289,182.347,423.398z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_8" d="M86.467,361.033c0-6.635,4.154-10.572,9.271-10.572c2.542,0,4.589,1.209,5.86,2.573l-1.923,2.325
+												c-1.054-1.054-2.263-1.768-3.845-1.768c-3.317,0-5.674,2.791-5.674,7.349c0,4.62,2.17,7.41,5.581,7.41
+												c1.798,0,3.193-0.837,4.341-2.077l1.922,2.264c-1.643,1.892-3.782,2.945-6.387,2.945C90.497,371.482,86.467,367.761,86.467,361.033
+												z"/>
+										</g>
+										<g>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_9" d="M31.824,277.231c0-6.635,4.154-10.572,9.271-10.572c2.542,0,4.589,1.209,5.86,2.573l-1.923,2.325
+												c-1.054-1.054-2.263-1.768-3.845-1.768c-3.317,0-5.674,2.791-5.674,7.349c0,4.62,2.17,7.41,5.581,7.41
+												c1.798,0,3.193-0.837,4.341-2.077l1.922,2.264c-1.643,1.892-3.782,2.945-6.387,2.945C35.855,287.68,31.824,283.959,31.824,277.231z
+												"/>
+											<path class="pie-letters js-discMap-trigger js-discMap-trigger_9" d="M50.734,267.031h5.427c6.201,0,9.859,3.349,9.859,10.046c0,6.728-3.658,10.231-9.674,10.231h-5.612
+												V267.031z M55.912,284.394c4.092,0,6.418-2.326,6.418-7.317c0-4.961-2.326-7.132-6.418-7.132H54.33v14.449H55.912z"/>
+										</g>
+									</svg>
+
+								</div>
+                    </div>
+	            </div><!-- END HERO, LEARN DISC -->
+                <!-- BEGIN HERO, NO REPORT -->
+	            <div class="hero" style="display: block;">
+                    <div class="hero-info">
+                        <div class="hero-info-hd">
+                            <h1 class="hdg hdg_1 hdg_pushTopSm hdg_pushBtm">Welcome, Wiley Colleague!</h1>
+                        </div>
+                        <div class="hero-info-bd">
+                            <p>You will see personalized content on this site after you take an Everything DiSC® assessment.</p>
+                        </div>
+                        <div class="hero-info-ft">
+                            <a href="javascript:void(0);" class="btn">Take the Assessment</a>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+                        <img src="./media/images/discs/placeholder-disc-3.png">
+                    </div>
+	            </div><!-- END HERO, NO REPORT -->
+		    </div>
+		</div><!-- END HERO SECTION -->
+
+        <!-- BEGIN MASON TILE SECTION -->
+        <div class="wrap wrap_extend">
+            <div class="wrap wrap_content">
+                <ul class="mason">
+                    <li class="mason-tile mason-tile_feature">
+                        <div class="mason-content">
+                            <h2 class="hdg hdg_2 hdg_pushBtmSm">Learn about DiSC</h2>
+                            <p>Everything DiSC&reg; is a simple and memorable model. However, the science behind DiSC is anything but simplistic.</p>
+
+                            <a href="learn.html" class="btn btn_secondary btn_sm">Start Learning</a>
+                        </div>
+                    </li>
+                    <li class="mason-tile">
+                        <a href="./learn.html#timeline">
+                            <div class="mason-media mason-media_timeline">
+                                <img src="./media/images/mason-tiles/DISC-TIMELINE-BKGRD.png" alt="Learn disc timeline" class="imgResponsive" />
+                            </div>
+                            <div class="mason-overlay">
+                                <h4 class="hdg hdg_3 hdg_bold">DiSC Timeline</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mason-tile">
+                        <a href="./learn.html#theory">
+                            <div class="mason-media mason-media_theory">
+                                <img src="./media/images/mason-tiles/DISC-THEORY-BKGRD.png" alt="Learn disc theory" class="imgResponsive">
+                            </div>
+                            <div class="mason-overlay">
+                                <h4 class="hdg hdg_3 hdg_bold">DiSC Theory</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mason-tile">
+                        <!-- INTRO VIDEO -->
+                        <a href="javascript:void(0);" onclick="fn_vidyard_wdUt7NiexznDRQrvwZw1Eg();">
+                            <div class="mason-media mason-media_intro">
+                                <img src="./media/images/mason-tiles/MYED-VIDEO-BKGRD.png" alt="Intro video" class="imgResponsive">
+                            </div>
+                            <div class="mason-overlay">
+                                <h4 class="hdg hdg_3 hdg_bold">Introduction <span class="txt_inlineBlock">Video <i class="fa fa-play-circle"></i></span></h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mason-tile">
+                        <a href="./learn.html#research">
+                            <div class="mason-media mason-media_research">
+                                <img src="./media/images/mason-tiles/DISC-RESEARCH-BKGRD.png" alt="Learn disc research" class="imgResponsive">
+                            </div>
+                            <div class="mason-overlay">
+                                <h4 class="hdg hdg_3 hdg_bold">DiSC Research</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mason-tile">
+                        <a href="./learn.html#explore">
+                            <div class="mason-media mason-media_explore">
+                                <img src="./media/images/mason-tiles/EXPLORE-DISC-BKGRD.png" alt="Explore the disc" class="imgResponsive">
+                            </div>
+                            <div class="mason-overlay">
+                                <h4 class="hdg hdg_3 hdg_bold">Explore DiSC</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mason-tile">
+                        <!-- WORKPLACE STRATEGIES VIDEO -->
+                        <a href="javascript:void(0);" onclick="fn_vidyard_A0zBdbiuPnu46rcuJ5KKsA();">
+                            <div class="mason-media mason-media_strategy">
+                                <img src="./media/images/mason-tiles/WORKPLACE-STRATEGIES-VIDEO-BKGRD.png" alt="Workplace strategies video" class="imgResponsive">
+                            </div>
+                            <div class="mason-overlay">
+                                <h4 class="hdg hdg_3 hdg_white hdg_bold">Workplace Strategies <span class="txt_inlineBlock">Video <i class="fa fa-play-circle"></i></span></h4>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- END MASON TILE SECTION -->
+
+		<!-- BEGIN BANNER -->
+        <div class="wrap wrap_extend wrap_blue">
+            <div class="wrap wrap_content">
+                <div class="banner">
+                    <div class="banner-info">
+                        <h3 class="hdg hdg_3 hdg_bold hdg_white hdg_pushBtmSm">How does your style differ from those of your colleagues?</h3>
+                        <span class="txt txt_bold txt_upper">Share and compare DiSC styles and get tips on working together</span>
+                    </div>
+                    <div class="banner-nav">
+                        <a href="./comparisons.html" class="btn btn_tertiary btn_pushRightNone">My Comparisons</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- END BANNER -->
+
+	</div><!-- END STICKY FOOTER -->
+	
+	
+        <!-- SUB FOOTER -->
+        <div class="subFooter">
+            <ul class="subFooter-list ">
+                <li><a href="./learn.html">Learn about DiSC&reg;</a></li>
+                <li><a href="http://wiley.qualtrics.com/jfe/form/SV_9pfE42uxOQcSsyp" target="_blank">Provide feedback</a></li>
+                <li><a href="./privacy-terms.html">View privacy &amp; terms of use</a></li>
+            </ul>
+        </div>
+        <!-- FOOTER -->
+        <div class="footer " role="content-info">
+            <ul class="footer-blocks">
+
+                <!-- PARTNER LOGO -->
+                <li>
+                    <img src="./media/images/footer_partner_logo.png" alt="Partner logo" />
+                </li>
+
+                <!-- PARTNER CONTACT INFO -->
+                <li>
+                    <div class="footer-client">
+                        <div class="footer-client-address">
+                            <span>Cnr Boundary and Rosa Streets</span>
+                            <span>Spring Hill Qld 4000</span>
+                        </div>
+                        <div class="footer-client-phone">(07) 3227 4888</div>
+                        <div class="footer-client-website">
+                            <a href="http://www.aim.com.au/" target="_blank">www.aim.com.au</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- TRUSTe LOGO -->
+                <li>
+                    <a href="http://www.truste.com" target="_blank">
+                        <img src="./media/images/footer_truste_logo.png" alt="TRUSTe logo" />
+                    </a>
+                </li>
+                
+                <!-- WILEY FOOTER CONTENT -->
+                <li>
+                    <div class="footer-company">
+                        <div class="footer-company-logo">
+                            <img src="./media/images/footer_logo.png" alt="Everything DiSC&reg; logo" />
+                        </div>
+                        <div class="footer-company-version">EPIC2/MN v2014.10.2.1720</div>
+                        <small class="footer-company-copy">
+                            <span>&copy;<script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script></span>
+                            <a href=" http://www.wiley.com" target="_blank">John Wiley &amp; Sons, Inc </a>
+                            <span> All rights reserved.</span>
+                        </small>
+                    </div>
+                </li>
+            </ul>
+        </div><!-- END FOOTER -->
+
+        <a href="./index.html" style="padding: 10px;">Front End Index Page</a><!-- FE INDEX PAGE LINK: REMOVE FROM BE INTEGRATION -->
+
+
+    <!-- VIDYARD MODAL VIDEOS -->
+        <script type='text/javascript' id='vidyard_embed_code_A0zBdbiuPnu46rcuJ5KKsA' src='http://play.vidyard.com/A0zBdbiuPnu46rcuJ5KKsA.js?v=3.1.1&type=lightbox'></script><!-- WORKPLACE STRATEGIES VIDEO -->
+        <script type="text/javascript" id="vidyard_embed_code_wdUt7NiexznDRQrvwZw1Eg" src="http://play.vidyard.com/wdUt7NiexznDRQrvwZw1Eg.js?v=3.1.1&type=lightbox"></script><!-- INTRODUCTION VIDEO -->
+
+
+
+        <!-- BACK TO TOP OF PAGE BUTTON -->
+        <a href="#" class="topside js-topside">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+
+        <!--build:js js/main.min.js -->
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/plugins.js"></script>
+        
+        <script src="plugins/slider/jquery.flexslider.js"></script>
+        <script src="plugins/audioPlayer/jplayer.playlist.min.js"></script>
+        <script src="plugins/audioPlayer/jquery.jplayer.min.js"></script>
+
+        <!-- FLEXSLIDER INIT JS -->
+        <script>
+        $(window).load(function() {
+              $('.flexslider_learn').flexslider({
+                  animationSpeed: 800,
+                  touch: true,
+                  pauseOnHover: true,
+                  pauseOnAction: true,
+                  startAt:0,
+                  animation: "fade",
+                  manualControls: ".flex-control-nav li"
+                });
+            });
+        </script>
+
+        <!-- AUDIO PLAYER INIT JS -->
+        <script type="text/javascript">
+        $(document).ready(function () {
+            var myPlaylist = new jPlayerPlaylist({
+                jPlayer: "#jquery_jplayer_1",
+                cssSelectorAncestor: "#jp_container_1"
+            },
+            [
+                {title: "The D Style", mp3: "./media/uploads/D_Style.mp3"},
+                {title: "The i Style", mp3: "./media/uploads/i_Style.mp3"},
+                {title: "The S Style", mp3: "./media/uploads/S_Style.mp3"},
+                {title: "The C Style", mp3: "./media/uploads/C_Style.mp3"}
+            ],
+            {
+                swfPath: "./plugins/audioPlayer/",
+                supplied: "mp3",
+                smoothPlayBar: true,
+                keyEnabled: true
+            })
+        });
+        </script>
+        <!-- endbuild -->
+        
+    </body>
+</html>

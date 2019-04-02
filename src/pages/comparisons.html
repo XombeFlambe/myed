@@ -1,0 +1,222 @@
+<!-- comparisons.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+	<!-- STICKY FOOTER -->
+    <div class="stickyFooter">
+		{{header.active('comparisons')}}
+
+		<div class="wrap wrap_extend js-tab" id="top">
+
+			<div class="wrap wrap_contain wrap_alignCenter">
+				<h1 class="hdg hdg_1 pushBtm40 pushTop40">Compare your DiSC style with those of others</h1>
+			</div>
+
+			<div class="wrap wrap_gradient">
+				<div class="wrap wrap_contain">
+					<div class="tabsNav">
+						<ul>
+							<li><a href="#scrollToMobile" class="js-nav js-tab-trigger js-tab-trigger_one isActive">My Updates</a></li>
+							<li><a href="#scrollToMobile" class="js-nav js-tab-trigger js-tab-trigger_two">My Comparisons</a></li>
+							<li><a href="#scrollToMobile" class="js-nav js-tab-trigger js-tab-trigger_three">My Groups</a></li>
+						</ul>
+						<ul class="tabsNav-right">
+							<li>
+								<a href="#scrollToMobile" class="js-nav btn btn_secondary btn_xsm btn_pushBtmNone btn_minWidthMobile js-tab-trigger js-tab-trigger_fourCompare">Invite Others to Compare</a>
+							</li>
+							<li>
+								<a href="#scrollToMobile" class="js-nav btn btn_xsm btn_pushBtmNone btn_minWidthMobile js-tab-trigger js-tab-trigger_fiveCompare">Build Group Map</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		    <div class="wrap wrap_extend wrap_grayLight">
+		    	<div id="scrollToMobile" class="isHiddenDesktop"></div>
+		    	<div id="scrollTo"></div>
+				<div class="wrap wrap_content js-slimArc">
+					<!--BEGIN TAB 1 HEADING -->
+					<div class="tab-heading js-tab-heading js-tab-heading_1 js-tip isActive">
+						<h2 class="hdg hdg_3 hdg_bold hdg_inlineBlock pushRight40 pushBtm20">Updates</h2>
+						<div class="box box_ornate">
+							<div class="checkbox checkbox_noMargin">
+								 <input type="checkbox" name="checkbox-accept" id="checkbox-accept" value="0" checked />
+    							<label for="checkbox-accept">
+	    							<span class="checkbox-unchecked">
+						            	<i class="fa fa-square-o"></i>
+					            	</span>
+					            	<span class="checkbox-checked">
+					            		<i class="fa fa-check-square"></i>
+					            	</span>
+									<span class="checkbox-text">Automatically accept invites to compare</span>
+								</label>
+								<span class="tip-trigger js-tip-trigger">
+									<i class="fa fa-info-circle"></i>
+								</span>
+							</div>
+						</div>
+						<div class="tip-content js-tip-content">
+							<span class="txt_sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo voluptatum quae esse velit minima rem, culpa voluptas maxime iure harum quibusdam ducimus rerum delectus.</span>
+						</div>
+					</div>
+					<!--BEGIN TAB 2 HEADING -->
+					<div class="tab-heading js-tab-heading js-tab-heading_2">
+						<h2 class="hdg hdg_3 hdg_bold hdg_inlineBlock pushRight40 pushBtm20">Compare</h2>
+						<div class="dropdown dropdown_sm js-dropdown pushRight10">
+			            	<div class="dropdown-trigger js-dropdown-trigger">
+			            		<span class="pushRight10">Sort by alpha order</span>
+			            		<i class="fa fa-caret-down"></i>
+			            	</div>
+			            	<ul class="dropdown-content js-dropdown-content">
+			            		<li>
+			            			<a href="javascript:void(0);">
+			            				<span class="pushRight10">Sort by alpha order</span>
+			            			</a>
+		            			</li>
+			            		<li>
+			            			<a href="javascript:void(0);">
+			            				<span class="pushRight10">Sort by most recent</span>
+			            			</a>
+			            		</li>
+			            	</ul>
+			            </div>
+			            <div class="box box_ornate">
+							<div class="checkbox checkbox_noMargin">
+								<input type="checkbox" name="checkbox-view" id="checkbox-view" checked /><!--BACK END, ADD/REMOVE CHECKED ATTRIBUTE FOR FULL/SLIM VIEW CHECKBOX -->
+    							<label for="checkbox-view" class="js-slimTrigger">
+	    							<span class="checkbox-unchecked">
+						            	<i class="fa fa-square-o"></i>
+					            	</span>
+					            	<span class="checkbox-checked">
+					            		<i class="fa fa-check-square"></i>
+					            	</span>
+									<span class="checkbox-text">Full View</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<!--BEGIN TAB 3 HEADING -->
+					<div class="tab-heading js-tab-heading js-tab-heading_3">
+						<h2 class="hdg hdg_3 hdg_bold hdg_inlineBlock pushRight40 pushBtm20">Groups</h2>
+						<div class="dropdown dropdown_sm js-dropdown">
+			            	<div class="dropdown-trigger js-dropdown-trigger">
+			            		<span class="pushRight10">Sort by most recent</span>
+			            		<i class="fa fa-caret-down"></i>
+			            	</div>
+			            	<ul class="dropdown-content js-dropdown-content">
+			            		<li>
+			            			<a href="javascript:void(0);">
+			            				<span class="pushRight10">Sort by most recent</span>
+			            			</a>
+		            			</li>
+			            		<li>
+			            			<a href="javascript:void(0);">
+			            				<span class="pushRight10">Sort by oldest</span>
+			            			</a>
+			            		</li>
+			            	</ul>
+			            </div>
+					</div>
+					<!--BEGIN TAB 4 HEADING -->
+					<div class="tab-heading js-tab-heading js-tab-heading_4">
+						<h2 class="hdg hdg_3 hdg_bold hdg_inlineBlock pushRight40 pushBtm20">Invite Others to Compare</h2>
+					</div>
+					<!--BEGIN TAB 5 HEADING -->
+					<div class="tab-heading js-tab-heading js-tab-heading_5">
+						<h2 class="hdg hdg_3 hdg_bold hdg_inlineBlock pushRight40 pushBtm20">Build Group Map</h2>
+					</div>
+					<!--BEGIN TAB 6 HEADING -->
+					<div class="tab-heading js-tab-heading js-tab-heading_6">
+						<h2 class="hdg hdg_3 hdg_bold hdg_inlineBlock pushRight40 pushBtm20">My Comparison with Adam Adamson</h2>
+					</div>
+					<!--BEGIN TAB 7 HEADING -->
+					<div class="tab-heading js-tab-heading js-tab-heading_7">
+						<h2 class="hdg hdg_3 hdg_bold hdg_inlineBlock pushRight40 pushBtm20">View Map: Corporate Interim Committee</h2>
+					</div>
+					<!--BEGIN TAB 8 HEADING -->
+					<div class="tab-heading js-tab-heading js-tab-heading_8">
+						<h2 class="hdg hdg_3 hdg_bold hdg_inlineBlock pushRight40 pushBtm20">Add People: Corporate Interim Committee</h2>
+					</div>
+
+					<!-- BEGIN TAB ONE -->
+					<div class="tab-content js-tab-content js-tab-content_one isActive">
+						{%include "partials/tabs/_tabs-updates.html"%}
+					</div><!-- END TAB ONE -->
+
+					<!-- BEGIN TAB TWO -->
+					<div class="tab-content js-tab-content js-tab-content_two">
+						{%include "partials/tabs/_tabs-compare.html"%}
+					</div><!-- END TAB TWO -->
+
+					<!-- BEGIN TAB THREE -->
+					<div class="tab-content js-tab-content js-tab-content_three">
+						{%include "partials/tabs/_tabs-groups.html"%}
+					</div><!-- END TAB THREE -->
+
+					<!-- BEGIN TAB FOUR -->
+					<div class="tab-content js-tab-content js-tab-content_four">
+						{%include "partials/tabs/_tabs-compare-add.html"%}
+					</div><!-- END TAB FOUR -->
+
+					<!-- BEGIN TAB FIVE -->
+					<div class="tab-content js-tab-content js-tab-content_five">
+						{%include "partials/tabs/_tabs-groups-create.html"%}
+					</div><!-- END TAB FIVE -->
+
+					<!-- BEGIN TAB SIX -->
+					<div class="tab-content js-tab-content js-tab-content_six">
+						{%include "partials/tabs/_tabs-compare-view.html"%}
+					</div><!-- END TAB SIX -->
+
+					<!-- BEGIN TAB SEVEN -->
+					<div class="tab-content js-tab-content js-tab-content_seven">
+						{%include "partials/tabs/_tabs-groups-view.html"%}
+					</div><!-- END TAB SEVEN -->
+
+					<!-- BEGIN TAB EIGHT -->
+					<div class="tab-content js-tab-content js-tab-content_eight">
+						{%include "partials/tabs/_tabs-groups-add.html"%}
+					</div><!-- END TAB EIGHT -->
+
+				</div>
+		    </div>
+
+			<!-- BEGIN LOWER PROMO SECTION -->
+		    <div class="wrap wrap_extend">
+				<div class="wrap wrap_content">
+					<h2 class="hdg hdg_3 hdg_bold hdg_pushBtm"><span class="txt_block">Build a Comparison for the useful tips on interacting </span>with your coworkers based on your DiSC styles:</h2>
+					<ul class="blocks blocks_2col">
+						<li>
+							<ul class="list list_circle list_bold">
+								<li class="txt_med">Managing tension</li>
+								<li class="txt_med">Presenting information</li>
+								<li class="txt_med">Getting buy-in</li>
+								<li class="txt_med">Providing &amp; receiving feedback</li>
+								<li class="txt_med">Getting to know eachother better</li>
+							</ul>
+							<div class="wrap wrap_pushTop">
+								<a href="#scrollTo" class="btn btn_secondary btn_sm js-nav js-tab-trigger js-tab-trigger_four">Invite Others to Compare</a>
+								<a href="javascript:void(0);" class="btn btn_sm">Watch Video</a>
+							</div>
+						</li>
+						<li>
+							<img src="./media/images/co-workers.png" class="imgFlex" alt="">
+						</li>
+					</ul>
+				</div>
+			</div><!-- END LOWER PROMO SECTION -->
+
+		</div>
+
+		{% include "partials/banners/_banner-feedback.html" %}
+
+	</div><!-- END STICKY FOOTER -->
+	
+	{{footer.active()}}
+
+	{%include "partials/modals/_modal-maps.html"%}
+	{%include "partials/modals/_modal-reports.html"%}
+
+{% endblock %}

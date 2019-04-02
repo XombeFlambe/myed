@@ -1,0 +1,38 @@
+/*----------------------------------------------------------------------
+ Headings
+----------------------------------------------------------------------*/
+.hdg {
+	color: $GRAY_DARK;
+	font-family: $FONT_SECONDARY;
+	font-weight: 100;
+	line-height: 1.4;
+}
+
+.hdg_1 {font-size: 32px;}
+.hdg_2 {font-size: 24px;}
+.hdg_3 {font-size: 20px;}
+.hdg_4 {font-size: 16px;}
+.hdg_5 {font-size: 14px;}
+
+.hdg_bold {font-weight: 600;}
+
+.hdg_gray {color: $GRAY;}
+.hdg_grayLight {color: $GRAY_LIGHT;}
+.hdg_white {color: $WHITE;}
+
+.hdg_upper {text-transform: uppercase;}
+.hdg_cap {text-transform: capitalize;}
+
+.hdg_alignCenter {text-align: center;}
+
+.hdg_inline {display: inline;}
+.hdg_inlineBlock {display: inline-block;}
+
+.hdg_pushBtm {margin-bottom: 20px;}
+.hdg_pushBtmSm {margin-bottom: 10px;}
+.hdg_pushTop {margin-top: 20px;}
+.hdg_pushTopSm {margin-top: 10px;}
+.hdg_pushPaddingTop {padding-top: 20px;}
+.hdg_pushPaddingTopSm {padding-top: 10px;}
+.hdg_pullTop {margin-top: -20px;}
+.hdg_pushRight {margin-right: 20px;}

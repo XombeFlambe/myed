@@ -1,0 +1,33 @@
+// ------------------------------------------------------------------
+// Header Med
+// ------------------------------------------------------------------
+.header {
+	border: none;
+	box-shadow: $BOX_SHADOW;
+}
+
+.header-push {min-height: 50px;}
+
+.header-content {
+	margin-bottom: 20px;
+	padding: 10px 20px 0;
+}
+
+.header-logo {
+	margin-left: 0;
+	float: left;
+}
+
+.header-logo img {width: 255px;}
+
+.header-logo.centered {float: none;}
+
+.header-nav {
+	margin-top: -5px;
+	float: right;
+	background: $WHITE;
+}
+
+@media screen and (max-width: 900px) {
+    .header-logo img {width: 180px;}
+}

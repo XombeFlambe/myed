@@ -1,0 +1,18 @@
+/*----------------------------------------------------------------------
+ Spinner
+----------------------------------------------------------------------*/
+$SPINNER_SIZE: 70px;
+
+.spinner {
+	width: $SPINNER_SIZE;
+	height: $SPINNER_SIZE;
+	margin-left: -$SPINNER_SIZE/2;
+	margin-top: -$SPINNER_SIZE/1.5;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: $BRAND;
+	font-size: $SPINNER_SIZE;
+}
+
+.spinner.inActive {display: none;}

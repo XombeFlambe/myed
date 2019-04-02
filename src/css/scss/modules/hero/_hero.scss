@@ -1,0 +1,38 @@
+// ------------------------------------------------------------------
+// Hero
+// ------------------------------------------------------------------
+.hero {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hero:before,
+.hero:after {
+    display: table;
+    content: "";
+}
+
+.hero:after {clear: both;}
+
+.hero-img {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 20px 10px 10px;
+}
+
+.hero_generic .hero-img {opacity: .3;}
+
+.hero_pie .hero-info {width: 45%;}
+.hero_pie .hero-img {width: 50%;}
+
+.hero-img img {width: 100%;}
+
+.hero-info-bd {
+    padding-bottom: 20px;
+    color: #323232;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero-info-ft {text-align: center;}

@@ -1,0 +1,27 @@
+//----------------------------------------------------------------------
+// Tip Styles
+//----------------------------------------------------------------------
+.tip,
+.tip-trigger {display: inline-block;}
+
+.tip-content {
+	display: none;
+	padding: 10px;
+	margin: 10px 0 20px;
+	border: 1px solid $GRAY_SEMI_LIGHT;
+	box-shadow: $BOX-SHADOW;
+	position: relative;
+	background: $WHITE;
+	font-size: 13px;
+}
+
+.tip-spike {
+	width: 12px;
+	height: 12px;
+	border-left: 1px solid $GRAY_SEMI_LIGHT;
+	border-top: 1px solid $GRAY_SEMI_LIGHT;
+	position: absolute;
+	top: -7px;
+	background: $WHITE;
+	transform: rotate(45deg);
+}

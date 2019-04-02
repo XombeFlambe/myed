@@ -1,0 +1,70 @@
+//----------------------------------------------------------------------
+// Tables
+//----------------------------------------------------------------------
+table {
+	td {padding: 5px;}
+}
+
+.table {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+
+	thead {
+		display: none;
+		border-bottom: 5px solid $BRAND_LIGHT;
+		@include noSelect();
+	}
+
+	thead th {text-align: left;}
+
+	tbody {display: block;}
+
+	tr {
+		display: block;
+		margin-bottom: 10px;
+		border: 1px solid $BRAND_LIGHT;
+		@include clearfix();
+	}
+
+	th,
+	td {
+		display: block;
+		padding: 5px 10px;
+	}
+
+	tr.inActive {color: $GRAY_SEMI_LIGHT;}
+
+	tbody tr {border-bottom: 1px solid $BRAND_LIGHT;}
+
+	tbody tr td:last-child {text-align: right;}
+
+	.table-td_noPad {padding: 0;}
+
+	.table-row-delete {
+		display: inline-block;
+		color: $GRAY_SEMI_DARK;
+		font-size: 22px;
+		cursor: pointer;
+	}
+}
+
+.table_reports {
+	tbody td[colspan] {float: none;}
+
+	tbody .table-row-delete {
+		margin: -35px -21px 0 0;
+		float:right;
+	}
+
+	tbody td + td {padding-right: 30px;}
+}
+
+.table_customers {
+	tbody .table-row-delete {
+		margin: -35px -21px 0 0;
+		float:right;
+	}
+
+	tbody td + td {padding-right: 30px;}
+}

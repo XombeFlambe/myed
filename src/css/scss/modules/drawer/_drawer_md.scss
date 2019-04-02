@@ -1,0 +1,17 @@
+//----------------------------------------------------------------------
+// Drawer Styles Med
+//----------------------------------------------------------------------
+.drawer-trigger {
+	@include clearfix();
+	text-align: left;
+}
+
+.drawer-hd {
+	display: inline-block;
+	margin: 5px 0 0 0;
+	font-size: 24px;
+}
+
+.drawer-trigger a {
+	float: right;
+}

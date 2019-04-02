@@ -1,0 +1,23 @@
+//----------------------------------------------------------------------
+// Media Box Object
+//----------------------------------------------------------------------
+.mediaBox {
+	display: table;
+	width: 100%;
+	position: relative;
+}
+
+.mediaBox_pad {padding: 10px;}
+.mediaBox_padSm {padding: 5px;}
+
+.mediaBox > * {
+	display: table-cell;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+.mediaBox-media {line-height: 0;}
+
+.mediaBox-info {width: 100%;}
+
+.mediaBox-delete {padding-right: 0;}

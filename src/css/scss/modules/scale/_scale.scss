@@ -1,0 +1,37 @@
+/*----------------------------------------------------------------------
+ Scale
+----------------------------------------------------------------------*/
+.scale {
+	width: 100%;
+	text-align: left;
+}
+
+.scale thead {
+	border-bottom: 2px solid $GRAY_SEMI_LIGHT;
+	border-top: 2px solid $GRAY_SEMI_LIGHT;
+	font-weight: 700;
+}
+
+.scale tr {border-bottom: 1px solid $GRAY_LIGHT;}
+
+.scale thead tr {border: none;}
+
+.scale th,
+.scale td {padding: 5px;}
+
+.scale_reliability {
+	td {width: 33%;}
+
+	tbody tr:last-child {
+		border-top: 2px solid $GRAY_SEMI_LIGHT;
+		border-bottom: none;
+		font-weight: 700;
+	}
+}
+
+@media screen and (max-width: $WIDTH_XSM) {
+	.scale_validity {font-size: 12px;}
+
+	.scale_validity th,
+	.scale_validity td {padding: 3px;}
+}

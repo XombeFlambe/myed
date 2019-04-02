@@ -1,0 +1,58 @@
+// ------------------------------------------------------------------
+// Footer Med
+// ------------------------------------------------------------------
+.footer {
+    padding: 20px 20px 50px;
+    border-top: 2px solid  $GRAY_LIGHT;
+    background: #ffffff;
+    font-size: 10px;
+}
+
+.footer-blocks {
+    max-width: $SITE_MAX_WIDTH;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.footer-blocks > li {
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+}
+
+.footer-client span {display: block;}
+
+.footer-client-phone,
+.footer-company-version {margin-bottom: 10px;}
+
+.footer a {
+    color: #0091d2;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {text-decoration: underline;}
+
+.footer small {font-size: 10px;}
+
+.footer-blocks li:last-child img {
+    width: 100%;
+    max-width: 160px;
+}
+
+.footer_signin {
+
+    .footer-blocks {
+        text-align: center;
+    }
+
+    .footer-blocks > li:first-child,
+    .footer-blocks > li:nth-child(2) {display: none;}
+
+    .footer-blocks > li {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+    }
+}

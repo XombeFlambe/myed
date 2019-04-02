@@ -1,0 +1,307 @@
+<!-- account.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+	<!-- STICKY FOOTER -->
+    <div class="stickyFooter">
+		{{header.active('account')}}
+
+		<div class="wrap wrap_extend js-tab" id="top">
+
+			<div class="wrap wrap_contain wrap_alignCenter">
+				<h1 class="hdg hdg_1 pushBtm40 pushTop40">Manage your account preferences</h1>
+			</div>
+			<div class="wrap wrap_gradient">
+				<div class="wrap wrap_contain wrap_alignCenter">
+					<ul class="tabsNav tabsNav_wide">
+						<li><a href="javascript:void(0);" class="js-tab-trigger js-tab-trigger_one isActive">Profile</a></li>
+						<li><a href="javascript:void(0);" class="js-tab-trigger js-tab-trigger_two">Emails From Us</a></li>
+						<li><a href="javascript:void(0);" class="js-tab-trigger js-tab-trigger_three">Account Status</a></li>
+					</ul>
+				</div>
+			</div>
+
+		    <div class="wrap wrap_extend wrap_alignCenter wrap_contentBgGray">
+				<div class="wrap wrap_content wrap_med">
+
+					<!-- BEGIN TAB ONE -->
+					<div class="js-tab-content js-tab-content_one isActive" id="profile">
+
+						<h2 class="hdg hdg_3 hdg_bold hdg_pushBtmSm">Manage your user profile.</h2>
+						<p class="txt_med">Manage your info and how you appear on MyEverythingDiSC.com</p>
+
+						<!-- BEGIN ACCORDION MODULE -->
+						<ul class="accordion js-accordion">
+						    <li class="accordion-item js-accordion-item">
+						        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><div>Profile Picture</div><i class="caret"></i></a>
+						        <div class="accordion-content js-accordion-content isActive">
+						            <p>This profile image will display to others along with your name in Comparisons.</p>
+						            <div class="avatar avatar_lg" style="background-image:url(./media/images/placeholders/monkey.jpg);"></div>
+						            <div class="wrap">
+							            <div class="dropdown js-dropdown">
+							            	<div class="dropdown-trigger js-dropdown-trigger"><span>Choose an image</span><i class="fa fa-caret-down"></i></div>
+							            	<ul class="dropdown-content js-dropdown-content">
+							            		<li><a href="javascript:void(0);"><i class="fa fa-linkedin-square"></i> Use LinkedIn photo</a></li>
+							            		<li><a href="javascript:void(0);" class="js-modalTrigger4"><i class="fa fa-upload"></i> Upload a photo</a></li>
+							            		<li><a href="javascript:void(0);"><i class="fa fa-user"></i> Use default image</a></li>
+							            	</ul>
+							            </div>
+						            </div>
+						        </div>
+						    </li>
+						    <li class="accordion-item js-accordion-item">
+						        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><div>Displayed Information</div><i class="caret"></i></a>
+						        <div class="accordion-content js-accordion-content">
+						            <p>The information shown here is required information. If you have access to the My Comparisons section of the site, the information will be visible to others in search results and Comparisons.</p>
+						            <div class="form form_alignLeft">
+						            	<ul class="blocks blocks_2col blocks_noMarginBtm">
+						            		<li>
+						            			<label for="first-name">First Name</label>
+						            			<input type="text" class="form-input" id="first-name" name="first-name">
+						            		</li>
+						            		<li>
+						            			<label for="last-name">Last Name</label>
+						            			<input type="text" class="form-input" id="last-name" name="last-name">
+						            		</li>
+						            	</ul>
+						            	<label for="last-name">Organization Name</label>
+				            			<input type="text" class="form-input" id="last-name" name="last-name">
+				            			<div class="wrap wrap_alignCenter">
+				            				<input type="submit" class="btn btn_secondary btn_pushTopSm" value="Update Information">
+				            			</div>
+						            </div>
+						        </div>
+						    </li>
+						    <li class="accordion-item js-accordion-item">
+						        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><div>Profile Report</div><i class="caret"></i></a>
+						        <div class="accordion-content js-accordion-content">
+						            <p>If you have taken more than one Everything DiSC Profile, you can choose which report will be used in Comparisons with others. The report you choose here will also determine what DiSC map and priorities information you see in the My Style section of this site.</p>
+						            <div class="form form_alignLeft">
+						            	<div class="dropdown dropdown_full dropdown_circle js-dropdown">
+							            	<div class="dropdown-trigger js-dropdown-trigger">
+							            		<span class="pushRight10">10/07/2015</span>
+					            				<div class="circle">CD</div>
+					            				<span class="txt_pushLeftSm">Everything DiSC Workplace Profile (English)</span>
+							            		<i class="fa fa-caret-down"></i>
+							            	</div>
+							            	<ul class="dropdown-content js-dropdown-content">
+							            		<li>
+							            			<a href="javascript:void(0);">
+							            				<span class="pushRight10">10/07/2015</span>
+							            				<div class="circle">CD</div>
+							            				<span class="txt_pushLeftSm">Everything DiSC Workplace Profile (English)</span>
+							            			</a>
+						            			</li>
+							            		<li>
+							            			<a href="javascript:void(0);">
+							            				<span class="pushRight10">99/99/9999</span>
+							            				<div class="circle">DC</div>
+							            				<span class="txt_pushLeftSm">Everything DiSC Sales Profile (English)</span>
+							            			</a>
+							            		</li>
+							            	</ul>
+							            </div>
+				            			<div class="wrap wrap_alignCenter">
+				            				<input type="submit" class="btn btn_secondary btn_pushTopSm" value="Update Information">
+				            			</div>
+						            </div>
+						        </div>
+						    </li>
+						    <li class="accordion-item js-accordion-item">
+						        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><div>Privacy</div><i class="caret"></i></a>
+						        <div class="accordion-content js-accordion-content">
+						            <div class="form form_alignLeft">
+					            	    <!-- CHECKBOX SECTOR OF FORM -->
+									    <ul class="checkbox">
+									        <li>
+									            <input type="checkbox" name="checkbox-privacy" id="checkbox-privacy-1" value="0" />
+									            <label for="checkbox-privacy-1" class="">
+									            	<span class="checkbox-unchecked">
+									            	<i class="fa fa-square-o"></i>
+									            	</span>
+									            	<span class="checkbox-checked">
+									            		<i class="fa fa-check-square"></i>
+									            	</span>
+									            	<span class="checkbox-text">Allow others to search for me by name</span>
+									            </label>
+									            <span class="js-tip">
+													<span class="tip-trigger js-tip-trigger">
+														<i class="fa fa-info-circle"></i>
+													</span>
+													<div class="tip-content js-tip-content">
+														<span class="txt_sm">Checking this box allows others to search for you and send you invitations to Compare. If you uncheck this box, others will not be able to send you Comparison invitations.</span>
+													</div>
+												</span>
+									        </li>
+									        <li>
+									            <input type="checkbox" name="checkbox-privacy" id="checkbox-privacy-2" value="1" />            
+									            <label for="checkbox-privacy-2">
+										            <span class="checkbox-unchecked">
+										            	<i class="fa fa-square-o"></i>
+										            	</span>
+										            	<span class="checkbox-checked">
+										            		<i class="fa fa-check-square"></i>
+										            	</span>
+										            <span class="checkbox-text">Auto-accept invites to Compare</span>
+									            </label>
+									            <span class="js-tip">
+													<span class="tip-trigger js-tip-trigger">
+														<i class="fa fa-info-circle"></i>
+													</span>
+													<div class="tip-content js-tip-content">
+														<span class="txt_sm">Checking this box allows others to build Comparisons with you without waiting for your permission. If you don't check this box, you will need to accept each invite before you can be included in Comparisons.</span>
+													</div>
+												</span>
+									        </li>
+									    </ul><!-- END CHECKBOX SECTOR OF FORM -->
+						            	<div class="wrap wrap_alignCenter">
+				            				<input type="submit" class="btn btn_secondary btn_pushTopSm" value="Update Privacy">
+				            			</div>
+						            </div>
+						        </div>
+						    </li>
+						    <li class="accordion-item js-accordion-item">
+						        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><div>Password</div><i class="caret"></i></a>
+						        <div class="accordion-content js-accordion-content">
+						            <div class="form form_alignLeft">
+						            	<div class="form-wrap js-password">
+						            		<label for="current-password">Current Password</label>
+				            				<input type="password" class="form-input js-password-field" id="current-password" name="current-password">
+				            				<span class="form-input-show js-password-trigger">Show</span>
+				            			</div>
+				            			<div class="form-wrap js-password">
+				            				<label for="new-password">New Password</label>
+				            				<input type="password" class="form-input js-password-field" id="new-password" name="new-password">
+				            				<span class="form-input-show js-password-trigger">Show</span>
+				            			</div>
+						            	<div class="wrap wrap_alignCenter">
+				            				<input type="submit" class="btn btn_secondary btn_pushTopSm" value="Update Password" disabled />
+				            			</div>
+						            </div>
+						        </div>
+						    </li>
+						    <li class="accordion-item js-accordion-item">
+						        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><div>Primary Email</div><i class="caret"></i></a>
+						        <div class="accordion-content js-accordion-content">
+						            <div class="form form_alignLeft">
+						            	<label for="current-email">Current Email</label>
+			            				<div class="form-input" id="current-email" disabled>example@example.com</div>
+			            				<label for="new-email">New Primary Email</label>
+			            				<input type="email" class="form-input" id="new-email" name="new-email">
+			            				<label for="confirm-email">Confirm New Primary Email</label>
+			            				<input type="email" class="form-input" id="confirm-email" name="confirm-email">
+			            				<div class="wrap wrap_alignCenter">
+				            				<input type="submit" class="btn btn_secondary btn_pushTopSm" value="Update Email" />
+				            			</div>
+						            </div>
+						        </div>
+						    </li>
+						</ul><!-- END ACCORDION MODULE -->
+					</div><!-- END TAB ONE -->
+
+					<!-- BEGIN TAB TWO -->
+					<div class="js-tab-content js-tab-content_two" id="emails">
+
+						<h2 class="hdg hdg_3 hdg_bold hdg_pushBtmSm">Tell us which emails you'd like to receive.</h2>
+						<p class="txt_med">We respect your time and your inbox.</p>
+						
+						<div class="form">
+						    <ul class="checkbox checkbox_block">
+						        <li>
+						            <input type="checkbox" name="checkbox-email" id="checkbox-email-1" />
+						            <label for="checkbox-email-1">
+							            <span class="checkbox-unchecked">
+						            	<i class="fa fa-square-o"></i>
+						            	</span>
+						            	<span class="checkbox-checked">
+						            		<i class="fa fa-check-square"></i>
+						            	</span>
+							            <span class="checkbox-text">Notify me when I receive invitations to Compare</span>
+							        </label>
+						        </li>
+						        <li>
+						            <input type="checkbox" name="checkbox-email" id="checkbox-email-2" />            
+						            <label for="checkbox-email-2">
+							            <span class="checkbox-unchecked">
+						            	<i class="fa fa-square-o"></i>
+						            	</span>
+						            	<span class="checkbox-checked">
+						            		<i class="fa fa-check-square"></i>
+						            	</span>
+							            <span class="checkbox-text">Notify me when someone accepts my invitation to Compare</span>
+							        </label>
+						        </li>
+						        <li>
+						            <input type="checkbox" name="checkbox-email" id="checkbox-email-3" />            
+						            <label for="checkbox-email-3">
+							            <span class="checkbox-unchecked">
+						            	<i class="fa fa-square-o"></i>
+						            	</span>
+						            	<span class="checkbox-checked">
+						            		<i class="fa fa-check-square"></i>
+						            	</span>
+							            <span class="checkbox-text">Notify me when there are updates to MyEverythingDiSC.com</span>
+							        </label>
+						        </li>
+						    </ul>
+						    <input type="submit" class="btn btn_secondary btn_pushTop" value="Update">
+						</div>
+					</div><!-- END TAB TWO -->
+
+					<!-- BEGIN TAB THREE -->
+					<div class="js-tab-content js-tab-content_three" id="status">
+
+						<h2 class="hdg hdg_3 hdg_bold hdg_pushBtmSm">Change your account status.</h2>
+						<p class="txt_med">Deactivated your account temporarily or delete it permanently.</p>
+
+						<div class="form">
+						    <ul class="radio radio_block">
+						        <li>
+						            <input type="radio" name="radio-account" id="radio-account-1" value="0" />
+						            <label for="radio-account-1" class="radio-custom"></label>
+						            <span class="radio-text">Deactivate my account (temporary) </span>
+						            <span class="js-tip">
+						            	<span class="tip-trigger js-tip-trigger">
+						            		<i class="fa fa-info-circle"></i>
+						            	</span>
+						            	<div class="tip-content js-tip-content">
+						            		<ul>
+						            			<li>- Disables signing into your account</li>
+						            			<li>- Prevents others from finding your account</li>
+						            		</ul>
+						            	</div>
+					            	</span>
+						        </li>
+						        <li>
+						            <input type="radio" name="radio-account" id="radio-account-2" value="1" />            
+						            <label for="radio-account-2" class="radio-custom"></label>
+						            <span class="radio-text">Delete my account (permanent) </span>
+						            <span class="js-tip">
+						            	<span class="tip-trigger js-tip-trigger">
+						            		<i class="fa fa-info-circle"></i>
+						            	</span>
+						            	<div class="tip-content js-tip-content">
+						            		<ul>
+						            			<li>- Permanently removes your account</li>
+						            			<li>- Requires you to create a new account in order to use the system again</li>
+						            		</ul>
+						            	</div>
+					            	</span>
+						        </li>
+						    </ul>
+					    	<input type="submit" class="btn btn_secondary btn_pushTop" value="Confirm">
+					    </div>
+					</div><!-- END TAB THREE -->
+
+				</div>
+		    </div>
+		</div>
+
+	</div><!-- END STICKY FOOTER -->
+	
+	{{footer.active()}}
+
+	{% include "partials/modals/_modal-upload-image.html" %}
+
+{% endblock %}

@@ -1,0 +1,52 @@
+//----------------------------------------------------------------------
+// Base Font Styles
+//----------------------------------------------------------------------
+$FONT_PRIMARY: 'Source Sans Pro', Arial, sans-serif;
+$FONT_SECONDARY: 'Open Sans', Arial, sans-serif;
+
+//----------------------------------------------------------------------
+// Common Colors
+//----------------------------------------------------------------------
+$BRAND: #0091D2;
+$BRAND_LIGHT: #bfd9df;
+$BRAND_SEMI_LIGHT: #B5D9DD;
+$BRAND_DARK: #236fa8;
+
+$BRAND_SECONDARY: #fdd601;
+$BRAND_SECONDARY_DARK: #fdc000;
+$BRAND_SECONDARY_LIGHT: #fdf8bc;
+
+$GRAY: #7E8C90;
+$GRAY_LIGHT: #eaf2f4;
+$GRAY_SEMI_LIGHT: #d6d6d6;
+$GRAY_SEMI_DARK: #4d4f4f;
+$GRAY_DARK: #323232;
+
+$WHITE: #FFFFFF;
+$BLACK: #000000;
+
+$RED: #dc4f4f;
+$RED_LIGHT: #f99393;
+
+$GREEN: #4e9659;
+
+$COLOR_BG: #ffffff;
+
+$COLOR_LINKEDIN: #007bb6;
+$COLOR_TWITTER: #76aaeb;
+$COLOR_YOUTUBE: #cd201f;
+
+//----------------------------------------------------------------------
+// Widths
+//----------------------------------------------------------------------
+$SITE_MAX_WIDTH: 1024px + 40px; /* 40px for content wrap side padding */ 
+$WIDTH_SM: 768px;
+$WIDTH_XSM: 480px;
+
+//----------------------------------------------------------------------
+// Box Styles
+//----------------------------------------------------------------------
+$BOX-SHADOW: 3px 5px 0 rgba(1, 1, 1, 0.11);
+
+$GRADIENT: linear-gradient(to bottom,  #eaf2f4 0%,#ffffff 50%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+, Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaf2f4+0,ffffff+50,ffffff+100 */
+$GRADIENT_FLIP: linear-gradient(to top,  #eaf2f4 0%,#ffffff 50%,#ffffff 100%);

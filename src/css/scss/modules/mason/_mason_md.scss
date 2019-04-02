@@ -1,0 +1,67 @@
+// ------------------------------------------------------------------
+// Mason Tiles Medium
+// ------------------------------------------------------------------
+.mason {border: none;}
+
+.mason-tile {
+	width: 25%;
+	padding: 12.5% 0;
+	border: none;
+	float: left;
+	position: relative;
+}
+
+.mason-tile_feature { width: 50%;}
+
+.mason-tile > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.mason-media {
+	width: 100%;
+	margin: 0;
+	border-radius: 0;
+}
+
+.mason-content {
+	position: absolute;
+}
+
+.mason-tile_feature .mason-content {
+	top: -10px;
+	left: 0;
+}
+
+.mason-overlay {
+	display: table;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	background: rgba(35,111,168,.8);
+	opacity: 0;
+	text-align: center;
+	vertical-align: middle;
+	transition: .3s opacity ease-in;
+}
+
+.mason-overlay > * {
+	display: table-cell;
+	vertical-align: middle;
+	color: $WHITE;
+}
+
+
+.mason-tile:hover .mason-overlay,
+.mason-tile:focus .mason-overlay {opacity: 1;}
+
+@media screen and (min-width: 768px) and (max-width: 860px) {
+    .mason-content p  {margin: -10px 0 10px;}
+}

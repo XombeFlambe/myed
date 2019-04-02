@@ -1,0 +1,48 @@
+//----------------------------------------------------------------------
+// Utilities
+//----------------------------------------------------------------------
+@mixin isHidden {
+    display: none;
+}
+
+@mixin isVisuallyHidden() {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    position: absolute !important;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin baseText {
+    font-family: $FONT_PRIMARY;
+    font-size: 16px;
+    font-weight: 400;
+    color: $GRAY_DARK;
+    line-height: 1.4;
+}
+
+@mixin baseLink {
+    color: $BRAND;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+@mixin noSelect {
+    -webkit-touch-callout: none;
+    user-select: none;
+}

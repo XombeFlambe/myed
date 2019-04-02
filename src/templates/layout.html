@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>My EverythingDiSC</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        {% include "partials/_favicons.html" %}
+
+        <!-- STYLESHEETS -->
+        <!--build:css css/css/modern.min.css-->
+        <link rel="stylesheet" href="./css/css/modern.css">
+        
+        <!-- endbuild -->
+        <!-- build:css css/css/legacy.min.css-->
+        <!--[if lt IE 9]> 
+            <link rel="stylesheet" href="css/css/legacy.css">
+            <link rel="stylesheet" href="css/css/ie.css">
+        <![endif]-->
+        <!-- endbuild -->
+
+        <link rel="stylesheet" href="plugins/slider/flexslider.css" type="text/css">
+        <link href="./plugins/audioPlayer/jplayer.blue.monday.css" rel="stylesheet">
+
+        <!-- FONTS -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+    <body class="js-modalArc">
+
+        <!-- BEGIN 'IF JAVASCRIPT IS DEACTIVATED' WARNING -->
+        <noscript>
+            <div class="noScript">
+                <div class="noScript-content">
+                    <img src="./media/images/myed-logo-beta.png">
+                    <h1>Javascript is disabled...</h1>
+                    <p>We're sorry, but MyEverythingDiSC.com does not work properly without Javascript enabled. Please enable Javascript to proceed, then reload page.</p>
+                    <a href="" class="btn btn_sm pushRight20">Reload Page</a>
+                </div>
+            </div>
+        </noscript><!-- END 'IF JAVASCRIPT IS DEACTIVATED' WARNING -->
+
+        {% import "partials/_header.html" as header %}
+        {% import "partials/_footer.html" as footer %}
+
+
+        {% block content %} {% endblock %}
+
+        <!-- BACK TO TOP OF PAGE BUTTON -->
+        <a href="#" class="topside js-topside">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+
+        <!--build:js js/main.min.js -->
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/plugins.js"></script>
+        
+        <script src="plugins/slider/jquery.flexslider.js"></script>
+        <script src="plugins/audioPlayer/jplayer.playlist.min.js"></script>
+        <script src="plugins/audioPlayer/jquery.jplayer.min.js"></script>
+
+        <!-- FLEXSLIDER INIT JS -->
+        <script>
+        $(window).load(function() {
+              $('.flexslider_learn').flexslider({
+                  animationSpeed: 800,
+                  touch: true,
+                  pauseOnHover: true,
+                  pauseOnAction: true,
+                  startAt:0,
+                  animation: "fade",
+                  manualControls: ".flex-control-nav li"
+                });
+            });
+        </script>
+
+        <!-- AUDIO PLAYER INIT JS -->
+        <script type="text/javascript">
+        $(document).ready(function () {
+            var myPlaylist = new jPlayerPlaylist({
+                jPlayer: "#jquery_jplayer_1",
+                cssSelectorAncestor: "#jp_container_1"
+            },
+            [
+                {title: "The D Style", mp3: "./media/uploads/D_Style.mp3"},
+                {title: "The i Style", mp3: "./media/uploads/i_Style.mp3"},
+                {title: "The S Style", mp3: "./media/uploads/S_Style.mp3"},
+                {title: "The C Style", mp3: "./media/uploads/C_Style.mp3"}
+            ],
+            {
+                swfPath: "./plugins/audioPlayer/",
+                supplied: "mp3",
+                smoothPlayBar: true,
+                keyEnabled: true
+            })
+        });
+        </script>
+        <!-- endbuild -->
+        
+    </body>
+</html>

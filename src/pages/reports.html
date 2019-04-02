@@ -1,0 +1,150 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+	<!-- STICKY FOOTER -->
+    <div class="stickyFooter">
+		{{header.active('reports')}}
+
+		<div class="wrap wrap_extend">
+
+		    <div class="wrap wrap_content" id="top">
+
+				<div class="wrap wrap_alignCenter wrap_sm">
+					<h1 class="hdg hdg_1 pushTop20 pushBtm40">View Your profile reports</h1>
+
+					<!-- BEGIN DRAWER MODULE -->
+                    <div class="drawer js-drawer">
+						<div class="drawer-trigger">
+                        	<h2 class="drawer-hd">Everything DiSC&reg; Profile Reports</h2>
+                            <a href="javascript:void(0)" class="btn btn_secondary js-drawer-trigger">Add a Report</a>
+                        </div>
+                        <div class="drawer-content js-drawer-content">
+                            <div class="form">
+                                <div class="pushBtm10">Enter or paste your access code</div>
+                                <div class="form-wrap">
+									<label for="acess-code" class="isVisuallyHidden">Access Code</label>
+									<i class="fa fa-key"></i>
+									<input type="text" id="access-code" name="acess-code" class="form-input form-input_icon" placeholder="for example: 1234-5678" />
+								</div>
+                                <div class="wrap wrap_alignRight">
+                                    <a href="#" class="js-gateway-next isHidden">Skip for now</a><!-- ADD inActive CLASS TO DEACTIVATE -->
+                                    <input  type="submit" value="Add" class="btn btn_secondary btn_sm"><!-- ADD disabled ATTRIBUTE TO DEACTIVATE -->
+                                </div>
+                                <div class="pushBtm10">You'll find your code in either of these two places.</div>
+                                <table>
+									<colgroup>
+										<col width="50%">
+										<col width="50%;">
+									</colgroup>
+                                	<tr>
+                                		<td>
+	                                		<img src="./media/images/examples/myed-code-email.png" alt="Access code example one" class="imgResponsive" />
+	                                    	<span class="txt_sm">On your Profile report cover</span>
+	                                    </td>
+	                                    <td>
+		                                    <img src="./media/images/examples/myed-code-report.png" alt="Access code example two" class="imgResponsive" />
+		                                    <span class="txt_sm">In the email about Everything DiSC&reg;</span>
+		                                </td>
+                                	</tr>
+                                </table>
+                            </div>
+
+                            <!-- ADD REPORT CONFIRMATION MESSAGES -->
+		                    <div class="wrap wrap_alignLeft">
+		                        <!-- ADD REPORT CONFIRMATION MESSAGE 1 -->
+		                        <p class="txt_med txt_bold">Success! Your report has been added.</p>
+
+		                        <!-- ADD REPORT CONFIRMATION MESSAGE 2 -->
+		                        <p class="txt_med txt_bold">Thanks for adding your code.</p>
+		                        <p>Your report will be hidden until your facilitator turns on access. In the meantime, feel free to learn more about Everything DiSC&reg;.</p>
+		                        <a href="./learn.html" class="btn btn_secondary btn_sm">Learn About DiSC</a>
+		                    </div>
+                        </div>
+                    </div><!-- END DRAWER MODULE -->
+
+				</div>
+
+				<div class="radio radio_block">
+					<table class="table table_reports">
+						<thead class="js-tip">
+							<tr>
+								<th width="10%;">
+	                                <span>Primary</span>
+	                                <span class="js-tip-trigger">
+	                                    <i class="fa fa-info-circle"></i>
+	                                </span>
+	                            </th>
+								<th>Date</th>
+								<th>Style</th>
+								<th>Report</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td colspan="5" class="table-td_noPad">
+									<div class="tip-content js-tip-content">
+					                    <p>The primary profile report is the one we use on this website to display your personalized content. If you change it here, it will be updated throughout the website.</p>
+					                </div>
+				                </td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input type="radio" name="radio-primary" id="radio-primary-1" checked />
+                                    <label for="radio-primary-1" class="radio-custom"></label>
+                                    <span class="isHiddenDesktop">Primary</span>
+								</td>
+								<td>09/09/2999</td>
+								<td><div class="circle">iD</div></td>
+								<td><a href="javascript:void(0);" class="js-modalTrigger2">Everything DiSC&reg; Sales Profile (English)</a></td>
+								<td><div class="table-row-delete" title="delete"><i class="fa fa-times"></i></div></td>
+							</tr>
+							<tr class="inActive">
+								<td>
+									<input type="radio" name="radio-primary" id="radio-primary-2" />
+                                    <label for="radio-primary-2" class="radio-custom"></label>
+                                    <span class="isHiddenDesktop isHidden">Primary</span>
+								</td>
+								<td>12/09/2011</td>
+								<td><div class="circle"></div></td>
+								<td><a href="javascript:void(0);" class="">Everything DiSC&reg; 363&deg; for Leaders Profile (English)</a></td>
+								<td><div class="table-row-delete" title="delete"><i class="fa fa-times"></i></div></td>
+							</tr>
+							<tr>
+								<td colspan="5"><p class="alert alert_inline alert_noMargin"><i class="fa fa-exclamation-circle"></i><span class="txt_bold"> Warning!</span> You are about to delete your Everything DiSC&reg; Sales Profile (English). <span class="alert-actions"><a href="javascript:void(0);" class="">Delete my Report</a> | <a href="javascript:void(0);" class="link_secondary">Cancel</a></span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="radio" name="radio-primary" id="radio-primary-4" />
+                                    <label for="radio-primary-4" class="radio-custom"></label>
+                                    <span class="isHiddenDesktop isHidden">Primary</span>
+								</td>
+								<td>99/99/9999</td>
+								<td><div class="circle">SC</div></td>
+								<td><a href="javascript:void(0);" class="js-modalTrigger2">Everything DiSC&reg; Workplace Profile (English)</a></td>
+								<td><div class="table-row-delete" title="delete"><i class="fa fa-times"></i></div></td>
+							</tr>
+							<tr>
+								<td colspan="5">
+									<p class="alert alert_inline alert_noMargin">
+										<a href="#"><i class="fa fa-external-link"></i> Take Everything DiSC&reg; 363&deg; for Leaders Profile (English)</a>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+		    </div>
+		</div>
+
+	</div><!-- END STICKY FOOTER -->
+	
+	{{footer.active()}}
+
+	{%include "partials/modals/_modal-reports.html"%}
+
+{% endblock %}

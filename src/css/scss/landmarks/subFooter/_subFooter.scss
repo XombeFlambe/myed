@@ -1,0 +1,25 @@
+// ------------------------------------------------------------------
+// Sub Footer
+// ------------------------------------------------------------------
+.subFooter {
+	min-height: 59px;
+	border-top: 1px solid $GRAY_LIGHT;
+	background: $GRAY_LIGHT;
+	background: $GRADIENT_FLIP;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.subFooter-list {
+	max-width: $SITE_MAX_WIDTH;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.subFooter-list li {
+	display: inline-block;
+	padding: 10px 40px;
+}
+
+.subFooter a {color: $GRAY_DARK;}

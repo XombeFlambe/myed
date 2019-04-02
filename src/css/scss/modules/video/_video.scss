@@ -1,0 +1,8 @@
+/*----------------------------------------------------------------------
+ Video Med
+----------------------------------------------------------------------*/
+.vidyard_inline > * {
+	width: 100% !important;
+	height: 0 !important;
+	padding: 28.1% !important;
+} /* Must place this class on inline style vidyard players for responsiveness */

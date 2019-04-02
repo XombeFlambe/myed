@@ -1,0 +1,33 @@
+/*----------------------------------------------------------------------
+ Avatar
+----------------------------------------------------------------------*/
+.avatar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    line-height: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -ms-interpolation-mode: bicubic;
+}
+
+.avatar_lg {
+    width: 100px;
+    height: 100px;
+}
+
+.avatar_sm {
+    width: 32px;
+    height: 32px;
+}
+
+.avatar_header {
+    width: 36px;
+    height: 36px;
+    margin-bottom: -15px;
+}
+
+.avatar img {width: 100%;}

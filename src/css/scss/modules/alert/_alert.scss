@@ -1,0 +1,92 @@
+// ------------------------------------------------------------------
+// Alert
+// ------------------------------------------------------------------
+.alert {
+    width: 100%;
+    @include clearfix();
+    position: relative;
+    color: $WHITE;
+    background: $RED;
+    box-shadow: $BOX_SHADOW;
+    font-size: 17px;
+    line-height: 1.6;
+    z-index: 3;
+}
+
+.alert_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.alert_notify {
+    border-top: 2px solid $BRAND_SECONDARY_DARK;
+    color: $GRAY_SEMI_DARK;
+	background: $BRAND_SECONDARY;
+    text-align: center;
+}
+
+.alert_inline,
+.alert_inlineRed {
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    background: $BRAND_SECONDARY_LIGHT;
+    border: 1px solid $BRAND_SECONDARY_DARK;
+    box-shadow: none;
+    color: $GRAY_SEMI_DARK;
+    text-align: center !important;
+}
+
+.alert_inlineRed {background: $RED_LIGHT;}
+
+.alert_feature {
+    padding: 10px;
+    border: 1px solid $BRAND_SECONDARY_DARK; 
+    background: $BRAND_SECONDARY_LIGHT;
+    box-shadow: none;
+    z-index: 0;
+    color: $GRAY_SEMI_DARK;
+    font-size: 14px;
+    text-align: center;
+}
+
+.alert_list {
+    padding: 10px;
+    background: $BRAND_SECONDARY_LIGHT;
+    box-shadow: none;
+    z-index: 0;
+    color: $GRAY_SEMI_DARK;
+    font-size: 14px;
+    text-align: center;
+}
+
+.alert_noMargin {margin: 0;}
+
+.alert-content {
+	max-width: $SITE_MAX_WIDTH;
+	margin: 0 auto;
+    padding: 10px 50px;
+}
+
+.alert-close {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -18px;
+    color: $WHITE;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 0;
+    text-align: right;
+}
+
+.alert-close:hover,
+.alert-close:focus {box-shadow: none;}
+
+.alert_notify .alert-close,
+.alert_inline .alert-close {color: inherit;}
+
+.alert-actions {display:block;}

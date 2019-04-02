@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Work+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+    <style>
+
+        html {
+            display: table;
+            width: 100%;
+            height: 100%;
+            background: url(./media/images/bg-content.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+            color: #888;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+        }
+
+        body {
+            display: table-cell;
+            margin: 2em auto;
+            vertical-align: middle;
+        }
+
+        h1 {
+            margin: 10px;
+            color: #323232;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        p {
+            width: 300px;
+            margin: 0 auto 10px;
+        }
+
+        a {
+            color: #0091D2;
+            text-decoration: none;
+            transition: box-shadow .3s;
+        }
+
+        a:hover {box-shadow: 0 1px 0 0 #0091d2;}
+
+        @media only screen and (max-width: 320px) {
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
+    </style>
+</head>
+<body class="errorPage">
+    <img src="./media/images/logo-beta.png">
+    <h1>Page not found...</h1>
+    <p>Sorry, but the page you were trying to view does not exist.</p>
+    <a href="javascript:javascript:history.go(-1)">Go back to previous page</a>
+</body>
+</html>
+<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->

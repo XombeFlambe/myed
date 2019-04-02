@@ -1,0 +1,41 @@
+/*----------------------------------------------------------------------
+ Box
+----------------------------------------------------------------------*/
+.box {
+	margin-bottom: 20px;
+	padding: 20px;
+	position: relative;
+	background: $WHITE;
+}
+
+.box_border {border: 1px solid $GRAY_SEMI_LIGHT;}
+.box_borderSecondary {border: 1px solid $BRAND_LIGHT;}
+
+.box_shadow {box-shadow: $BOX_SHADOW;}
+
+.box_minHeight {min-height: 500px;}
+
+.box_ornate {
+	display: inline-block;
+	padding: 5px 10px;
+	@include clearfix();
+	border: 1px solid $GRAY_SEMI_LIGHT;
+	border-radius: 20px;
+	background: $GRADIENT_FLIP;
+}
+
+.box_noPad {padding: 0;}
+
+.box_noMarginBtm {margin-bottom: 0;}
+
+.box_scroll {
+	max-height: 325px;
+	overflow-y: scroll;
+}
+
+.box-delete {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	cursor: pointer;
+}

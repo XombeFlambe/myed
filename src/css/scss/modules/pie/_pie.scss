@@ -1,0 +1,95 @@
+//----------------------------------------------------------------------
+// Pie Styles
+//----------------------------------------------------------------------
+.pieMedia {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.pieMedia svg {max-width: 400px;}
+
+.pieInfo li {display: none;}
+.pieInfo li.isActive {display: block;}
+
+.pie-slice {
+	cursor: pointer;
+	transition: fill .5s ease-in;
+}
+
+.pie-slice_D {
+	fill: #50bc84;
+	stroke-width: .5;
+	stroke: #66d899;
+}
+
+.pie-slice_D:hover {fill: #66d899;}
+
+.pie-slice_i {
+	fill: #f37778;
+	stroke-width: .5;
+	stroke: #f79fa8;
+}
+
+.pie-slice_i:hover {fill: #f79fa8;}
+
+.pie-slice_S {
+	fill: #35ade3;
+	stroke-width: .5;
+	stroke: #5dd4f4;
+}
+
+.pie-slice_S:hover {fill: #5dd4f4;}
+
+.pie-slice_C {
+	fill: #fcd602;
+	stroke-width: .5;
+	stroke: #f9eeb3;
+}
+
+.pie-slice_C:hover {fill: #f9e169;}
+
+.pie-slice_11 {animation: flareOne 2s ease-out;}
+
+.pie-slice_2 {
+	animation: flareTwo 2s ease-out;
+	animation-delay: 1s;
+}
+
+.pie-slice_5 {
+	animation: flareThree 2s ease-out;
+	animation-delay: 2s;
+}
+
+.pie-slice_8 {
+	animation: flareFour 2s ease-out;
+	animation-delay: 3s;
+}
+
+@keyframes flareOne {
+    0% {fill: #50bc84;}
+    50% {fill: #66d899;}
+    100% {fill: #50bc84;}
+}
+
+@keyframes flareTwo {
+    0% {fill: #f37778;}
+    50% {fill: #f79fa8;}
+    100% {fill: #f37778;}
+}
+
+@keyframes flareThree {
+    0% {fill: #35ade3;}
+    50% {fill: #5dd4f4;}
+    100% {fill: #35ade3;}
+}
+
+@keyframes flareFour {
+    0% {fill: #fcd602;}
+    50% {fill: #f9e169;}
+    100% {fill: #fcd602;}
+}
+
+.pie-letters {
+	fill: $WHITE;
+	cursor: pointer;
+}

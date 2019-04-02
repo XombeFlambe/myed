@@ -1,0 +1,41 @@
+<!-- index.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+	<!-- STICKY FOOTER -->
+    <div class="stickyFooter">
+		{{header.active('signin')}}
+
+        <div class="wrap wrap_signin">
+            <div class="wrap wrap_content">
+                <h1 class="hdg_2">Front End Page Index</h1>
+                <ul class="list">
+                    <li><hr></li>
+                    <li><a href="styleguide.html">Style Guide</a></li>
+                    <li><hr></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                    <li><a href="forgot-password.html">Forgot Password</a></li>
+                    <li><a href="reset-password.html">Reset Password</a></li>
+                    <li><a href="create-account.html">Create Account</a></li>
+                    <li><hr></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="style.html">My Style</a></li>
+                    <li><a href="reports.html">My Reports</a></li>
+                    <li><a href="customers.html">My Customers</a></li>
+                    <li><a href="comparisons.html">My Comparisons</a></li>
+                    <li><a href="learn.html">Learn About DiSC</a></li>
+                    <li><a href="account.html">My Account</a></li>
+                    <li><hr></li>
+                    <li><a href="privacy-terms.html">Privacy and Terms</a></li>
+                    <li><a href="404.html">404 Page</a></li>
+                    <li><a href=".html"></a></li>
+                </ul>
+            </div>
+        </div>
+
+	</div><!-- END STICKY FOOTER -->
+	
+	{{footer.active('signin')}}
+
+{% endblock %}

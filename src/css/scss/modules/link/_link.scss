@@ -1,0 +1,23 @@
+/*----------------------------------------------------------------------
+ Links
+----------------------------------------------------------------------*/
+.link {@include baseLink();}
+
+.link_underline {text-decoration: underline;}
+
+.link_underline:hover,
+.link_underline:focus {text-decoration: none;}
+
+.link_secondary {color: $GRAY;}
+
+.link_box:hover,
+.link_box:focus {
+	display: block;
+	background: $GRAY_LIGHT;
+	box-shadow: none;
+}
+
+.link_pushLeft {padding-left: 20px;}
+.link_pushRight {padding-right: 20px;}
+.link_pushLeftSm {padding-left: 10px;}
+.link_pushRightSm {padding-right: 10px;}

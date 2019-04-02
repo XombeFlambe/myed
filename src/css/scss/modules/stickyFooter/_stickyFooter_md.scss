@@ -1,0 +1,8 @@
+/*----------------------------------------------------------------------
+ Sticky Footer Med
+----------------------------------------------------------------------*/
+$STICKY_HEIGHT: 142px +59px; /* Footer height plus sub footer height */
+
+.stickyFooter {margin-bottom: -$STICKY_HEIGHT;}
+
+.stickyFooter:after {height: $STICKY_HEIGHT;}

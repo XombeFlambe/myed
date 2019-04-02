@@ -1,0 +1,358 @@
+<!-- learn.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+	<!-- STICKY FOOTER -->
+    <div class="stickyFooter">
+		{{header.active('learn')}}
+
+		<div class="wrap wrap_extend js-tab js-discMap" id="top">
+
+			<div class="wrap wrap_contain wrap_alignCenter">
+				<h1 class="hdg hdg_1 pushBtm40 pushTop40">Learn about DiSC&reg;</h1>
+			</div>
+
+			<div class="wrap wrap_gradient">
+				<div class="wrap wrap_contain">
+					<div class="tabsNav">
+						<ul>
+							<li><a href="#scrollToMobile" class="js-nav js-tab-trigger js-tab-trigger_one isActive">Timeline of DiSC</a></li>
+							<li><a href="#scrollToMobile" class="js-nav js-tab-trigger js-tab-trigger_two">Explore the DiSC Map</a></li>
+							<li><a href="#scrollToMobile" class="js-nav js-tab-trigger js-tab-trigger_three">DiSC Theory</a></li>
+							<li><a href="#scrollToMobile" class="js-nav js-tab-trigger js-tab-trigger_four">DiSC Research</a></li>
+						</ul>
+						<ul class="tabsNav-right">
+							<li>
+								<div class="btn btn_secondary btn_xsm btn_pushBtmNone btn_minWidthMobile js-modalTrigger3">Listen to DiSC Podcasts</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		    <div class="wrap wrap_extend wrap_contentBgGray">
+		    	<div id="scrollToMobile" class="isHiddenDesktop"></div>
+				<div class="wrap wrap_content">
+
+					<h2 class="hdg hdg_3 hdg_bold hdg_pushBtm">
+						<span>
+							<span class="tab-heading js-tab-heading js-tab-heading_1 isActive">Timeline of DiSC</span>
+							<span class="tab-heading js-tab-heading js-tab-heading_2">Explore the DiSC Map</span>
+							<span class="tab-heading js-tab-heading js-tab-heading_3">DiSC Theory</span>
+							<span class="tab-heading js-tab-heading js-tab-heading_4">DiSC Research</span>
+						</span>
+					</h2>
+					<div class="box box_minHeight">
+
+						<!-- BEGIN TAB ONE -->
+						<div class="tab-content js-tab-content js-tab-content_one isActive" id="timeline">
+							<p class="txt_bold txt_pushBtmSm txt_alignCenter">Choose a year to learn about the events that have helped shape Everything DiSC into what it is today.</p>
+							{% include "partials/sliders/_learn-slider.html" %}
+						</div><!-- END TAB ONE -->
+
+						<!-- BEGIN TAB TWO -->
+						<div class="tab-content js-tab-content js-tab-content_two" id="explore">
+							<!-- BEGIN PIE MODULE -->
+							<ul class="blocks blocks_2col js-discMap">
+								<li>
+									{% include "partials/pie/_pie-media.html" %}
+								</li>
+								<li>
+									<p class="pushTop40"></p>
+									{% include "partials/pie/_pie-info.html" %}
+								</li>
+							</ul>
+						</div><!-- END TAB TWO -->
+
+						<!-- BEGIN TAB THREE -->
+						<div class="tab-content js-tab-content js-tab-content_three" id="theory">
+							<!-- BEGIN ACCORDION MODULE -->
+							<ul class="accordion js-accordion">
+							    <li class="accordion-item js-accordion-item">
+							        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><span>2 dimensions of human nature</span><i class="caret"></i></a>
+							        <div class="accordion-content js-accordion-content isActive">
+							            <ul class="blocks blocks_2col">
+							            	<li class="txt_alignCenter">
+							            		<h3 class="hdg hdg_4 hdg_bold hdg_pushBtmSm isHiddenDesktop">Vertical: level of activity</h3>
+							            		<img src="./media/images/discs/disc-vertical.png" class="imgFlex" alt="">
+							            	</li>
+							            	<li>
+							            		<h3 class="hdg hdg_4 hdg_bold hdg_pushBtmSm isHiddenMobile">Vertical: level of activity</h3>
+							            		<p class="txt_pushBtmLg">The vertical dimension is best described as level of activity, ranging from active to thoughtful. People with DiSC styles at the top of the circle tend to be fast-paced and are often described as assertive, dynamic, and bold. Traditional explanations of the model suggest that these people perceive themselves as more powerful than the environment. Because of this perception, they tend to exert effort to change their circumstances. Conversely, people with styles that fall toward the bottom of the circle tend to be more moderate paced and are often described as calm, methodical, and careful. Traditionally, these people are thought to perceive themselves as less powerful than the environment, and thus they are more inclined to adapt to existing circumstances.</p>
+							            	</li>
+						            	</ul>
+						            	<ul class="blocks blocks_2col">
+							            	<li class="txt_alignCenter">
+							            		<h3 class="hdg hdg_4 hdg_bold hdg_pushBtmSm isHiddenDesktop">Horizontal: level of acceptance</h3>
+							            		<img src="./media/images/discs/disc-horizontal.png" class="imgFlex" alt="">
+							            	</li>
+							            	<li>
+							            		<h3 class="hdg hdg_4 hdg_bold hdg_pushBtmSm isHiddenMobile">Horizontal: level of acceptance</h3>
+							            		<p class="txt_pushBtmLg">The horizontal dimension runs from questioning to accepting. People with DiSC styles that fall toward the left side of the circle are naturally more skeptical in nature and are often described as logic-focused, objective, and challenging. A traditional explanation of these characteristics is that these people see the environment as antagonistic. In other words, they instinctively withhold trust from people and ideas until those outside elements can be thoroughly vetted. On the other hand, people with styles on the right side of the circle are naturally more receptive in nature and are often described as people-focused, empathizing, and agreeable. Traditionally, they are said to see the environment as being aligned with their interests. In essence, they are biased to see the people and ideas around them as favorable and are thus inclined to trust them.</p>
+							            	</li>
+							            </ul>
+							        </div>
+							    </li>
+							    <li class="accordion-item js-accordion-item">
+							        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><span>4 quadrants of DiSC</span><i class="caret"></i></a>
+							        <div class="accordion-content js-accordion-content">
+							            <ul class="blocks blocks_2col">
+							            	<li class="txt_alignCenter">
+							            		<img src="./media/images/discs/placeholder-disc.png" class="imgFlex" alt="">
+							            	</li>
+							            	<li>
+							            		<p>The <span class="txt_bold">D (Dominance) style</span> is active and questioning. This describes people who are direct, forceful, and outspoken with their opinions.</p>
+							            		<p>The <span class="txt_bold">i (Influence) style</span> is active and accepting. This describes people who are outgoing, enthusiastic, and lively.</p>
+							            		<p>The <span class="txt_bold">S (Steadiness) style</span> is thoughtful and accepting. This describes people who are gentle, accommodating, and patient with others’ mistakes.</p>
+							            		<p>The <span class="txt_bold">C (Conscientiousness) style</span> is thoughtful and questioning. This describes people who are analytical, reserved, and precise.</p>
+							            		<p>Although the DiSC dimensions form four distinct styles, it is probably more useful to think of the DiSC circle in continuous terms. Consider that each of the four styles blend into their neighboring styles much the same way that colors blend into one another on the color wheel. Red and yellow are distinct colors, but they both blend to form a new color, orange. In the same way, the D and i styles are distinct, but the space between them on the circle represents an equally distinct set of traits. For instance, people with a Di style are more likely than people with the D style to describe themselves as daring and convincing. A person with an iD style is more likely than someone with the i style to describe himself as charismatic and dynamic. In both cases, these two styles (Di and iD) share something with the D and i styles, but they also have characteristics that differentiate them from those singular styles.</p>
+							            		<p>You may also notice that when discussing DiSC, we go out of our way to say “a person with the D style” rather than simply calling someone a “D”. This subtle difference in language is meant to mitigate the natural temptation to pigeonhole people. Although a person with the D style predominantly demonstrates D traits, she has elements of the other four styles in her as well. For example, it is likely that she is quite capable of patiently listening to a coworker describe his hurt feelings, even though this is more of an S quality.</p>
+							            	</li>
+							            </ul>
+							        </div>
+							    </li>
+							    <li class="accordion-item js-accordion-item">
+							        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><span>The idea of stretch</span><i class="caret"></i></a>
+							        <div class="accordion-content js-accordion-content">
+							            <ul class="blocks blocks_2col">
+							            	<li class="txt_alignCenter">
+							            		<img src="./media/images/discs/placeholder-disc.png" class="imgFlex" alt="">
+							            	</li>
+							            	<li>
+							            		<p>The continuous nature of the DiSC circle also helps people understand the idea of “stretch.” It is helpful to think of your style as your home base or comfort zone. Someone with a C style may be very comfortable working alone on analytical projects that require accuracy. At times, however, this person may be called on to mingle with strangers at a professional function. In this case, the person is being asked to stretch across the circle toward the i style. Now, someone with the C style who has a dot close to the center of the circle will probably find this mingling distasteful, but manageable. On the other hand, someone with a C style whose dot is located on the edge of the circle is more likely to find this mingling highly stressful. In the second case, the person has had to travel farther outside their comfort zone, and that will require more energy. So, as a general rule, people with dots located close to the center usually have a somewhat easier time adopting foreign DiSC styles when the situation calls for it. People whose dots are on the edge of the circle may have to stretch more (and experience more stress) if they want to adopt another style. On the other hand, because these people have more pronounced DiSC styles, those styles are often accompanied by some very distinct strengths.</p>
+							            	</li>
+							            </ul>
+							        </div>
+							    </li>
+							</ul><!-- END ACCORDION MODULE -->
+						</div><!-- END TAB THREE -->
+
+						<!-- BEGIN TAB FOUR -->
+						<div class="tab-content js-tab-content js-tab-content_four" id="research">
+							<!-- BEGIN ACCORDION MODULE -->
+							<ul class="accordion js-accordion">
+							    <li class="accordion-item js-accordion-item">
+							        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><span>Background</span><i class="caret"></i></a>
+							        <div class="accordion-content js-accordion-content isActive">
+							            <ul class="blocks blocks_2col">
+							            	<li class="txt_alignCenter">
+							            		<img src="./media/images/discs/placeholder-disc-3.png" class="imgFlex" alt="">
+							            	</li>
+							            	<li>
+							            		<p>Psychological instruments are used to measure abstract qualities that we can’t touch or see. These are characteristics like intelligence, extroversion, or honesty. So how do researchers evaluate these instruments? How do we know whether such tools are actually providing accurate information about these characteristics or just generating haphazard feedback that sounds believable?</p>
+												<p>Simply put, if an instrument is indeed useful and accurate, it should meet a variety of different standards that have been established by the scientific community. Validation is the process through which researchers assess the quality of a psychological instrument by testing the tool against these different standards. This page is designed to help you understand these different standards and see how the Everything DiSC® assessment performs under examination. For more detailed information, see the full Everything DiSC Research Report.</p>
+												<p class="txt_bold">Validation asks two fundamental questions:</p>
+												<p><span class="txt_bold">How reliable is the tool?</span> That is, researchers ask if an instrument measures in a consistent and dependable way. If the results contain a lot of random variation, it is deemed less reliable.</p>
+												<p><span class="txt_bold">How valid is the tool?</span> That is, researchers ask if an instrument measures accurately. The more that a tool measures what it proposes to measure, the more valid the tool is.</p>
+												<p>Note that no psychometric tool is perfectly reliable or perfectly valid. All psychological instruments are subject to various sources of error. Reliability and validity are seen as matters of degree on continuous scales, rather than reliable/unreliable and valid/invalid on dichotomous scales. Consequently, it is more appropriate to ask, “How much evidence is there for the reliability of this tool?” than, “Is this tool reliable?”</p>
+							            	</li>
+							            </ul>
+							        </div>
+							    </li>
+							    <li class="accordion-item js-accordion-item">
+							        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><span>Scales</span><i class="caret"></i></a>
+							        <div class="accordion-content js-accordion-content">
+							            <ul class="blocks blocks_2col">
+							            	<li class="txt_alignCenter">
+							            		<img src="./media/images/discs/disc-all.png" class="imgFlex" alt="">
+							            	</li>
+							            	<li>
+							            		<p>A person’s DiSC® style is measured by asking them the degree to which they agree with a series of statements about themselves. These responses are used to calculate a score for that individual on eight scales. The eight scales are as follows:</p>
+							            		<p><span class="txt_bold">D</span> measures a direct, dominant disposition using adjectives such as aggressive, strong-willed, and forceful.</p>
+							            		<p><span class="txt_bold">Di</span> measures an active, fast-paced disposition using adjectives such as dynamic, adventurous, and bold.</p>
+							            		<p><span class="txt_bold">i</span> measures an interactive, influencing disposition using adjectives such as sociable, lively, and talkative.</p>
+							            		<p><span class="txt_bold">iS</span> measures an agreeable, warm disposition using adjectives such as trusting, cheerful, and caring.</p>
+							            		<p><span class="txt_bold">S</span> measures an accommodating, steady disposition using adjectives such as considerate, gentle, and soft-hearted.</p>
+							            		<p><span class="txt_bold">SC</span> measures a moderate-paced, cautious disposition using adjectives such as careful, soft-spoken, and self-controlled.</p>
+							            		<p><span class="txt_bold">C</span> measures a private, conscientious disposition using adjectives such as analytical, reserved, and unemotional.</p>
+							            		<p><span class="txt_bold">CD</span> measures a questioning, skeptical disposition using adjectives such as cynical, stubborn, and critical. Although these scales do not show up in the profile, they are used to determine which style the respondent receives.</p>
+							            	</li>
+							            </ul>
+							        </div>
+							    </li>
+							    <li class="accordion-item js-accordion-item">
+							        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><span>Reliability</span><i class="caret"></i></a>
+							        <div class="accordion-content js-accordion-content">
+							            <ul class="blocks blocks_2col">
+							            	<li class="txt_alignCenter">
+							            		<p class="txt_bold">Table: Scale Reliabilities</p>
+							            		<table class="scale scale_reliability">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Style</td>
+                                                            <td>Test-Retest</td>
+                                                            <td>Alpha</td>
+                                                        </tr>
+                                                        <tr>
+                                                        	<th></th>
+                                                            <th>(2 Week)</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>DI</td>
+                                                            <td>.86</td>
+                                                            <td>.90</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>I</td>
+                                                            <td>.87</td>
+                                                            <td>.90</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>IS</td>
+                                                            <td>.85</td>
+                                                            <td>.86</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>S</td>
+                                                            <td>.86</td>
+                                                            <td>.87</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>SC</td>
+                                                            <td>.88</td>
+                                                            <td>.84</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>C</td>
+                                                            <td>.85</td>
+                                                            <td>.79</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>CD</td>
+                                                            <td>.85</td>
+                                                            <td>.87</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>D</td>
+                                                            <td>.86</td>
+                                                            <td>.88</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>N</td>
+                                                            <td>599</td>
+                                                            <td>752</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+							            	</li>
+							            	<li>
+							            		<p>To determine if a tool is reliable, researchers look at the stability of the instrument and the internal consistency of the instrument. Stability is easy to understand. In this case, a researcher would simply have a group of people take the same assessment twice and correlate the results. This is called test-retest reliability. Internal consistency is more difficult to understand. Here, we have the assumption that all of the questions (or items) on a given scale are measuring the same trait. As a consequence, all of these items should, in theory, correlate with each other. Internal consistency is represented using a metric called alpha.</p>
+							            		<p>We can use similar standards to evaluate both test-retest and alpha. The maximum value is 1.0 and higher values indicate higher levels of reliability. Although not set in stone, most researchers use the following guidelines to interpret values: above .9 is considered excellent, above .8 is considered good, above .7 is considered acceptable, and below .7 is considered questionable. The reliability estimates for the eight DiSC® scales are shown in Table 1.</p>
+							            		<p>As Table 1 shows, all values were well above the .70 cutoff and all but one were above .80. This suggests that the measurement of DiSC is both stable and internally consistent. For more information on the reliability of the DiSC scales, see the more in-depth Everything DiSC® Research Report.</p>
+							            	</li>
+							            </ul>
+							        </div>
+							    </li>
+							    <li class="accordion-item js-accordion-item">
+							        <a href="javascript:void(0)" class="accordion-trigger js-accordion-trigger"><span>Validity</span><i class="caret"></i></a>
+							        <div class="accordion-content js-accordion-content">
+							            <ul class="blocks blocks_2col">
+							            	<li class="txt_alignCenter">
+							            		<p class="txt_bold">Table: Scale Intercorrelations</p>
+							            		<table class="scale scale_validity">
+                                                    <thead>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td>DI</td>
+                                                            <td>I</td>
+                                                            <td>IS</td>
+                                                            <td>S</td>
+                                                            <td>SC</td>
+                                                            <td>C</td>
+                                                            <td>CD</td>
+                                                            <td>D</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>DI</td>
+                                                            <td>.90</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>I</td>
+                                                            <td>.50</td>
+                                                            <td>.90</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>IS</td>
+                                                            <td>.04</td>
+                                                            <td>.47</td>
+                                                            <td>.86</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>S</td>
+                                                            <td>-.31</td>
+                                                            <td>.03</td>
+                                                            <td>.57</td>
+                                                            <td>.87</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>SC</td>
+                                                            <td>-.73</td>
+                                                            <td>-.56</td>
+                                                            <td>-.13</td>
+                                                            <td>.34</td>
+                                                            <td>.84</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>C</td>
+                                                            <td>-.43</td>
+                                                            <td>-.70</td>
+                                                            <td>-.49</td>
+                                                            <td>-.18</td>
+                                                            <td>.45</td>
+                                                            <td>.79</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>CD</td>
+                                                            <td>-.14</td>
+                                                            <td>-.37</td>
+                                                            <td>-.68</td>
+                                                            <td>-.66</td>
+                                                            <td>-.08</td>
+                                                            <td>.26</td>
+                                                            <td>.87</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>D</td>
+                                                            <td>.46</td>
+                                                            <td>.14</td>
+                                                            <td>-.37</td>
+                                                            <td>-.69</td>
+                                                            <td>-.62</td>
+                                                            <td>-.19</td>
+                                                            <td>.42</td>
+                                                            <td>.88</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+							            	</li>
+							            	<li>
+							            		<p>The continuous nature of the DiSC circle also helps people understand the idea of “stretch.” It is helpful to think of your style as your home base or comfort zone. Someone with a C style may be very comfortable working alone on analytical projects that require accuracy. At times, however, this person may be called on to mingle with strangers at a professional function. In this case, the person is being asked to stretch across the circle toward the i style. Now, someone with the C style who has a dot close to the center of the circle will probably find this mingling distasteful, but manageable. On the other hand, someone with a C style whose dot is located on the edge of the circle is more likely to find this mingling highly stressful. In the second case, the person has had to travel farther outside their comfort zone, and that will require more energy. So, as a general rule, people with dots located close to the center usually have a somewhat easier time adopting foreign DiSC styles when the situation calls for it. People whose dots are on the edge of the circle may have to stretch more (and experience more stress) if they want to adopt another style. On the other hand, because these people have more pronounced DiSC styles, those styles are often accompanied by some very distinct strengths.</p>
+							            	</li>
+							            </ul>
+							        </div>
+							    </li>
+							</ul><!-- END ACCORDION MODULE -->
+						</div><!-- END TAB FOUR -->
+					</div><!-- END BOX -->
+
+				</div>
+		    </div>
+		</div>
+
+		{% include "partials/banners/_banner-feedback.html" %}
+
+	</div><!-- END STICKY FOOTER -->
+	
+	{{footer.active()}}
+
+	{%include "partials/modals/_modal-podcasts.html"%}
+
+{% endblock %}

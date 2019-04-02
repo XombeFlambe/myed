@@ -1,0 +1,27 @@
+<!-- create-account.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+	<!-- STICKY FOOTER -->
+    <div class="stickyFooter">
+		{{header.active('signin')}}
+
+	    <div class="wrap wrap_content wrap_signin wrap_alignCenter wrap_pushBtm" id="top">
+
+			<h1 class="hdg hdg_1 hdg_pushBtmSm">Create an Account</h1>
+			<p class="txt">Who can create an account <i class="fa fa-question-circle"></i></p>
+
+			{%include "partials/forms/_form-create-account.html"%}
+
+			<p><span class="txt_bold">Already have an account? </span><a href="signin.html"> Sign In</a></p>
+
+			<span class="txt_sm">When you "Create an Account", you accept the <a href="privacy-terms.html">privacy policy and terms of use</a> of this site.</span>
+
+	    </div>
+
+	</div><!-- END STICKY FOOTER -->
+	
+	{{footer.active('signin')}}
+
+{% endblock %}

@@ -1,0 +1,29 @@
+// ------------------------------------------------------------------
+// Footer Med
+// ------------------------------------------------------------------
+.footer {padding: 20px;}
+
+.footer-blocks > li {
+    width: 25%;
+    min-height: 100px;
+    float: left;
+    text-align: left;
+}
+
+.footer-blocks > li:last-child {
+    padding-top: 0;
+    box-shadow: none;
+}
+
+.footer-blocks > li:last-child,
+.footer-blocks > li:nth-child(3) {text-align: right;}
+
+.footer_signin {
+
+    .footer-blocks > li {
+        float: none;
+    }
+
+    .footer-blocks > li:last-child,
+	.footer-blocks > li:nth-child(3) {text-align: center;}
+}

@@ -1,0 +1,110 @@
+<!-- home.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+    {% include "partials/modals/_modal-gateway.html" %}
+
+	<!-- STICKY FOOTER -->
+    <div class="stickyFooter">
+		{{header.active('home')}}
+
+        <!-- BEGIN HERO SECTION -->
+		<div class="wrap wrap_extend wrap_contentBg">
+		    <div class="wrap wrap_content" id="top">
+				{% include "partials/heroes/_hero-my-style.html" %}
+                {% include "partials/heroes/_hero-no-report.html" %}
+                {% include "partials/heroes/_hero-learn-disc.html" %}
+                {% include "partials/heroes/_hero-wiley.html" %}
+		    </div>
+		</div><!-- END HERO SECTION -->
+
+        <!-- BEGIN MASON TILE SECTION -->
+        <div class="wrap wrap_extend">
+            <div class="wrap wrap_content">
+                <ul class="mason">
+                    <li class="mason-tile mason-tile_feature">
+                        <div class="mason-content">
+                            <h2 class="hdg hdg_2 hdg_pushBtmSm">Learn about DiSC</h2>
+                            <p>Everything DiSC&reg; is a simple and memorable model. However, the science behind DiSC is anything but simplistic.</p>
+
+                            <a href="learn.html" class="btn btn_secondary btn_sm">Start Learning</a>
+                        </div>
+                    </li>
+                    <li class="mason-tile">
+                        <a href="./learn.html#timeline">
+                            <div class="mason-media mason-media_timeline">
+                                <img src="./media/images/mason-tiles/DISC-TIMELINE-BKGRD.png" alt="Learn disc timeline" class="imgResponsive" />
+                            </div>
+                            <div class="mason-overlay">
+                                <h4 class="hdg hdg_3 hdg_bold">DiSC Timeline</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mason-tile">
+                        <a href="./learn.html#theory">
+                            <div class="mason-media mason-media_theory">
+                                <img src="./media/images/mason-tiles/DISC-THEORY-BKGRD.png" alt="Learn disc theory" class="imgResponsive">
+                            </div>
+                            <div class="mason-overlay">
+                                <h4 class="hdg hdg_3 hdg_bold">DiSC Theory</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mason-tile">
+                        <!-- INTRO VIDEO -->
+                        <a href="javascript:void(0);" onclick="fn_vidyard_wdUt7NiexznDRQrvwZw1Eg();">
+                            <div class="mason-media mason-media_intro">
+                                <img src="./media/images/mason-tiles/MYED-VIDEO-BKGRD.png" alt="Intro video" class="imgResponsive">
+                            </div>
+                            <div class="mason-overlay">
+                                <h4 class="hdg hdg_3 hdg_bold">Introduction <span class="txt_inlineBlock">Video <i class="fa fa-play-circle"></i></span></h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mason-tile">
+                        <a href="./learn.html#research">
+                            <div class="mason-media mason-media_research">
+                                <img src="./media/images/mason-tiles/DISC-RESEARCH-BKGRD.png" alt="Learn disc research" class="imgResponsive">
+                            </div>
+                            <div class="mason-overlay">
+                                <h4 class="hdg hdg_3 hdg_bold">DiSC Research</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mason-tile">
+                        <a href="./learn.html#explore">
+                            <div class="mason-media mason-media_explore">
+                                <img src="./media/images/mason-tiles/EXPLORE-DISC-BKGRD.png" alt="Explore the disc" class="imgResponsive">
+                            </div>
+                            <div class="mason-overlay">
+                                <h4 class="hdg hdg_3 hdg_bold">Explore DiSC</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mason-tile">
+                        <!-- WORKPLACE STRATEGIES VIDEO -->
+                        <a href="javascript:void(0);" onclick="fn_vidyard_A0zBdbiuPnu46rcuJ5KKsA();">
+                            <div class="mason-media mason-media_strategy">
+                                <img src="./media/images/mason-tiles/WORKPLACE-STRATEGIES-VIDEO-BKGRD.png" alt="Workplace strategies video" class="imgResponsive">
+                            </div>
+                            <div class="mason-overlay">
+                                <h4 class="hdg hdg_3 hdg_white hdg_bold">Workplace Strategies <span class="txt_inlineBlock">Video <i class="fa fa-play-circle"></i></span></h4>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- END MASON TILE SECTION -->
+
+        {% include "partials/banners/_banner-comparisons.html" %}
+
+	</div><!-- END STICKY FOOTER -->
+	
+	{{footer.active()}}
+
+    <!-- VIDYARD MODAL VIDEOS -->
+        <script type='text/javascript' id='vidyard_embed_code_A0zBdbiuPnu46rcuJ5KKsA' src='http://play.vidyard.com/A0zBdbiuPnu46rcuJ5KKsA.js?v=3.1.1&type=lightbox'></script><!-- WORKPLACE STRATEGIES VIDEO -->
+        <script type="text/javascript" id="vidyard_embed_code_wdUt7NiexznDRQrvwZw1Eg" src="http://play.vidyard.com/wdUt7NiexznDRQrvwZw1Eg.js?v=3.1.1&type=lightbox"></script><!-- INTRODUCTION VIDEO -->
+
+{% endblock %}

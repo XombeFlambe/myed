@@ -1,0 +1,38 @@
+/*----------------------------------------------------------------------
+ Text
+----------------------------------------------------------------------*/
+.txt {@include baseText();}
+
+.txt_sm {font-size: 13px;}
+.txt_med {font-size: 18px;}
+.txt_lg {font-size: 22px;}
+
+.txt_bold {font-weight: 700;}
+.txt_normal {font-weight: 400;}
+
+.txt_italic {font-style: italic;}
+
+.txt_upper {text-transform: uppercase;}
+.txt_lower {text-transform: lowercase;}
+
+.txt_inlineBlock {display: inline-block;}
+.txt_block {display: block;}
+
+.txt_alignCenter {text-align: center;}
+
+.txt_pushBtm {margin-bottom: 20px;}
+.txt_pushBtmSm {margin-bottom: 10px;}
+.txt_pushBtmLg {margin-bottom: 40px;}
+.txt_pushTop {margin-top: 20px;}
+.txt_pushTopSm {margin-top: 10px;}
+.txt_pushTopXsm {margin-top: 5px;}
+.txt_pushTopLg {margin-top: 40px;}
+
+.txt_pushRight {margin-right: 20px;}
+.txt_pushRightSm {margin-right: 10px;}
+.txt_pushLeft {margin-left: 20px;}
+.txt_pushLeftSm {margin-left: 10px;}
+
+.txt_gray {color: $GRAY;}
+.txt_red {color: $RED;}
+.txt_green {color: $GREEN;}

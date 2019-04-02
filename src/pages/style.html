@@ -1,0 +1,239 @@
+<!-- style.nunjucks -->
+{% extends "layout.html" %}
+
+{% block content %}
+
+	<!-- STICKY FOOTER -->
+    <div class="stickyFooter">
+		{{header.active('style')}}
+
+		<div class="wrap wrap_extend js-tab js-discMap" id="top">
+
+			<div class="wrap wrap_contain wrap_alignCenter">
+				<h1 class="hdg hdg_1 pushBtm40 pushTop40">DiSCover how your style impacts you @work</h1>
+			</div>
+
+			<!-- TABS NAVIGATION -->
+			<div class="wrap wrap_gradient">
+				<div class="wrap wrap_contain">
+					<div class="tabsNav">
+						<ul>
+							<li><a href="#scrollToMobile" class="js-nav js-tab-trigger js-tab-trigger_one js-discMap-heading_show isActive">My Interaction</a></li>
+							<li><a href="#scrollToMobile" class="js-nav js-tab-trigger js-tab-trigger_two js-discMap-heading_show">My Environment</a></li>
+							<li><a href="#scrollToMobile" class="js-nav js-tab-trigger js-tab-trigger_three js-discMap-heading_show">My Communication</a></li>
+							<li>
+								<a href="#scrollToMobile" class="js-nav js-tab-trigger js-tab-trigger_four js-discMap-heading_hide">My DiSC alignment</a>
+							</li>
+						</ul>
+						<ul class="tabsNav-right">
+							<li>
+								<a href="jhavascript:void(0);" class="btn btn_secondary btn_xsm btn_pushBtmNone btn_minWidthMobile"><i class="fa fa-share-alt"></i> Share your style!</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- END TABS NAVIGATION -->
+
+		    <div class="wrap wrap_extend wrap_contentBgGray">
+		    	<div id="scrollToMobile" class="isHiddenDesktop"></div>
+				<div class="wrap wrap_content">
+
+					<!-- TAB HEADINGS -->
+					<h2 class="hdg hdg_3 hdg_bold hdg_pushBtm">
+						<span>
+							<span class="tab-heading js-tab-heading js-tab-heading_1 isActive">My Interaction: </span>
+							<span class="tab-heading js-tab-heading js-tab-heading_2">My Environment: </span>
+							<span class="tab-heading js-tab-heading js-tab-heading_3">My Communication: </span>
+							<span class="tab-heading js-tab-heading js-tab-heading_4">My DiSC Alignment</span>
+						</span>
+						<span>
+							<span class="tab-heading js-discMap-heading js-discMap-heading_0 isActive">Select a Priority</span>
+							<span class="tab-heading js-discMap-heading js-discMap-heading_1">Action</span>
+							<span class="tab-heading js-discMap-heading js-discMap-heading_2">Enthusiasm</span>
+							<span class="tab-heading js-discMap-heading js-discMap-heading_3">Collaboration</span>
+							<span class="tab-heading js-discMap-heading js-discMap-heading_4">Support</span>
+							<span class="tab-heading js-discMap-heading js-discMap-heading_5">Stability</span>
+							<span class="tab-heading js-discMap-heading js-discMap-heading_6">Accuracy</span>
+							<span class="tab-heading js-discMap-heading js-discMap-heading_7">Challenge</span>
+							<span class="tab-heading js-discMap-heading js-discMap-heading_8">Results</span>
+						</span>
+					</h2><!-- END TAB HEADINGS -->
+
+					<div class="box box_minHeight">
+
+						<!-- BEGIN TAB ONE -->
+						<div class="tab-content js-tab-content isActive js-tab-content_one">
+							<ul class="blocks blocks_2col">
+								<li class="wrap wrap_alignCenter wrap_paddedWidth">
+									<p><span class="txt_bold">Tip:</span> Select the words around the circle to find out more about your interaction preferences.</p>
+									<div class="discMap">
+										<img src="./media/images/discs/disc-content.png" alt="Your DiSC" class="imgFlex">
+
+										<ul class="discMap-action">
+											<li class="discMap-btn discMap-btn_Di js-discMap-trigger js-discMap-trigger_1"></li>
+											<li class="discMap-btn discMap-btn_i js-discMap-trigger js-discMap-trigger_2"></li>
+											<li class="discMap-btn discMap-btn_iS js-discMap-trigger js-discMap-trigger_3"></li>
+											<li class="discMap-btn discMap-btn_S js-discMap-trigger js-discMap-trigger_4"></li>
+											<li class="discMap-btn discMap-btn_SC js-discMap-trigger js-discMap-trigger_5"></li>
+											<li class="discMap-btn discMap-btn_C js-discMap-trigger js-discMap-trigger_6"></li>
+											<li class="discMap-btn discMap-btn_CD js-discMap-trigger js-discMap-trigger_7"></li>
+											<li class="discMap-btn discMap-btn_D js-discMap-trigger js-discMap-trigger_8"></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									{% include "partials/discMap/_default.html" %}
+									{% include "partials/discMap/interaction/_interaction-di.html" %}
+									{% include "partials/discMap/interaction/_interaction-i.html" %}
+									{% include "partials/discMap/interaction/_interaction-is.html" %}
+									{% include "partials/discMap/interaction/_interaction-s.html" %}
+									{% include "partials/discMap/interaction/_interaction-sc.html" %}
+									{% include "partials/discMap/interaction/_interaction-c.html" %}
+									{% include "partials/discMap/interaction/_interaction-cd.html" %}
+									{% include "partials/discMap/interaction/_interaction-d.html" %}
+
+									<hr>
+									<p>Choose another word around the DiSC map to learn more about interaction, or choose a different category.</p>
+									<div class="dropdown js-dropdown">
+						            	<div class="dropdown-trigger js-dropdown-trigger"><span>My Interaction</span><i class="fa fa-caret-down"></i></div>
+						            	<ul class="dropdown-content js-dropdown-content">
+						            		<li><a href="javascript:void(0);" class="js-tab-trigger js-tab-trigger_one">My Interaction</a></li>
+						            		<li><a href="javascript:void(0);" class="js-tab-trigger js-tab-trigger_two">My Environment</a></li>
+						            		<li><a href="javascript:void(0);" class="js-tab-trigger js-tab-trigger_three">My Communication</a></li>
+						            	</ul>
+						            </div>
+								</li>
+							</ul>
+						</div><!-- END TAB ONE -->
+
+						<!-- BEGIN TAB TWO -->
+						<div class="tab-content js-tab-content js-tab-content_two">
+							<ul class="blocks blocks_2col">
+								<li class="wrap wrap_alignCenter wrap_paddedWidth">
+									<p><span class="txt_bold">Tip:</span> Select the words around the circle to find out more about your interaction preferences.</p>
+									<div class="discMap">
+										<img src="./media/images/discs/disc-content.png" alt="Your DiSC" class="imgFlex">
+
+										<ul class="discMap-action">
+											<li class="discMap-btn discMap-btn_Di js-discMap-trigger js-discMap-trigger_1"></li>
+											<li class="discMap-btn discMap-btn_i js-discMap-trigger js-discMap-trigger_2"></li>
+											<li class="discMap-btn discMap-btn_iS js-discMap-trigger js-discMap-trigger_3"></li>
+											<li class="discMap-btn discMap-btn_S js-discMap-trigger js-discMap-trigger_4"></li>
+											<li class="discMap-btn discMap-btn_SC js-discMap-trigger js-discMap-trigger_5"></li>
+											<li class="discMap-btn discMap-btn_C js-discMap-trigger js-discMap-trigger_6"></li>
+											<li class="discMap-btn discMap-btn_CD js-discMap-trigger js-discMap-trigger_7"></li>
+											<li class="discMap-btn discMap-btn_D js-discMap-trigger js-discMap-trigger_8"></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									{% include "partials/discMap/environment/_environment-di.html" %}
+									{% include "partials/discMap/environment/_environment-i.html" %}
+									{% include "partials/discMap/environment/_environment-is.html" %}
+									{% include "partials/discMap/environment/_environment-s.html" %}
+									{% include "partials/discMap/environment/_environment-sc.html" %}
+									{% include "partials/discMap/environment/_environment-c.html" %}
+									{% include "partials/discMap/environment/_environment-cd.html" %}
+									{% include "partials/discMap/environment/_environment-d.html" %}
+
+									<hr>
+									<p>Choose another word around the DiSC map to learn more about environment, or choose a different category.</p>
+									<div class="dropdown js-dropdown">
+						            	<div class="dropdown-trigger js-dropdown-trigger"><span>My Environment</span><i class="fa fa-caret-down"></i></div>
+						            	<ul class="dropdown-content js-dropdown-content">
+						            		<li><a href="javascript:void(0);" class="js-tab-trigger js-tab-trigger_one">My Interaction</a></li>
+						            		<li><a href="javascript:void(0);" class="js-tab-trigger js-tab-trigger_two">My Environment</a></li>
+						            		<li><a href="javascript:void(0);" class="js-tab-trigger js-tab-trigger_three">My Communication</a></li>
+						            	</ul>
+						            </div>
+						        </li>
+						    </ul>
+						</div><!-- END TAB TWO -->
+
+						<!-- BEGIN TAB THREE -->
+						<div class="tab-content js-tab-content js-tab-content_three">
+							<ul class="blocks blocks_2col">
+								<li class="wrap wrap_alignCenter wrap_paddedWidth">
+									<p><span class="txt_bold">Tip:</span> Select the words around the circle to find out more about your interaction preferences.</p>
+									<div class="discMap">
+										<img src="./media/images/discs/disc-content.png" alt="Your DiSC" class="imgFlex">
+
+										<ul class="discMap-action">
+											<li class="discMap-btn discMap-btn_Di js-discMap-trigger js-discMap-trigger_1"></li>
+											<li class="discMap-btn discMap-btn_i js-discMap-trigger js-discMap-trigger_2"></li>
+											<li class="discMap-btn discMap-btn_iS js-discMap-trigger js-discMap-trigger_3"></li>
+											<li class="discMap-btn discMap-btn_S js-discMap-trigger js-discMap-trigger_4"></li>
+											<li class="discMap-btn discMap-btn_SC js-discMap-trigger js-discMap-trigger_5"></li>
+											<li class="discMap-btn discMap-btn_C js-discMap-trigger js-discMap-trigger_6"></li>
+											<li class="discMap-btn discMap-btn_CD js-discMap-trigger js-discMap-trigger_7"></li>
+											<li class="discMap-btn discMap-btn_D js-discMap-trigger js-discMap-trigger_8"></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									{% include "partials/discMap/communication/_communication-di.html" %}
+									{% include "partials/discMap/communication/_communication-i.html" %}
+									{% include "partials/discMap/communication/_communication-is.html" %}
+									{% include "partials/discMap/communication/_communication-s.html" %}
+									{% include "partials/discMap/communication/_communication-sc.html" %}
+									{% include "partials/discMap/communication/_communication-c.html" %}
+									{% include "partials/discMap/communication/_communication-cd.html" %}
+									{% include "partials/discMap/communication/_communication-d.html" %}
+
+									<hr>
+									<p>Choose another word around the DiSC map to learn more about interaction, or choose a different category.</p>
+									<div class="dropdown js-dropdown">
+						            	<div class="dropdown-trigger js-dropdown-trigger"><span>My Communication</span><i class="fa fa-caret-down"></i></div>
+						            	<ul class="dropdown-content js-dropdown-content">
+						            		<li><a href="javascript:void(0);" class="js-tab-trigger js-tab-trigger_one">My Interaction</a></li>
+						            		<li><a href="javascript:void(0);" class="js-tab-trigger js-tab-trigger_two">My Environment</a></li>
+						            		<li><a href="javascript:void(0);" class="js-tab-trigger js-tab-trigger_three">My Communication</a></li>
+						            	</ul>
+						            </div>
+						        </li>
+						    </ul>
+						</div><!-- END TAB THREE -->
+
+						<!-- BEGIN TAB FOUR -->
+						<div class="tab-content js-tab-content js-tab-content_four">
+							<ul class="blocks blocks_2col">
+								<li class="wrap wrap_alignCenter wrap_paddedWidth">
+									<div class="discMap discMap_pushTop">
+										<img src="./media/images/discs/placeholder-disc.png" alt="Your DiSC" class="imgFlex">
+									</div>
+								</li>
+								<li>
+									<h3 class="hdg hdg_3 hdg_bold hdg_pushBtmSm">How aligned are you to your DiSC&reg; style?</h3>
+									<p>During the assessment, people tend to answer questions in a way that is expected for their styles, but sometimes people answer in ways that are, well, unexpected. This is a summary of your most surprising answers to give you an idea of how aligned you are to your DiSC style.</p>
+									<div class="box box_border">
+										<p class="txt_bold">You <span class="txt_upper">agreed</span> with the following statements. Others with your style tend to disagree with these statements.</p>
+										<ul class="list list_bullet">
+											<li>Lorem ipsum dolor sit amet.</li>
+											<li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+											<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore debitis repellat, obcaecati. Libero iure, nostrum dolores unde reiciendis provident voluptatum.</li>
+										</ul>
+									</div>
+									<div class="box box_border">
+										<p class="txt_bold">You <span class="txt_upper">disagreed</span> with the following statements. Others with your style tend to agree with these statements.</p>
+										<ul class="list list_bullet">
+											<li>Lorem ipsum dolor sit amet.</li>
+											<li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+											<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore debitis repellat, obcaecati. Libero iure, nostrum dolores unde reiciendis provident voluptatum.</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div><!-- END TAB FOUR -->
+					</div><!-- END BOX -->
+
+				</div>
+		    </div>
+		</div>
+
+		{% include "partials/banners/_banner-feedback.html" %}
+
+	</div><!-- END STICKY FOOTER -->
+	
+	{{footer.active()}}
+
+{% endblock %}

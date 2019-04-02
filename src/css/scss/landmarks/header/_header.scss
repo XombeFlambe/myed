@@ -1,0 +1,33 @@
+// ------------------------------------------------------------------
+// Header
+// ------------------------------------------------------------------
+.header {border-bottom: 5px solid  $GRAY_SEMI_LIGHT;}
+
+.header-wrap {
+	background: $WHITE;
+}
+
+.header-content {
+	max-width: $SITE-MAX-WIDTH;
+	margin: 0 auto;
+	padding: 10px 0 0;
+	@include clearfix();
+	position: relative;
+}
+
+.header-logo {margin-left: 10px;}
+
+.header-logo a:hover,
+.header-logo a:focus {
+	text-decoration: none;
+	box-shadow: none;
+}
+
+.header-logo img {width: 180px;}
+
+.header-logo.centered {text-align: center;}
+
+.header-nav {
+	@include clearfix();
+	background: $BRAND_LIGHT;
+}
